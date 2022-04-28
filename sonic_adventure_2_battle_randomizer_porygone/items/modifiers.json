@@ -1,0 +1,222 @@
+[
+    {
+        "name": "Mission Count",
+        "type": "consumable",
+        "img": "images/checks/CheckDone.png",
+        "initial_quantity": 1,
+        "min_quantity": 1,
+        "max_quantity": 5,
+        "increment": 1,
+        "codes": "mission_count"
+    },
+    {
+        "name": "Cannon's Core Cost - Hundreds",
+        "type": "consumable",
+        "img": "images/checks/CheckNotDone.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 1,
+        "increment": 1,
+        "codes": "cannons_core_cost_100"
+    },
+    {
+        "name": "Cannon's Core Cost - Tens",
+        "type": "consumable",
+        "img": "images/checks/CheckNotDone.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 9,
+        "increment": 1,
+        "codes": "cannons_core_cost_10"
+    },
+    {
+        "name": "Cannon's Core Cost - Ones",
+        "type": "consumable",
+        "img": "images/checks/CheckNotDone.png",
+        "initial_quantity": 1,
+        "min_quantity": 0,
+        "max_quantity": 9,
+        "increment": 1,
+        "codes": "cannons_core_cost_1"
+    },
+    {
+        "name": "City Escape",
+        "type": "toggle",
+        "img": "images/levels/city_escape_available.png",
+        "codes": "city_escape_available"
+    },
+    {
+        "name": "Wild Canyon",
+        "type": "toggle",
+        "img": "images/levels/wild_canyon_available.png",
+        "codes": "wild_canyon_available"
+    },
+    {
+        "name": "Prison Lane",
+        "type": "toggle",
+        "img": "images/levels/prison_lane_available.png",
+        "codes": "prison_lane_available"
+    },
+    {
+        "name": "Metal Harbor",
+        "type": "toggle",
+        "img": "images/levels/metal_harbor_available.png",
+        "codes": "metal_harbor_available"
+    },
+    {
+        "name": "Green Forest",
+        "type": "toggle",
+        "img": "images/levels/green_forest_available.png",
+        "codes": "green_forest_available"
+    },
+    {
+        "name": "Pumpkin Hill",
+        "type": "toggle",
+        "img": "images/levels/pumpkin_hill_available.png",
+        "codes": "pumpkin_hill_available"
+    },
+    {
+        "name": "Mission Street",
+        "type": "toggle",
+        "img": "images/levels/mission_street_available.png",
+        "codes": "mission_street_available"
+    },
+    {
+        "name": "Aquatic Mine",
+        "type": "toggle",
+        "img": "images/levels/aquatic_mine_available.png",
+        "codes": "aquatic_mine_available"
+    },
+    {
+        "name": "Route 101",
+        "type": "toggle",
+        "img": "images/levels/route_101_available.png",
+        "codes": "route_101_available"
+    },
+    {
+        "name": "Hidden Base",
+        "type": "toggle",
+        "img": "images/levels/hidden_base_available.png",
+        "codes": "hidden_base_available"
+    },
+    {
+        "name": "Pyramid Cave",
+        "type": "toggle",
+        "img": "images/levels/pyramid_cave_available.png",
+        "codes": "pyramid_cave_available"
+    },
+    {
+        "name": "Death Chamber",
+        "type": "toggle",
+        "img": "images/levels/death_chamber_available.png",
+        "codes": "death_chamber_available"
+    },
+    {
+        "name": "Eternal Engine",
+        "type": "toggle",
+        "img": "images/levels/eternal_engine_available.png",
+        "codes": "eternal_engine_available"
+    },
+    {
+        "name": "Meteor Herd",
+        "type": "toggle",
+        "img": "images/levels/meteor_herd_available.png",
+        "codes": "meteor_herd_available"
+    },
+    {
+        "name": "Crazy Gadget",
+        "type": "toggle",
+        "img": "images/levels/crazy_gadget_available.png",
+        "codes": "crazy_gadget_available"
+    },
+    {
+        "name": "Final Rush",
+        "type": "toggle",
+        "img": "images/levels/final_rush_available.png",
+        "codes": "final_rush_available"
+    },
+    {
+        "name": "Iron Gate",
+        "type": "toggle",
+        "img": "images/levels/iron_gate_available.png",
+        "codes": "iron_gate_available"
+    },
+    {
+        "name": "Dry Lagoon",
+        "type": "toggle",
+        "img": "images/levels/dry_lagoon_available.png",
+        "codes": "dry_lagoon_available"
+    },
+    {
+        "name": "Sand Ocean",
+        "type": "toggle",
+        "img": "images/levels/sand_ocean_available.png",
+        "codes": "sand_ocean_available"
+    },
+    {
+        "name": "Radical Highway",
+        "type": "toggle",
+        "img": "images/levels/radical_highway_available.png",
+        "codes": "radical_highway_available"
+    },
+    {
+        "name": "Lost Colony",
+        "type": "toggle",
+        "img": "images/levels/lost_colony_available.png",
+        "codes": "lost_colony_available"
+    },
+    {
+        "name": "Egg Quarters",
+        "type": "toggle",
+        "img": "images/levels/egg_quarters_available.png",
+        "codes": "egg_quarters_available"
+    },
+    {
+        "name": "Weapons Bed",
+        "type": "toggle",
+        "img": "images/levels/weapons_bed_available.png",
+        "codes": "weapons_bed_available"
+    },
+    {
+        "name": "Security Hall",
+        "type": "toggle",
+        "img": "images/levels/security_hall_available.png",
+        "codes": "security_hall_available"
+    },
+    {
+        "name": "White Jungle",
+        "type": "toggle",
+        "img": "images/levels/white_jungle_available.png",
+        "codes": "white_jungle_available"
+    },
+    {
+        "name": "Route 280",
+        "type": "toggle",
+        "img": "images/levels/route_280_available.png",
+        "codes": "route_280_available"
+    },
+    {
+        "name": "Sky Rail",
+        "type": "toggle",
+        "img": "images/levels/sky_rail_available.png",
+        "codes": "sky_rail_available"
+    },
+    {
+        "name": "Mad Space",
+        "type": "toggle",
+        "img": "images/levels/mad_space_available.png",
+        "codes": "mad_space_available"
+    },
+    {
+        "name": "Cosmic Wall",
+        "type": "toggle",
+        "img": "images/levels/cosmic_wall_available.png",
+        "codes": "cosmic_wall_available"
+    },
+    {
+        "name": "Final Chase",
+        "type": "toggle",
+        "img": "images/levels/final_chase_available.png",
+        "codes": "final_chase_available"
+    }
+]

@@ -1,0 +1,53 @@
+[
+	{
+		"name": "Eternal Engine",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": ["eternal_engine_available"],
+		"sections": [
+			{
+				"name": "Mission 1",
+				"access_rules": ["tails_booster, tails_bazooka"],
+				"visibility_rules": [],
+				"item_count": 1
+			},
+			{
+				"name": "Mission 2",
+				"access_rules": ["tails_booster, tails_bazooka"],
+				"visibility_rules": ["$IncludeMission2"],
+				"item_count": 1
+			},
+			{
+				"name": "Mission 3",
+				"access_rules": ["tails_booster, tails_mystic_melody"],
+				"visibility_rules": ["$IncludeMission3"],
+				"item_count": 1
+			},
+			{
+				"name": "Mission 4",
+				"access_rules": ["tails_booster, tails_bazooka"],
+				"visibility_rules": ["$IncludeMission4"],
+				"item_count": 1
+			},
+			{
+				"name": "Mission 5",
+				"access_rules": ["tails_booster, tails_bazooka"],
+				"visibility_rules": ["$IncludeMission5"],
+				"item_count": 1
+			},
+			{
+				"name": "Upgrade",
+				"access_rules": ["tails_booster"],
+				"visibility_rules": [],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select",
+				"x": 1530,
+				"y": 150
+			}
+		]
+	}
+]

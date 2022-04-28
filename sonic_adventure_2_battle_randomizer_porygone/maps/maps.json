@@ -1,0 +1,8 @@
+﻿[
+    {
+        "name": "stage_select",
+		"location_size": 40,
+		"location_border_thickness": 5,
+        "img": "images/StageSelectBG.png"
+    }
+]

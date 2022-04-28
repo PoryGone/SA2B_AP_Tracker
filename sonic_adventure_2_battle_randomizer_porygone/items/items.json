@@ -1,0 +1,177 @@
+[
+    {
+        "name": "Sonic - Magic Hands",
+        "type": "toggle",
+        "img": "images/items/sonic_magic_gloves.png",
+        "codes": "sonic_magic_gloves"
+    },
+    {
+        "name": "Sonic - Light Shoes",
+        "type": "toggle",
+        "img": "images/items/sonic_light_shoes.png",
+        "codes": "sonic_light_shoes"
+    },
+    {
+        "name": "Sonic - Ancient Light",
+        "type": "toggle",
+        "img": "images/items/sonic_ancient_light.png",
+        "codes": "sonic_ancient_light"
+    },
+    {
+        "name": "Sonic Bounce Bracelet",
+        "type": "toggle",
+        "img": "images/items/sonic_bounce_bracelet.png",
+        "codes": "sonic_bounce_bracelet"
+    },
+    {
+        "name": "Sonic - Flame Ring",
+        "type": "toggle",
+        "img": "images/items/sonic_flame_ring.png",
+        "codes": "sonic_flame_ring"
+    },
+    {
+        "name": "Sonic - Mystic Melody",
+        "type": "toggle",
+        "img": "images/items/sonic_mystic_melody.png",
+        "codes": "sonic_mystic_melody"
+    },
+    {
+        "name": "Tails - Laser Blaster",
+        "type": "toggle",
+        "img": "images/items/tails_laser_blaster.png",
+        "codes": "tails_laser_blaster"
+    },
+    {
+        "name": "Tails - Booster",
+        "type": "toggle",
+        "img": "images/items/tails_booster.png",
+        "codes": "tails_booster"
+    },
+    {
+        "name": "Tails - Mystic Melody",
+        "type": "toggle",
+        "img": "images/items/tails_mystic_melody.png",
+        "codes": "tails_mystic_melody"
+    },
+    {
+        "name": "Tails - Bazooka",
+        "type": "toggle",
+        "img": "images/items/tails_bazooka.png",
+        "codes": "tails_bazooka"
+    },
+    {
+        "name": "Knuckles - Mystic Melody",
+        "type": "toggle",
+        "img": "images/items/knuckles_mystic_melody.png",
+        "codes": "knuckles_mystic_melody"
+    },
+    {
+        "name": "Knuckles - Shovel Claws",
+        "type": "toggle",
+        "img": "images/items/knuckles_shovel_claws.png",
+        "codes": "knuckles_shovel_claws"
+    },
+    {
+        "name": "Knuckles - Air Necklace",
+        "type": "toggle",
+        "img": "images/items/knuckles_air_necklace.png",
+        "codes": "knuckles_air_necklace"
+    },
+    {
+        "name": "Knuckles - Hammer Gloves",
+        "type": "toggle",
+        "img": "images/items/knuckles_hammer_gloves.png",
+        "codes": "knuckles_hammer_gloves"
+    },
+    {
+        "name": "Knuckles - Sunglasses",
+        "type": "toggle",
+        "img": "images/items/knuckles_sunglasses.png",
+        "codes": "knuckles_sunglasses"
+    },
+    {
+        "name": "Shadow - Flame Ring",
+        "type": "toggle",
+        "img": "images/items/shadow_flame_ring.png",
+        "codes": "shadow_flame_ring"
+    },
+    {
+        "name": "Shadow - Air Shoes",
+        "type": "toggle",
+        "img": "images/items/shadow_air_shoes.png",
+        "codes": "shadow_air_shoes"
+    },
+    {
+        "name": "Shadow - Ancient Light",
+        "type": "toggle",
+        "img": "images/items/shadow_ancient_light.png",
+        "codes": "shadow_ancient_light"
+    },
+    {
+        "name": "Shadow - Mystic Melody",
+        "type": "toggle",
+        "img": "images/items/shadow_mystic_melody.png",
+        "codes": "shadow_mystic_melody"
+    },
+    {
+        "name": "Eggman - Laser Blaster",
+        "type": "toggle",
+        "img": "images/items/eggman_laser_blaster.png",
+        "codes": "eggman_laser_blaster"
+    },
+    {
+        "name": "Eggman - Mystic Melody",
+        "type": "toggle",
+        "img": "images/items/eggman_mystic_melody.png",
+        "codes": "eggman_mystic_melody"
+    },
+    {
+        "name": "Eggman - Jet Engine",
+        "type": "toggle",
+        "img": "images/items/eggman_jet_engine.png",
+        "codes": "eggman_jet_engine"
+    },
+    {
+        "name": "Eggman - Large Cannon",
+        "type": "toggle",
+        "img": "images/items/eggman_large_cannon.png",
+        "codes": "eggman_large_cannon"
+    },
+    {
+        "name": "Eggman - Protective Armor",
+        "type": "toggle",
+        "img": "images/items/eggman_protective_armor.png",
+        "codes": "eggman_protective_armor"
+    },
+    {
+        "name": "Rouge - Mystic Melody",
+        "type": "toggle",
+        "img": "images/items/rouge_mystic_melody.png",
+        "codes": "rouge_mystic_melody"
+    },
+    {
+        "name": "Rouge - Pick Nails",
+        "type": "toggle",
+        "img": "images/items/rouge_pick_nails.png",
+        "codes": "rouge_pick_nails"
+    },
+    {
+        "name": "Rouge - Treasure Scope",
+        "type": "toggle",
+        "img": "images/items/rouge_treasure_scope.png",
+        "codes": "rouge_treasure_scope"
+    },
+    {
+        "name": "Rouge - Iron Boots",
+        "type": "toggle",
+        "img": "images/items/rouge_iron_boots.png",
+        "codes": "rouge_iron_boots"
+    },
+    {
+        "name": "Emblems",
+        "type": "consumable",
+        "img": "images/items/emblem.png",
+        "codes": "emblems",
+        "max_quantity": 155
+    }
+]
