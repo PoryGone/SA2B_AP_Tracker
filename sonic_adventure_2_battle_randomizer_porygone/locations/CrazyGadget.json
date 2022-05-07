@@ -4,41 +4,40 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": ["crazy_gadget_available"],
+		"visibility_rules": ["crazy_gadget_available"],
 		"sections": [
 			{
 				"name": "Mission 1",
 				"access_rules": ["sonic_light_shoes, sonic_bounce_bracelet, sonic_flame_ring"],
-				"visibility_rules": [],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": ["sonic_bounce_bracelet"],
-				"visibility_rules": ["$IncludeMission2"],
+				"access_rules": ["@Crazy Gadget/Mission 1, sonic_bounce_bracelet"],
+				"visibility_rules": ["mission_count:2"],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 3",
-				"access_rules": ["sonic_light_shoes, sonic_bounce_bracelet, sonic_flame_ring, sonic_mystic_melody"],
-				"visibility_rules": ["$IncludeMission3"],
+				"access_rules": ["@Crazy Gadget/Mission 2, sonic_light_shoes, sonic_bounce_bracelet, sonic_flame_ring, sonic_mystic_melody"],
+				"visibility_rules": ["mission_count:3"],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 4",
-				"access_rules": ["sonic_light_shoes, sonic_bounce_bracelet, sonic_flame_ring"],
-				"visibility_rules": ["$IncludeMission4"],
+				"access_rules": ["@Crazy Gadget/Mission 3, sonic_light_shoes, sonic_bounce_bracelet, sonic_flame_ring"],
+				"visibility_rules": ["mission_count:4"],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 5",
-				"access_rules": ["sonic_light_shoes, sonic_bounce_bracelet, sonic_flame_ring"],
-				"visibility_rules": ["$IncludeMission5"],
+				"access_rules": ["@Crazy Gadget/Mission 4, sonic_light_shoes, sonic_bounce_bracelet, sonic_flame_ring"],
+				"visibility_rules": ["mission_count:5"],
 				"item_count": 1
 			},
 			{
 				"name": "Upgrade",
 				"access_rules": ["sonic_bounce_bracelet"],
-				"visibility_rules": [],
 				"item_count": 1
 			}
 		],

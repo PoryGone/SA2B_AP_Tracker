@@ -4,41 +4,39 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": ["weapons_bed_available"],
+		"visibility_rules": ["weapons_bed_available"],
 		"sections": [
 			{
 				"name": "Mission 1",
 				"access_rules": ["eggman_jet_engine, eggman_large_cannon"],
-				"visibility_rules": [],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": ["eggman_jet_engine, eggman_large_cannon"],
-				"visibility_rules": ["$IncludeMission2"],
+				"access_rules": ["@Weapons Bed/Mission 1, eggman_jet_engine, eggman_large_cannon"],
+				"visibility_rules": ["mission_count:2"],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 3",
-				"access_rules": ["eggman_mystic_melody, eggman_jet_engine, eggman_large_cannon"],
-				"visibility_rules": ["$IncludeMission3"],
+				"access_rules": ["@Weapons Bed/Mission 2, eggman_mystic_melody, eggman_jet_engine, eggman_large_cannon"],
+				"visibility_rules": ["mission_count:3"],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 4",
-				"access_rules": ["eggman_jet_engine, eggman_large_cannon"],
-				"visibility_rules": ["$IncludeMission4"],
+				"access_rules": ["@Weapons Bed/Mission 3, eggman_jet_engine, eggman_large_cannon"],
+				"visibility_rules": ["mission_count:4"],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 5",
-				"access_rules": ["eggman_jet_engine, eggman_large_cannon"],
-				"visibility_rules": ["$IncludeMission5"],
+				"access_rules": ["@Weapons Bed/Mission 4, eggman_jet_engine, eggman_large_cannon"],
+				"visibility_rules": ["mission_count:5"],
 				"item_count": 1
 			},
 			{
 				"name": "Upgrade",
-				"access_rules": [],
-				"visibility_rules": [],
 				"item_count": 1
 			}
 		],

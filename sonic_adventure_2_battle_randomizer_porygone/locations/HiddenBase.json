@@ -4,41 +4,40 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": ["hidden_base_available"],
+		"visibility_rules": ["hidden_base_available"],
 		"sections": [
 			{
 				"name": "Mission 1",
 				"access_rules": ["tails_booster"],
-				"visibility_rules": [],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": ["tails_booster"],
-				"visibility_rules": ["$IncludeMission2"],
+				"access_rules": ["@Hidden Base/Mission 1, tails_booster"],
+				"visibility_rules": ["mission_count:2"],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 3",
-				"access_rules": ["tails_booster, tails_mystic_melody"],
-				"visibility_rules": ["$IncludeMission3"],
+				"access_rules": ["@Hidden Base/Mission 2, tails_booster, tails_mystic_melody"],
+				"visibility_rules": ["mission_count:3"],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 4",
-				"access_rules": ["tails_booster"],
-				"visibility_rules": ["$IncludeMission4"],
+				"access_rules": ["@Hidden Base/Mission 3, tails_booster"],
+				"visibility_rules": ["mission_count:4"],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 5",
-				"access_rules": ["tails_booster"],
-				"visibility_rules": ["$IncludeMission5"],
+				"access_rules": ["@Hidden Base/Mission 4, tails_booster"],
+				"visibility_rules": ["mission_count:5"],
 				"item_count": 1
 			},
 			{
 				"name": "Upgrade",
 				"access_rules": ["tails_booster, tails_bazooka"],
-				"visibility_rules": [],
 				"item_count": 1
 			}
 		],

@@ -10,29 +10,5 @@ end
 function CannonsCoreAvailable()
 	local emblemCount = Tracker:ProviderCountForCode("emblems")
 	local emblemReqCount = CalculateCannonsCoreCost()
-	return emblemCount >= emblemReqCount
-end
-
-function IncludeMission2()
-	local mission_count = Tracker:ProviderCountForCode("mission_count")
-
-	return (mission_count >= 2)
-end
-
-function IncludeMission3()
-	local mission_count = Tracker:ProviderCountForCode("mission_count")
-
-	return (mission_count >= 3)
-end
-
-function IncludeMission4()
-	local mission_count = Tracker:ProviderCountForCode("mission_count")
-
-	return (mission_count >= 4)
-end
-
-function IncludeMission5()
-	local mission_count = Tracker:ProviderCountForCode("mission_count")
-
-	return (mission_count >= 5)
+	return emblemCount + 1 - emblemReqCount
 end
