@@ -8,5 +8,6 @@ ScriptHost:LoadScript("scripts/logic.lua")
 Tracker:AddLayouts("layouts/items.json")
 
 ScriptHost:LoadScript("scripts/loadlocations.lua")
+ScriptHost:LoadScript("scripts/autotracking.lua")
 
 Tracker:AddLayouts("layouts/tracker.json")

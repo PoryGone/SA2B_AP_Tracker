@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\images",
     "\\items",
-    "\\layouts",
-    "\\maps",
-    "\\scripts"
+    "\\locations",
+    "\\scripts",
+    "\\scripts\\autotracking"
   ],
-  "SelectedNode": "\\scripts\\logic.lua",
   "PreviewInSolutionExplorer": false
 }
