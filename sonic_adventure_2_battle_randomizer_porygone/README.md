@@ -4,7 +4,8 @@ An PopTracker/EmoTracker pack with map for\
 [the Sonic Adventure 2: Battle Archipelago Randomizer](https://github.com/PoryGone)
 
 ## Requirements
-[PopTracker](https://github.com/black-sliver/PopTracker)
+[PopTracker](https://github.com/black-sliver/PopTracker) (Recommended)
+or
 [EmoTracker](https://emotracker.net/)
 
 ## Installation
@@ -15,7 +16,7 @@ An PopTracker/EmoTracker pack with map for\
 ## Usage
 
 The tracker will show you which stages you can access with your current items and emblems.
-PopTracker supports Archipelago Autotracking integration (see the application's README for details).
+PopTracker supports Archipelago Autotracking integration (see the PopTracker's README for details).
 
 ## Notes
 
