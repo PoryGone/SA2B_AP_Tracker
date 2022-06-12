@@ -1,0 +1,90 @@
+[
+	{
+		"name": "Chao Race Intermediate",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/ChaoMap.png",
+		"access_rules": ["[$ChaoIntermediateAvailable]"],
+		"visibility_rules": ["chao_garden_difficulty:2"],
+		"sections": [
+			{
+				"name": "Aquamarine",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 5
+			},
+			{
+				"name": "Aquamarine Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Topaz",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 5
+			},
+			{
+				"name": "Topaz Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Peridot",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 5
+			},
+			{
+				"name": "Peridot Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Garnet",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 5
+			},
+			{
+				"name": "Garnet Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Onyx",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 5
+			},
+			{
+				"name": "Onyx Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Diamond",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 5
+			},
+			{
+				"name": "Diamond Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select",
+				"x": 210,
+				"y": 90
+			}
+		]
+	}
+]

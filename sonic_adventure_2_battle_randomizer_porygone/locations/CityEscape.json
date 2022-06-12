@@ -30,7 +30,7 @@
 			},
 			{
 				"name": "Mission 5",
-				"access_rules": ["@City Escape/Mission 4, sonic_flame_ring"],
+				"access_rules": ["@City Escape/Mission 4, sonic_light_shoes, sonic_flame_ring"],
 				"visibility_rules": ["mission_count:5"],
 				"item_count": 1
 			},

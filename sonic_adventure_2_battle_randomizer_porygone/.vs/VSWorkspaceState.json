@@ -3,9 +3,10 @@
     "",
     "\\images",
     "\\items",
+    "\\layouts",
+    "\\locations",
     "\\scripts",
     "\\scripts\\autotracking"
   ],
-  "SelectedNode": "\\scripts\\autotracking\\location_mapping.lua",
   "PreviewInSolutionExplorer": false
 }

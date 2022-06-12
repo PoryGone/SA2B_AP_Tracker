@@ -30,7 +30,7 @@ LOCATION_MAPPING = {
     [0xFF001C] = {"@Cosmic Wall/Mission 1"},
     [0xFF001D] = {"@Final Chase/Mission 1"},
     [0xFF001E] = {"@Cannon's Core/Mission 1"},
-    
+
     [0xFF0020] = {"@City Escape/Mission 2"},
     [0xFF0021] = {"@Wild Canyon/Mission 2"},
     [0xFF0022] = {"@Prison Lane/Mission 2"},
@@ -62,7 +62,7 @@ LOCATION_MAPPING = {
     [0xFF003C] = {"@Cosmic Wall/Mission 2"},
     [0xFF003D] = {"@Final Chase/Mission 2"},
     [0xFF003E] = {"@Cannon's Core/Mission 2"},
-    
+
     [0xFF0040] = {"@City Escape/Mission 3"},
     [0xFF0041] = {"@Wild Canyon/Mission 3"},
     [0xFF0042] = {"@Prison Lane/Mission 3"},
@@ -94,7 +94,7 @@ LOCATION_MAPPING = {
     [0xFF005C] = {"@Cosmic Wall/Mission 3"},
     [0xFF005D] = {"@Final Chase/Mission 3"},
     [0xFF005E] = {"@Cannon's Core/Mission 3"},
-    
+
     [0xFF0060] = {"@City Escape/Mission 4"},
     [0xFF0061] = {"@Wild Canyon/Mission 4"},
     [0xFF0062] = {"@Prison Lane/Mission 4"},
@@ -126,7 +126,7 @@ LOCATION_MAPPING = {
     [0xFF007C] = {"@Cosmic Wall/Mission 4"},
     [0xFF007D] = {"@Final Chase/Mission 4"},
     [0xFF007E] = {"@Cannon's Core/Mission 4"},
-    
+
     [0xFF0080] = {"@City Escape/Mission 5"},
     [0xFF0081] = {"@Wild Canyon/Mission 5"},
     [0xFF0082] = {"@Prison Lane/Mission 5"},
@@ -158,7 +158,7 @@ LOCATION_MAPPING = {
     [0xFF009C] = {"@Cosmic Wall/Mission 5"},
     [0xFF009D] = {"@Final Chase/Mission 5"},
     [0xFF009E] = {"@Cannon's Core/Mission 5"},
-    
+
     [0xFF00A0] = {"@City Escape/Upgrade"},
     [0xFF00A1] = {"@Wild Canyon/Upgrade"},
     [0xFF00A2] = {"@Prison Lane/Upgrade"},
@@ -190,6 +190,78 @@ LOCATION_MAPPING = {
     [0xFF00BC] = {"@Cosmic Wall/Upgrade"},
     [0xFF00BD] = {"@Final Chase/Upgrade"},
     [0xFF00BE] = {"@Cannon's Core/Upgrade"},
+
+    [0xFF0200] = {"@Chao Race Beginner/Crab Pool"},
+    [0xFF0201] = {"@Chao Race Beginner/Crab Pool"},
+    [0xFF0202] = {"@Chao Race Beginner/Crab Pool", "@Chao Race Beginner/Crab Pool Prize"},
+    [0xFF0203] = {"@Chao Race Beginner/Stump Valley"},
+    [0xFF0204] = {"@Chao Race Beginner/Stump Valley"},
+    [0xFF0205] = {"@Chao Race Beginner/Stump Valley", "@Chao Race Beginner/Stump Valley Prize"},
+    [0xFF0206] = {"@Chao Race Beginner/Mushroom Forest"},
+    [0xFF0207] = {"@Chao Race Beginner/Mushroom Forest"},
+    [0xFF0208] = {"@Chao Race Beginner/Mushroom Forest", "@Chao Race Beginner/Mushroom Forest Prize"},
+    [0xFF0209] = {"@Chao Race Beginner/Block Canyon"},
+    [0xFF020A] = {"@Chao Race Beginner/Block Canyon"},
+    [0xFF020B] = {"@Chao Race Beginner/Block Canyon", "@Chao Race Beginner/Block Canyon Prize"},
+
+    [0xFF020C] = {"@Chao Race Intermediate/Aquamarine"},
+    [0xFF020D] = {"@Chao Race Intermediate/Aquamarine"},
+    [0xFF020E] = {"@Chao Race Intermediate/Aquamarine"},
+    [0xFF020F] = {"@Chao Race Intermediate/Aquamarine"},
+    [0xFF0210] = {"@Chao Race Intermediate/Aquamarine", "@Chao Race Intermediate/Aquamarine Prize"},
+    [0xFF0211] = {"@Chao Race Intermediate/Topaz"},
+    [0xFF0212] = {"@Chao Race Intermediate/Topaz"},
+    [0xFF0213] = {"@Chao Race Intermediate/Topaz"},
+    [0xFF0214] = {"@Chao Race Intermediate/Topaz"},
+    [0xFF0215] = {"@Chao Race Intermediate/Topaz", "@Chao Race Intermediate/Topaz Prize"},
+    [0xFF0216] = {"@Chao Race Intermediate/Peridot"},
+    [0xFF0217] = {"@Chao Race Intermediate/Peridot"},
+    [0xFF0218] = {"@Chao Race Intermediate/Peridot"},
+    [0xFF0219] = {"@Chao Race Intermediate/Peridot"},
+    [0xFF021A] = {"@Chao Race Intermediate/Peridot", "@Chao Race Intermediate/Peridot Prize"},
+    [0xFF021B] = {"@Chao Race Intermediate/Garnet"},
+    [0xFF021C] = {"@Chao Race Intermediate/Garnet"},
+    [0xFF021D] = {"@Chao Race Intermediate/Garnet"},
+    [0xFF021E] = {"@Chao Race Intermediate/Garnet"},
+    [0xFF021F] = {"@Chao Race Intermediate/Garnet", "@Chao Race Intermediate/Garnet Prize"},
+    [0xFF0220] = {"@Chao Race Intermediate/Onyx"},
+    [0xFF0221] = {"@Chao Race Intermediate/Onyx"},
+    [0xFF0222] = {"@Chao Race Intermediate/Onyx"},
+    [0xFF0223] = {"@Chao Race Intermediate/Onyx"},
+    [0xFF0224] = {"@Chao Race Intermediate/Onyx", "@Chao Race Intermediate/Onyx Prize"},
+    [0xFF0225] = {"@Chao Race Intermediate/Diamond"},
+    [0xFF0226] = {"@Chao Race Intermediate/Diamond"},
+    [0xFF0227] = {"@Chao Race Intermediate/Diamond"},
+    [0xFF0228] = {"@Chao Race Intermediate/Diamond"},
+    [0xFF0229] = {"@Chao Race Intermediate/Diamond", "@Chao Race Intermediate/Diamond Prize"},
+
+    [0xFF022A] = {"@Chao Race Expert/Challenge"},
+    [0xFF022B] = {"@Chao Race Expert/Challenge"},
+    [0xFF022C] = {"@Chao Race Expert/Challenge"},
+    [0xFF022D] = {"@Chao Race Expert/Challenge", "@Chao Race Expert/Challenge Prize"},
+    [0xFF022E] = {"@Chao Race Expert/Challenge"},
+    [0xFF022F] = {"@Chao Race Expert/Challenge"},
+    [0xFF0230] = {"@Chao Race Expert/Challenge"},
+    [0xFF0231] = {"@Chao Race Expert/Challenge", "@Chao Race Expert/Challenge Prize"},
+    [0xFF0232] = {"@Chao Race Expert/Challenge"},
+    [0xFF0233] = {"@Chao Race Expert/Challenge"},
+    [0xFF0234] = {"@Chao Race Expert/Challenge"},
+    [0xFF0235] = {"@Chao Race Expert/Challenge", "@Chao Race Expert/Challenge Prize"},
+
+    [0xFF0236] = {"@Chao Race Expert/Hero"},
+    [0xFF0237] = {"@Chao Race Expert/Hero", "@Chao Race Expert/Hero Prize"},
+    [0xFF0238] = {"@Chao Race Expert/Hero"},
+    [0xFF0239] = {"@Chao Race Expert/Hero", "@Chao Race Expert/Hero Prize"},
+
+    [0xFF023A] = {"@Chao Race Expert/Dark"},
+    [0xFF023B] = {"@Chao Race Expert/Dark", "@Chao Race Expert/Dark Prize"},
+    [0xFF023C] = {"@Chao Race Expert/Dark"},
+    [0xFF023D] = {"@Chao Race Expert/Dark", "@Chao Race Expert/Dark Prize"},
+
+    [0xFF0300] = {"@Chao Karate/Beginner"},
+    [0xFF0301] = {"@Chao Karate/Standard"},
+    [0xFF0302] = {"@Chao Karate/Expert"},
+    [0xFF0303] = {"@Chao Karate/Super"},
 }
 
 

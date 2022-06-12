@@ -1,0 +1,54 @@
+[
+	{
+		"name": "Chao Race Expert",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/ChaoMap.png",
+		"access_rules": ["[$ChaoExpertAvailable]"],
+		"visibility_rules": ["chao_garden_difficulty:3"],
+		"sections": [
+			{
+				"name": "Challenge",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 12
+			},
+			{
+				"name": "Challenge Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 3
+			},
+			{
+				"name": "Hero",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 4
+			},
+			{
+				"name": "Hero Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Dark",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 4
+			},
+			{
+				"name": "Dark Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select",
+				"x": 270,
+				"y": 90
+			}
+		]
+	}
+]

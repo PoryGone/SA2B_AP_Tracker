@@ -1,0 +1,66 @@
+[
+	{
+		"name": "Chao Race Beginner",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/ChaoMap.png",
+		"access_rules": ["[$ChaoBeginnerAvailable]"],
+		"visibility_rules": ["chao_garden_difficulty:1"],
+		"sections": [
+			{
+				"name": "Crab Pool",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 3
+			},
+			{
+				"name": "Crab Pool Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Stump Valley",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 3
+			},
+			{
+				"name": "Stump Valley Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Mushroom Forest",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 3
+			},
+			{
+				"name": "Mushroom Forest Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Block Canyon",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 3
+			},
+			{
+				"name": "Block Canyon Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select",
+				"x": 150,
+				"y": 90
+			}
+		]
+	}
+]

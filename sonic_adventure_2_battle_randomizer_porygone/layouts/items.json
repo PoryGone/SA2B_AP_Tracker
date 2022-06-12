@@ -91,6 +91,18 @@
                         "mad_space_available",
                         "cosmic_wall_available",
                         "final_chase_available"
+                    ],
+                    [
+                        "",
+                        "chao_garden_difficulty",
+                        "chao_prize_only",
+                        "chao_karate",
+                        "",
+                        "",
+                        "chao_beginner_cost",
+                        "chao_intermediate_cost",
+                        "chao_expert_cost",
+                        ""
                     ]
                 ]
             }

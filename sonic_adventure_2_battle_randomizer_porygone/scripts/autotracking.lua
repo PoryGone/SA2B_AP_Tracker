@@ -56,12 +56,13 @@ function onClear(slot_data)
             end
         end
     end
-    
-    for _, v in pairs(LOCATION_MAPPING) do
-        if v[1] then
-            local obj = Tracker:FindObjectForCode(v[1])
+
+    for k, v in pairs(LOCATION_MAPPING) do
+        local loc_list = LOCATION_MAPPING[k]
+        for i, loc in ipairs(loc_list) do
+            local obj = Tracker:FindObjectForCode(loc)
             if obj then
-                if v[1]:sub(1, 1) == "@" then
+                if loc:sub(1, 1) == "@" then
                     obj.AvailableChestCount = obj.ChestCount
                 else
                     obj.Active = false
@@ -91,6 +92,38 @@ function onClear(slot_data)
             obj100.AcquiredCount = (slot_data['EmblemsForCannonsCore'] // 100)
             obj10.AcquiredCount = (math.fmod(slot_data['EmblemsForCannonsCore'], 100) // 10)
             obj1.AcquiredCount = (math.fmod(slot_data['EmblemsForCannonsCore'], 10))
+        end
+    end
+
+    if slot_data['GateCosts'] then
+        local chao_beg = Tracker:FindObjectForCode("chao_beginner_cost")
+        local chao_int = Tracker:FindObjectForCode("chao_intermediate_cost")
+        local chao_exp = Tracker:FindObjectForCode("chao_expert_cost")
+
+        if slot_data['GateCosts']["5"] then
+            chao_beg.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_int.AcquiredCount = (slot_data['GateCosts']["2"])
+            chao_exp.AcquiredCount = (slot_data['GateCosts']["4"])
+        elseif slot_data['GateCosts']["4"] then
+            chao_beg.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_int.AcquiredCount = (slot_data['GateCosts']["2"])
+            chao_exp.AcquiredCount = (slot_data['GateCosts']["3"])
+        elseif slot_data['GateCosts']["3"] then
+            chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_int.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_exp.AcquiredCount = (slot_data['GateCosts']["3"])
+        elseif slot_data['GateCosts']["2"] then
+            chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_int.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_exp.AcquiredCount = (slot_data['GateCosts']["2"])
+        elseif slot_data['GateCosts']["1"] then
+            chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_int.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_exp.AcquiredCount = (slot_data['GateCosts']["1"])
+        elseif slot_data['GateCosts']["0"] then
+            chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_int.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_exp.AcquiredCount = (slot_data['GateCosts']["0"])
         end
     end
 end
@@ -129,17 +162,19 @@ function onItem(index, item_id, item_name, player_number)
 end
 
 function onLocation(location_id, location_name)
-    local v = LOCATION_MAPPING[location_id]
+    local loc_list = LOCATION_MAPPING[location_id]
 
-    if not v[1] then
-        return
-    end
-    local obj = Tracker:FindObjectForCode(v[1])     
-    if obj then
-        if v[1]:sub(1, 1) == "@" then
-            obj.AvailableChestCount = obj.AvailableChestCount - 1
-        else
-            obj.Active = true
+    for i, loc in ipairs(loc_list) do
+        if not loc then
+            return
+        end
+        local obj = Tracker:FindObjectForCode(loc)
+        if obj then
+            if loc:sub(1, 1) == "@" then
+                obj.AvailableChestCount = obj.AvailableChestCount - 1
+            else
+                obj.Active = true
+            end
         end
     end
 end

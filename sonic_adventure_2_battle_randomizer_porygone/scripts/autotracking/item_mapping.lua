@@ -66,4 +66,8 @@ SETTINGS_MAPPING = {
     [0xFF0022] = {"cannons_core_cost_100", "consumable"},
     [0xFF0023] = {"cannons_core_cost_10", "consumable"},
     [0xFF0024] = {"cannons_core_cost_1", "consumable"},
+
+    [0xFF0043] = {"chao_beginner_cost", "consumable"},
+    [0xFF0044] = {"chao_intermediate_cost", "consumable"},
+    [0xFF0045] = {"chao_expert_cost", "consumable"},
 }

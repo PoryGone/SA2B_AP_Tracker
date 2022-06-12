@@ -1,5 +1,57 @@
 [
     {
+        "name": "Chao Garden Difficulty",
+        "type": "consumable",
+        "img": "images/ChaoMap.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 3,
+        "increment": 1,
+        "codes": "chao_garden_difficulty"
+    },
+    {
+        "name": "Chao Karate",
+        "type": "toggle",
+        "img": "images/ChaoMap.png",
+        "codes": "chao_karate"
+    },
+    {
+        "name": "Chao Checks - Prize Only",
+        "type": "toggle",
+        "img": "images/ChaoMap.png",
+        "codes": "chao_prize_only"
+    },
+    {
+        "name": "Chao Beginner Emblem Requirement",
+        "type": "consumable",
+        "img": "images/ChaoMap.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 180,
+        "increment": 1,
+        "codes": "chao_beginner_cost"
+    },
+    {
+        "name": "Chao Intermediate Emblem Requirement",
+        "type": "consumable",
+        "img": "images/ChaoMap.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 180,
+        "increment": 1,
+        "codes": "chao_intermediate_cost"
+    },
+    {
+        "name": "Chao Expert Emblem Requirement",
+        "type": "consumable",
+        "img": "images/ChaoMap.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 180,
+        "increment": 1,
+        "codes": "chao_expert_cost"
+    },
+    {
         "name": "Mission Count",
         "type": "consumable",
         "img": "images/checks/CheckDone.png",
