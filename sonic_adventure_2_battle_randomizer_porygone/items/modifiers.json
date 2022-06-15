@@ -52,6 +52,76 @@
         "codes": "chao_expert_cost"
     },
     {
+        "name": "Gate Count",
+        "type": "consumable",
+        "img": "images/items/gun_logo.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "increment": 1,
+        "codes": "gate_count"
+    },
+    {
+        "name": "Gate Cost 1",
+        "type": "consumable",
+        "img": "images/items/gun_logo.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 180,
+        "increment": 1,
+        "codes": "gate_cost_1"
+    },
+    {
+        "name": "Gate Cost 2",
+        "type": "consumable",
+        "img": "images/items/gun_logo.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 180,
+        "increment": 1,
+        "codes": "gate_cost_2"
+    },
+    {
+        "name": "Gate Cost 3",
+        "type": "consumable",
+        "img": "images/items/gun_logo.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 180,
+        "increment": 1,
+        "codes": "gate_cost_3"
+    },
+    {
+        "name": "Gate Cost 4",
+        "type": "consumable",
+        "img": "images/items/gun_logo.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 180,
+        "increment": 1,
+        "codes": "gate_cost_4"
+    },
+    {
+        "name": "Gate Cost 5",
+        "type": "consumable",
+        "img": "images/items/gun_logo.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 180,
+        "increment": 1,
+        "codes": "gate_cost_5"
+    },
+    {
+        "name": "Bosses Complete",
+        "type": "consumable",
+        "img": "images/items/gun_logo.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "increment": 1,
+        "codes": "bosses_complete"
+    },
+    {
         "name": "Mission Count",
         "type": "consumable",
         "img": "images/checks/CheckDone.png",

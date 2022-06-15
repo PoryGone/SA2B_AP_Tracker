@@ -3,13 +3,24 @@ ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 
 LEVEL_UNLOCKS = {}
 
+
+
 CUR_INDEX = -1
 SLOT_DATA = nil
 
 
 function updateGateUnlocks(newEmblemCount)
+    print("updateGateUnlocks: ")
+    local bosses_complete = Tracker:ProviderCountForCode("bosses_complete")
     for k,v in pairs(LEVEL_UNLOCKS) do
-        if v <= newEmblemCount then
+        local boss_beaten = false
+        for k2, v2 in pairs(SLOT_DATA['GateCosts']) do
+            if v == v2 then
+                boss_beaten = bosses_complete >= tonumber(k2)
+            end
+        end
+        if (v <= newEmblemCount) and boss_beaten then
+            print(k, v, newEmblemCount, boss_beaten)
             local obj = Tracker:FindObjectForCode(LEVEL_MAPPING[tonumber(k)][1])
             if obj then
                 obj.Active = true
@@ -99,32 +110,51 @@ function onClear(slot_data)
         local chao_beg = Tracker:FindObjectForCode("chao_beginner_cost")
         local chao_int = Tracker:FindObjectForCode("chao_intermediate_cost")
         local chao_exp = Tracker:FindObjectForCode("chao_expert_cost")
+        local gate_count = Tracker:FindObjectForCode("gate_count")
 
         if slot_data['GateCosts']["5"] then
             chao_beg.AcquiredCount = (slot_data['GateCosts']["1"])
             chao_int.AcquiredCount = (slot_data['GateCosts']["2"])
             chao_exp.AcquiredCount = (slot_data['GateCosts']["4"])
+            gate_count.AcquiredCount = 5
         elseif slot_data['GateCosts']["4"] then
             chao_beg.AcquiredCount = (slot_data['GateCosts']["1"])
             chao_int.AcquiredCount = (slot_data['GateCosts']["2"])
             chao_exp.AcquiredCount = (slot_data['GateCosts']["3"])
+            gate_count.AcquiredCount = 4
         elseif slot_data['GateCosts']["3"] then
             chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
             chao_int.AcquiredCount = (slot_data['GateCosts']["1"])
             chao_exp.AcquiredCount = (slot_data['GateCosts']["3"])
+            gate_count.AcquiredCount = 3
         elseif slot_data['GateCosts']["2"] then
             chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
             chao_int.AcquiredCount = (slot_data['GateCosts']["1"])
             chao_exp.AcquiredCount = (slot_data['GateCosts']["2"])
+            gate_count.AcquiredCount = 2
         elseif slot_data['GateCosts']["1"] then
             chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
             chao_int.AcquiredCount = (slot_data['GateCosts']["0"])
             chao_exp.AcquiredCount = (slot_data['GateCosts']["1"])
+            gate_count.AcquiredCount = 1
         elseif slot_data['GateCosts']["0"] then
             chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
             chao_int.AcquiredCount = (slot_data['GateCosts']["0"])
             chao_exp.AcquiredCount = (slot_data['GateCosts']["0"])
+            gate_count.AcquiredCount = 0
         end
+
+        local gate_cost_1 = Tracker:FindObjectForCode("gate_cost_1")
+        local gate_cost_2 = Tracker:FindObjectForCode("gate_cost_2")
+        local gate_cost_3 = Tracker:FindObjectForCode("gate_cost_3")
+        local gate_cost_4 = Tracker:FindObjectForCode("gate_cost_4")
+        local gate_cost_5 = Tracker:FindObjectForCode("gate_cost_5")
+
+        if slot_data['GateCosts']["1"] then gate_cost_1.AcquiredCount = slot_data['GateCosts']["1"] end
+        if slot_data['GateCosts']["2"] then gate_cost_2.AcquiredCount = slot_data['GateCosts']["2"] end
+        if slot_data['GateCosts']["3"] then gate_cost_3.AcquiredCount = slot_data['GateCosts']["3"] end
+        if slot_data['GateCosts']["4"] then gate_cost_4.AcquiredCount = slot_data['GateCosts']["4"] end
+        if slot_data['GateCosts']["5"] then gate_cost_5.AcquiredCount = slot_data['GateCosts']["5"] end
     end
 end
 
@@ -176,6 +206,13 @@ function onLocation(location_id, location_name)
                 obj.Active = true
             end
         end
+    end
+
+    if location_id == 0xFF0100 or location_id == 0xFF0101 or location_id == 0xFF0102 or location_id == 0xFF0103 or location_id == 0xFF0104 then
+        local bosses_complete = Tracker:FindObjectForCode("bosses_complete")
+        bosses_complete.AcquiredCount = bosses_complete.AcquiredCount + 1
+        local emblem_count = Tracker:FindObjectForCode("emblems")
+        updateGateUnlocks(emblem_count.AcquiredCount)
     end
 end
 

@@ -191,6 +191,12 @@ LOCATION_MAPPING = {
     [0xFF00BD] = {"@Final Chase/Upgrade"},
     [0xFF00BE] = {"@Cannon's Core/Upgrade"},
 
+    [0xFF0100] = {"@Bosses/Gate 1"},
+    [0xFF0101] = {"@Bosses/Gate 2"},
+    [0xFF0102] = {"@Bosses/Gate 3"},
+    [0xFF0103] = {"@Bosses/Gate 4"},
+    [0xFF0104] = {"@Bosses/Gate 5"},
+
     [0xFF0200] = {"@Chao Race Beginner/Crab Pool"},
     [0xFF0201] = {"@Chao Race Beginner/Crab Pool"},
     [0xFF0202] = {"@Chao Race Beginner/Crab Pool", "@Chao Race Beginner/Crab Pool Prize"},

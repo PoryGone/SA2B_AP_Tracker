@@ -1,0 +1,48 @@
+[
+	{
+		"name": "Bosses",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [],
+		"visibility_rules": [],
+		"sections": [
+			{
+				"name": "Gate 1",
+				"access_rules": ["$BossAvailable|1"],
+				"visibility_rules": ["gate_count:1"],
+				"item_count": 1
+			},
+			{
+				"name": "Gate 2",
+				"access_rules": ["$BossAvailable|2"],
+				"visibility_rules": ["gate_count:2"],
+				"item_count": 1
+			},
+			{
+				"name": "Gate 3",
+				"access_rules": ["$BossAvailable|3"],
+				"visibility_rules": ["gate_count:3"],
+				"item_count": 1
+			},
+			{
+				"name": "Gate 4",
+				"access_rules": ["$BossAvailable|4"],
+				"visibility_rules": ["gate_count:4"],
+				"item_count": 1
+			},
+			{
+				"name": "Gate 5",
+				"access_rules": ["$BossAvailable|5"],
+				"visibility_rules": ["gate_count:5"],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select",
+				"x": 90,
+				"y": 390
+			}
+		]
+	}
+]

@@ -35,3 +35,22 @@ function NotChaoPrizeOnly()
 	local chao_prize_only = Tracker:ProviderCountForCode("chao_prize_only")
 	return 1 - chao_prize_only
 end
+
+function BossAvailable(boss_index)
+	local emblemCount = Tracker:ProviderCountForCode("emblems")
+    local gate_cost_1 = Tracker:ProviderCountForCode("gate_cost_1")
+    local gate_cost_2 = Tracker:ProviderCountForCode("gate_cost_2")
+    local gate_cost_3 = Tracker:ProviderCountForCode("gate_cost_3")
+    local gate_cost_4 = Tracker:ProviderCountForCode("gate_cost_4")
+    local gate_cost_5 = Tracker:ProviderCountForCode("gate_cost_5")
+
+	local boss_available = false
+	if tonumber(boss_index) == 1 then boss_available = (emblemCount >= gate_cost_1)
+	elseif tonumber(boss_index) == 2 then boss_available = (emblemCount >= gate_cost_2)
+	elseif tonumber(boss_index) == 3 then boss_available = (emblemCount >= gate_cost_3)
+	elseif tonumber(boss_index) == 4 then boss_available = (emblemCount >= gate_cost_4)
+	elseif tonumber(boss_index) == 5 then boss_available = (emblemCount >= gate_cost_5)
+	end
+
+	return boss_available
+end

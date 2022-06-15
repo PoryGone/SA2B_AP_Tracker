@@ -31,6 +31,8 @@ Tracker:AddLocations("locations/MadSpace.json")
 Tracker:AddLocations("locations/CosmicWall.json")
 Tracker:AddLocations("locations/FinalChase.json")
 
+Tracker:AddLocations("locations/GateBosses.json")
+
 Tracker:AddLocations("locations/ChaoGardenBeginner.json")
 Tracker:AddLocations("locations/ChaoGardenIntermediate.json")
 Tracker:AddLocations("locations/ChaoGardenExpert.json")
