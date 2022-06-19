@@ -106,6 +106,21 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data['ChaoGardenDifficulty'] then
+        local chao_diff = Tracker:FindObjectForCode("chao_garden_difficulty")
+        chao_diff.AcquiredCount = (slot_data['ChaoGardenDifficulty'])
+    end
+
+    if slot_data['include_chao_karate'] then
+        local chao_karate = Tracker:FindObjectForCode("chao_karate")
+        chao_karate.Active = (slot_data['include_chao_karate'])
+    end
+
+    if slot_data['ChaoRaceChecks'] then
+        local chao_prize = Tracker:FindObjectForCode("chao_prize_only")
+        chao_prize.Active = (slot_data['ChaoRaceChecks'])
+    end
+
     if slot_data['GateCosts'] then
         local chao_beg = Tracker:FindObjectForCode("chao_beginner_cost")
         local chao_int = Tracker:FindObjectForCode("chao_intermediate_cost")
