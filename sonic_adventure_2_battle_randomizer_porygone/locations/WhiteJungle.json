@@ -8,41 +8,164 @@
 		"sections": [
 			{
 				"name": "Mission 1",
-				"access_rules": ["shadow_air_shoes"],
+				"access_rules": [ "[shadow_air_shoes]" ],
+				"visibility_rules": [ "$MissionActive|24|1" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": ["@White Jungle/Mission 1"],
-				"visibility_rules": ["mission_count:2"],
+				"access_rules": [""],
+				"visibility_rules": [ "$MissionActive|24|2" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 3",
-				"access_rules": ["@White Jungle/Mission 2, shadow_air_shoes, shadow_mystic_melody"],
-				"visibility_rules": ["mission_count:3"],
+				"access_rules": ["[shadow_air_shoes], [shadow_mystic_melody]"],
+				"visibility_rules": [ "$MissionActive|24|3" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 4",
-				"access_rules": ["@White Jungle/Mission 3, shadow_air_shoes"],
-				"visibility_rules": ["mission_count:4"],
+				"access_rules": ["[shadow_air_shoes]"],
+				"visibility_rules": [ "$MissionActive|24|4" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 5",
-				"access_rules": ["@White Jungle/Mission 4, shadow_flame_ring, shadow_air_shoes"],
-				"visibility_rules": ["mission_count:5"],
+				"access_rules": ["[shadow_flame_ring], [shadow_air_shoes]"],
+				"visibility_rules": [ "$MissionActive|24|5" ],
 				"item_count": 1
 			},
 			{
 				"name": "Upgrade",
+				"chest_unopened_img": "images/checks/level_upgrade_disabled.png",
+				"chest_opened_img": "images/checks/level_upgrade.png",
 				"item_count": 1
 			}
 		],
 		"map_locations": [
 			{
 				"map": "stage_select",
+				"x": 630,
+				"y": 270
+			}
+		]
+	},
+	{
+		"name": "White Jungle ",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "white_jungle_available" ],
+		"visibility_rules": [ "white_jungle_available" ],
+		"sections": [
+			{
+				"name": "Chao Key 1",
+				"chest_unopened_img": "images/checks/ap_chao_key_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_key.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "keysanity" ]
+			},
+			{
+				"name": "Chao Key 2",
+				"chest_unopened_img": "images/checks/ap_chao_key_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_key.png",
+				"item_count": 1,
+				"access_rules": [ "[shadow_air_shoes]" ],
+				"visibility_rules": [ "keysanity" ]
+			},
+			{
+				"name": "Chao Key 3",
+				"chest_unopened_img": "images/checks/ap_chao_key_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_key.png",
+				"item_count": 1,
+				"access_rules": [ "[shadow_air_shoes]" ],
+				"visibility_rules": [ "keysanity" ]
+			},
+			{
+				"name": "Gold Beetle",
+				"chest_unopened_img": "images/checks/ap_gold_beetle_disabled.png",
+				"chest_opened_img": "images/checks/ap_gold_beetle.png",
+				"access_rules": [ "[shadow_air_shoes]" ],
+				"visibility_rules": [ "beetlesanity" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_keys",
+				"x": 630,
+				"y": 270
+			}
+		]
+	},
+	{
+		"name": "White Jungle  ",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "white_jungle_available" ],
+		"visibility_rules": [ "white_jungle_available" ],
+		"sections": [
+			{
+				"name": "Pipe 1",
+				"chest_unopened_img": "images/checks/ap_chao_pipe_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_pipe.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "pipesanity" ]
+			},
+			{
+				"name": "Pipe 2",
+				"chest_unopened_img": "images/checks/ap_chao_pipe_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_pipe.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "pipesanity" ]
+			},
+			{
+				"name": "Pipe 3",
+				"chest_unopened_img": "images/checks/ap_chao_pipe_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_pipe.png",
+				"item_count": 1,
+				"access_rules": [ "[shadow_air_shoes]" ],
+				"visibility_rules": [ "pipesanity" ]
+			},
+			{
+				"name": "Pipe 4",
+				"chest_unopened_img": "images/checks/ap_chao_pipe_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_pipe.png",
+				"item_count": 1,
+				"access_rules": [ "[shadow_air_shoes]" ],
+				"visibility_rules": [ "pipesanity" ]
+			},
+			{
+				"name": "Hidden 1",
+				"chest_unopened_img": "images/checks/ap_hidden_check_disabled.png",
+				"chest_opened_img": "images/checks/ap_hidden_check.png",
+				"access_rules": [ "" ],
+				"visibility_rules": [ "hiddensanity" ],
+				"item_count": 1
+			},
+			{
+				"name": "Hidden 2",
+				"chest_unopened_img": "images/checks/ap_hidden_check_disabled.png",
+				"chest_opened_img": "images/checks/ap_hidden_check.png",
+				"access_rules": [ "" ],
+				"visibility_rules": [ "hiddensanity" ],
+				"item_count": 1
+			},
+			{
+				"name": "Hidden 3",
+				"chest_unopened_img": "images/checks/ap_hidden_check_disabled.png",
+				"chest_opened_img": "images/checks/ap_hidden_check.png",
+				"access_rules": [ "[shadow_air_shoes]" ],
+				"visibility_rules": [ "hiddensanity" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_whistles",
 				"x": 630,
 				"y": 270
 			}

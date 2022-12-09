@@ -8,41 +8,133 @@
 		"sections": [
 			{
 				"name": "Mission 1",
+				"access_rules": [ "" ],
+				"visibility_rules": [ "$MissionActive|1|1" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": ["@Wild Canyon/Mission 1"],
-				"visibility_rules": ["mission_count:2"],
+				"access_rules": [""],
+				"visibility_rules": [ "$MissionActive|1|2" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 3",
-				"access_rules": ["@Wild Canyon/Mission 2, knuckles_shovel_claws, knuckles_hammer_gloves, knuckles_mystic_melody"],
-				"visibility_rules": ["mission_count:3"],
+				"access_rules": ["knuckles_shovel_claws, [knuckles_hammer_gloves], [knuckles_mystic_melody]"],
+				"visibility_rules": [ "$MissionActive|1|3" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 4",
-				"access_rules": ["@Wild Canyon/Mission 3"],
-				"visibility_rules": ["mission_count:4"],
+				"access_rules": [""],
+				"visibility_rules": [ "$MissionActive|1|4" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 5",
-				"access_rules": ["@Wild Canyon/Mission 4, knuckles_shovel_claws, knuckles_sunglasses"],
-				"visibility_rules": ["mission_count:5"],
+				"access_rules": ["knuckles_shovel_claws, [knuckles_sunglasses]"],
+				"visibility_rules": [ "$MissionActive|1|5" ],
 				"item_count": 1
 			},
 			{
 				"name": "Upgrade",
-				"access_rules": ["knuckles_shovel_claws"],
+				"chest_unopened_img": "images/checks/level_upgrade_disabled.png",
+				"chest_opened_img": "images/checks/level_upgrade.png",
+				"access_rules": [ "knuckles_shovel_claws" ],
 				"item_count": 1
 			}
 		],
 		"map_locations": [
 			{
 				"map": "stage_select",
+				"x": 930,
+				"y": 90
+			}
+		]
+	},
+	{
+		"name": "Wild Canyon ",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "wild_canyon_available" ],
+		"visibility_rules": [ "wild_canyon_available" ],
+		"sections": [
+			{
+				"name": "Chao Key 1",
+				"chest_unopened_img": "images/checks/ap_chao_key_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_key.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "keysanity" ]
+			},
+			{
+				"name": "Chao Key 2",
+				"chest_unopened_img": "images/checks/ap_chao_key_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_key.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "keysanity" ]
+			},
+			{
+				"name": "Chao Key 3",
+				"chest_unopened_img": "images/checks/ap_chao_key_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_key.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "keysanity" ]
+			},
+			{
+				"name": "Gold Beetle",
+				"chest_unopened_img": "images/checks/ap_gold_beetle_disabled.png",
+				"chest_opened_img": "images/checks/ap_gold_beetle.png",
+				"access_rules": [ "" ],
+				"visibility_rules": [ "beetlesanity" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_keys",
+				"x": 930,
+				"y": 90
+			}
+		]
+	},
+	{
+		"name": "Wild Canyon  ",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "wild_canyon_available" ],
+		"visibility_rules": [ "wild_canyon_available" ],
+		"sections": [
+			{
+				"name": "Pipe 1",
+				"chest_unopened_img": "images/checks/ap_chao_pipe_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_pipe.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "pipesanity" ]
+			},
+			{
+				"name": "Pipe 2",
+				"chest_unopened_img": "images/checks/ap_chao_pipe_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_pipe.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "pipesanity" ]
+			},
+			{
+				"name": "Pipe 3",
+				"chest_unopened_img": "images/checks/ap_chao_pipe_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_pipe.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "pipesanity" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_whistles",
 				"x": 930,
 				"y": 90
 			}

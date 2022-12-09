@@ -1,0 +1,48 @@
+[
+	{
+		"name": "Green Hill",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "white_chaos_emerald, red_chaos_emerald, cyan_chaos_emerald, purple_chaos_emerald, green_chaos_emerald, yellow_chaos_emerald, blue_chaos_emerald" ],
+		"visibility_rules": [ "goal:1" ],
+		"sections": [
+			{
+				"name": "Level Clear",
+				"access_rules": [ "" ],
+				"visibility_rules": [ "" ],
+				"item_count": 1
+			},
+		],
+		"map_locations": [
+			{
+				"map": "stage_select",
+				"x": 510,
+				"y": 390
+			}
+		]
+	},
+	{
+		"name": "Green Hill ",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "white_chaos_emerald, red_chaos_emerald, cyan_chaos_emerald, purple_chaos_emerald, green_chaos_emerald, yellow_chaos_emerald, blue_chaos_emerald" ],
+		"visibility_rules": [ "goal:1" ],
+		"sections": [
+			{
+				"name": "Chao Key 1",
+				"chest_unopened_img": "images/checks/ap_chao_key_disabled.png",
+				"chest_opened_img": "images/checks/ap_chao_key.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "keysanity" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_keys",
+				"x": 510,
+				"y": 390
+			}
+		]
+	}
+]

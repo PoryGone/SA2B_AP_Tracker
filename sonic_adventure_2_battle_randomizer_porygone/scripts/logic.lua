@@ -1,4 +1,7 @@
 
+ScriptHost:LoadScript("scripts/autotracking/mission_data.lua")
+
+
 function CalculateCannonsCoreCost()
 	local cost_hundreds = Tracker:ProviderCountForCode("cannons_core_cost_100")
 	local cost_tens     = Tracker:ProviderCountForCode("cannons_core_cost_10")
@@ -53,4 +56,38 @@ function BossAvailable(boss_index)
 	end
 
 	return boss_available
+end
+
+function MissionAccess(level_num, mission_num)
+    local mission_order_id = MISSION_MAPPING[tonumber(level_num)][1]
+    local mission_order = Tracker:ProviderCountForCode(mission_order_id)
+
+	for i=1,5 do
+		if MISSION_ORDERS[mission_order][i] == tonumber(mission_num) then
+			return true
+		end
+	end
+
+	return false
+end
+
+function MissionActive(level_num, mission_num)
+	local show_missions = Tracker:ProviderCountForCode("show_missions")
+    if show_missions > 0 then
+		return 1
+	end
+
+    local mission_order_id = MISSION_MAPPING[tonumber(level_num)][1]
+    local mission_order = Tracker:ProviderCountForCode(mission_order_id)
+
+    local mission_count_id = MISSION_COUNT_MAPPING[tonumber(level_num)][1]
+    local mission_count = Tracker:ProviderCountForCode(mission_count_id)
+
+	for i=1, mission_count do
+		if MISSION_ORDERS[mission_order][i] == tonumber(mission_num) then
+			return 1
+		end
+	end
+	
+	return 0
 end

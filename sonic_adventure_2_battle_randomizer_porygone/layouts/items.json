@@ -45,16 +45,28 @@
                         ""
                     ],
                     [
-                        "chao_garden_difficulty",
-                        "chao_prize_only",
-                        "chao_karate",
-                        "",
-                        "gate_count",
-                        "mission_count",
-                        "",
+                        "white_chaos_emerald",
+                        "red_chaos_emerald",
+                        "cyan_chaos_emerald",
+                        "purple_chaos_emerald",
+                        "green_chaos_emerald",
+                        "yellow_chaos_emerald",
+                        "blue_chaos_emerald",
                         "cannons_core_cost_100",
                         "cannons_core_cost_10",
                         "cannons_core_cost_1"
+                    ],
+                    [
+                        "chao_garden_difficulty",
+                        "chao_prize_only",
+                        "chao_karate",
+                        "keysanity",
+                        "beetlesanity",
+                        "pipesanity",
+                        "hiddensanity",
+                        "gate_count",
+                        "goal",
+                        "show_missions"
                     ],
                     [
                         "city_escape_available",

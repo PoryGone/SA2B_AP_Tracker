@@ -7,37 +7,73 @@
 		"visibility_rules": ["chao_garden_difficulty:3"],
 		"sections": [
 			{
-				"name": "Challenge",
+				"name": "Aquamarine",
 				"clear_as_group": "false",
 				"visibility_rules": ["$NotChaoPrizeOnly"],
-				"item_count": 12
+				"item_count": 5
 			},
 			{
-				"name": "Challenge Prize",
-				"clear_as_group": "false",
-				"visibility_rules": ["chao_prize_only"],
-				"item_count": 3
-			},
-			{
-				"name": "Hero",
-				"clear_as_group": "false",
-				"visibility_rules": ["$NotChaoPrizeOnly"],
-				"item_count": 4
-			},
-			{
-				"name": "Hero Prize",
+				"name": "Aquamarine Prize",
 				"clear_as_group": "false",
 				"visibility_rules": ["chao_prize_only"],
 				"item_count": 1
 			},
 			{
-				"name": "Dark",
+				"name": "Topaz",
 				"clear_as_group": "false",
 				"visibility_rules": ["$NotChaoPrizeOnly"],
-				"item_count": 4
+				"item_count": 5
 			},
 			{
-				"name": "Dark Prize",
+				"name": "Topaz Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Peridot",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 5
+			},
+			{
+				"name": "Peridot Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Garnet",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 5
+			},
+			{
+				"name": "Garnet Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Onyx",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 5
+			},
+			{
+				"name": "Onyx Prize",
+				"clear_as_group": "false",
+				"visibility_rules": ["chao_prize_only"],
+				"item_count": 1
+			},
+			{
+				"name": "Diamond",
+				"clear_as_group": "false",
+				"visibility_rules": ["$NotChaoPrizeOnly"],
+				"item_count": 5
+			},
+			{
+				"name": "Diamond Prize",
 				"clear_as_group": "false",
 				"visibility_rules": ["chao_prize_only"],
 				"item_count": 1

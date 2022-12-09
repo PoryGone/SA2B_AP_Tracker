@@ -1,5 +1,19 @@
 [
     {
+        "name": "Goal",
+        "type": "toggle",
+        "img": "images/HuntGoal.png",
+        "disabled_img": "images/BiolizardGoal.png",
+        "disabled_img_mods": "none",
+        "codes": "goal"
+    },
+    {
+        "name": "Show All Missions",
+        "type": "toggle",
+        "img": "images/checks/CheckDone.png",
+        "codes": "show_missions"
+    },
+    {
         "name": "Chao Garden Difficulty",
         "type": "consumable",
         "img": "images/ChaoMap.png",
@@ -50,6 +64,30 @@
         "max_quantity": 180,
         "increment": 1,
         "codes": "chao_expert_cost"
+    },
+    {
+        "name": "Keysanity",
+        "type": "toggle",
+        "img": "images/checks/ap_chao_key.png",
+        "codes": "keysanity"
+    },
+    {
+        "name": "Beetlesanity",
+        "type": "toggle",
+        "img": "images/checks/ap_gold_beetle.png",
+        "codes": "beetlesanity"
+    },
+    {
+        "name": "Whistlesanity - Pipes",
+        "type": "toggle",
+        "img": "images/checks/ap_chao_pipe.png",
+        "codes": "pipesanity"
+    },
+    {
+        "name": "Whistlesanity - Hiddens",
+        "type": "toggle",
+        "img": "images/checks/ap_hidden_check.png",
+        "codes": "hiddensanity"
     },
     {
         "name": "Gate Count",
@@ -340,5 +378,502 @@
         "type": "toggle",
         "img": "images/levels/final_chase_available.png",
         "codes": "final_chase_available"
+    },
+
+    {
+        "name": "City Escape",
+        "type": "consumable",
+        "img": "images/levels/city_escape_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "city_escape_missions"
+    },
+    {
+        "name": "Wild Canyon",
+        "type": "consumable",
+        "img": "images/levels/wild_canyon_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "wild_canyon_missions"
+    },
+    {
+        "name": "Prison Lane",
+        "type": "consumable",
+        "img": "images/levels/prison_lane_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "prison_lane_missions"
+    },
+    {
+        "name": "Metal Harbor",
+        "type": "consumable",
+        "img": "images/levels/metal_harbor_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "metal_harbor_missions"
+    },
+    {
+        "name": "Green Forest",
+        "type": "consumable",
+        "img": "images/levels/green_forest_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "green_forest_missions"
+    },
+    {
+        "name": "Pumpkin Hill",
+        "type": "consumable",
+        "img": "images/levels/pumpkin_hill_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "pumpkin_hill_missions"
+    },
+    {
+        "name": "Mission Street",
+        "type": "consumable",
+        "img": "images/levels/mission_street_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "mission_street_missions"
+    },
+    {
+        "name": "Aquatic Mine",
+        "type": "consumable",
+        "img": "images/levels/aquatic_mine_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "aquatic_mine_missions"
+    },
+    {
+        "name": "Route 101",
+        "type": "consumable",
+        "img": "images/levels/route_101_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "route_101_missions"
+    },
+    {
+        "name": "Hidden Base",
+        "type": "consumable",
+        "img": "images/levels/hidden_base_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "hidden_base_missions"
+    },
+    {
+        "name": "Pyramid Cave",
+        "type": "consumable",
+        "img": "images/levels/pyramid_cave_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "pyramid_cave_missions"
+    },
+    {
+        "name": "Death Chamber",
+        "type": "consumable",
+        "img": "images/levels/death_chamber_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "death_chamber_missions"
+    },
+    {
+        "name": "Eternal Engine",
+        "type": "consumable",
+        "img": "images/levels/eternal_engine_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "eternal_engine_missions"
+    },
+    {
+        "name": "Meteor Herd",
+        "type": "consumable",
+        "img": "images/levels/meteor_herd_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "meteor_herd_missions"
+    },
+    {
+        "name": "Crazy Gadget",
+        "type": "consumable",
+        "img": "images/levels/crazy_gadget_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "crazy_gadget_missions"
+    },
+    {
+        "name": "Final Rush",
+        "type": "consumable",
+        "img": "images/levels/final_rush_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "final_rush_missions"
+    },
+    {
+        "name": "Iron Gate",
+        "type": "consumable",
+        "img": "images/levels/iron_gate_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "iron_gate_missions"
+    },
+    {
+        "name": "Dry Lagoon",
+        "type": "consumable",
+        "img": "images/levels/dry_lagoon_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "dry_lagoon_missions"
+    },
+    {
+        "name": "Sand Ocean",
+        "type": "consumable",
+        "img": "images/levels/sand_ocean_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "sand_ocean_missions"
+    },
+    {
+        "name": "Radical Highway",
+        "type": "consumable",
+        "img": "images/levels/radical_highway_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "radical_highway_missions"
+    },
+    {
+        "name": "Lost Colony",
+        "type": "consumable",
+        "img": "images/levels/lost_colony_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "lost_colony_missions"
+    },
+    {
+        "name": "Egg Quarters",
+        "type": "consumable",
+        "img": "images/levels/egg_quarters_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "egg_quarters_missions"
+    },
+    {
+        "name": "Weapons Bed",
+        "type": "consumable",
+        "img": "images/levels/weapons_bed_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "weapons_bed_missions"
+    },
+    {
+        "name": "Security Hall",
+        "type": "consumable",
+        "img": "images/levels/security_hall_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "security_hall_missions"
+    },
+    {
+        "name": "White Jungle",
+        "type": "consumable",
+        "img": "images/levels/white_jungle_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "white_jungle_missions"
+    },
+    {
+        "name": "Route 280",
+        "type": "consumable",
+        "img": "images/levels/route_280_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "route_280_missions"
+    },
+    {
+        "name": "Sky Rail",
+        "type": "consumable",
+        "img": "images/levels/sky_rail_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "sky_rail_missions"
+    },
+    {
+        "name": "Mad Space",
+        "type": "consumable",
+        "img": "images/levels/mad_space_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "mad_space_missions"
+    },
+    {
+        "name": "Cosmic Wall",
+        "type": "consumable",
+        "img": "images/levels/cosmic_wall_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "cosmic_wall_missions"
+    },
+    {
+        "name": "Final Chase",
+        "type": "consumable",
+        "img": "images/levels/final_chase_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "final_chase_missions"
+    },
+    {
+        "name": "Cannon's Core",
+        "type": "consumable",
+        "img": "images/levels/final_chase_available.png",
+        "min_quantity": 0,
+        "max_quantity": 120,
+        "codes": "cannons_core_missions"
+    },
+    {
+        "name": "City Escape",
+        "type": "consumable",
+        "img": "images/levels/city_escape_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "city_escape_mission_counts"
+    },
+    {
+        "name": "Wild Canyon",
+        "type": "consumable",
+        "img": "images/levels/wild_canyon_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "wild_canyon_mission_counts"
+    },
+    {
+        "name": "Prison Lane",
+        "type": "consumable",
+        "img": "images/levels/prison_lane_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "prison_lane_mission_counts"
+    },
+    {
+        "name": "Metal Harbor",
+        "type": "consumable",
+        "img": "images/levels/metal_harbor_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "metal_harbor_mission_counts"
+    },
+    {
+        "name": "Green Forest",
+        "type": "consumable",
+        "img": "images/levels/green_forest_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "green_forest_mission_counts"
+    },
+    {
+        "name": "Pumpkin Hill",
+        "type": "consumable",
+        "img": "images/levels/pumpkin_hill_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "pumpkin_hill_mission_counts"
+    },
+    {
+        "name": "Mission Street",
+        "type": "consumable",
+        "img": "images/levels/mission_street_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "mission_street_mission_counts"
+    },
+    {
+        "name": "Aquatic Mine",
+        "type": "consumable",
+        "img": "images/levels/aquatic_mine_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "aquatic_mine_mission_counts"
+    },
+    {
+        "name": "Route 101",
+        "type": "consumable",
+        "img": "images/levels/route_101_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "route_101_mission_counts"
+    },
+    {
+        "name": "Hidden Base",
+        "type": "consumable",
+        "img": "images/levels/hidden_base_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "hidden_base_mission_counts"
+    },
+    {
+        "name": "Pyramid Cave",
+        "type": "consumable",
+        "img": "images/levels/pyramid_cave_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "pyramid_cave_mission_counts"
+    },
+    {
+        "name": "Death Chamber",
+        "type": "consumable",
+        "img": "images/levels/death_chamber_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "death_chamber_mission_counts"
+    },
+    {
+        "name": "Eternal Engine",
+        "type": "consumable",
+        "img": "images/levels/eternal_engine_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "eternal_engine_mission_counts"
+    },
+    {
+        "name": "Meteor Herd",
+        "type": "consumable",
+        "img": "images/levels/meteor_herd_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "meteor_herd_mission_counts"
+    },
+    {
+        "name": "Crazy Gadget",
+        "type": "consumable",
+        "img": "images/levels/crazy_gadget_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "crazy_gadget_mission_counts"
+    },
+    {
+        "name": "Final Rush",
+        "type": "consumable",
+        "img": "images/levels/final_rush_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "final_rush_mission_counts"
+    },
+    {
+        "name": "Iron Gate",
+        "type": "consumable",
+        "img": "images/levels/iron_gate_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "iron_gate_mission_counts"
+    },
+    {
+        "name": "Dry Lagoon",
+        "type": "consumable",
+        "img": "images/levels/dry_lagoon_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "dry_lagoon_mission_counts"
+    },
+    {
+        "name": "Sand Ocean",
+        "type": "consumable",
+        "img": "images/levels/sand_ocean_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "sand_ocean_mission_counts"
+    },
+    {
+        "name": "Radical Highway",
+        "type": "consumable",
+        "img": "images/levels/radical_highway_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "radical_highway_mission_counts"
+    },
+    {
+        "name": "Lost Colony",
+        "type": "consumable",
+        "img": "images/levels/lost_colony_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "lost_colony_mission_counts"
+    },
+    {
+        "name": "Egg Quarters",
+        "type": "consumable",
+        "img": "images/levels/egg_quarters_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "egg_quarters_mission_counts"
+    },
+    {
+        "name": "Weapons Bed",
+        "type": "consumable",
+        "img": "images/levels/weapons_bed_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "weapons_bed_mission_counts"
+    },
+    {
+        "name": "Security Hall",
+        "type": "consumable",
+        "img": "images/levels/security_hall_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "security_hall_mission_counts"
+    },
+    {
+        "name": "White Jungle",
+        "type": "consumable",
+        "img": "images/levels/white_jungle_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "white_jungle_mission_counts"
+    },
+    {
+        "name": "Route 280",
+        "type": "consumable",
+        "img": "images/levels/route_280_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "route_280_mission_counts"
+    },
+    {
+        "name": "Sky Rail",
+        "type": "consumable",
+        "img": "images/levels/sky_rail_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "sky_rail_mission_counts"
+    },
+    {
+        "name": "Mad Space",
+        "type": "consumable",
+        "img": "images/levels/mad_space_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "mad_space_mission_counts"
+    },
+    {
+        "name": "Cosmic Wall",
+        "type": "consumable",
+        "img": "images/levels/cosmic_wall_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "cosmic_wall_mission_counts"
+    },
+    {
+        "name": "Final Chase",
+        "type": "consumable",
+        "img": "images/levels/final_chase_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "final_chase_mission_counts"
+    },
+    {
+        "name": "Cannon's Core",
+        "type": "consumable",
+        "img": "images/levels/final_chase_available.png",
+        "min_quantity": 0,
+        "max_quantity": 5,
+        "codes": "cannons_core_mission_counts"
     }
 ]

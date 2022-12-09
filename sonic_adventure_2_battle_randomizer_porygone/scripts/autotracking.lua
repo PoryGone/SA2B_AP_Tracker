@@ -1,5 +1,6 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/mission_data.lua")
 
 LEVEL_UNLOCKS = {}
 
@@ -35,6 +36,25 @@ function setupGates(slot_data)
     end
 
     updateGateUnlocks(0)
+end
+
+function setupMissions(slot_data)
+    for k,v in pairs(slot_data['MissionMap']) do
+        print(k, v)
+        local obj = Tracker:FindObjectForCode(MISSION_MAPPING[tonumber(k)][1])
+        if obj then
+            obj.AcquiredCount = v
+        end
+    end
+
+    for k,v in pairs(slot_data['MissionCountMap']) do
+        print(k, v)
+        local obj = Tracker:FindObjectForCode(MISSION_COUNT_MAPPING[tonumber(k)][1])
+        if obj then
+            obj.AcquiredCount = v
+        end
+    end
+
 end
 
 function onClear(slot_data)
@@ -87,6 +107,7 @@ function onClear(slot_data)
     end
 
     setupGates(slot_data)
+    setupMissions(slot_data)
 
     if slot_data['IncludeMissions'] then
         local obj = Tracker:FindObjectForCode("mission_count")
@@ -104,6 +125,29 @@ function onClear(slot_data)
             obj10.AcquiredCount = (math.fmod(slot_data['EmblemsForCannonsCore'], 100) // 10)
             obj1.AcquiredCount = (math.fmod(slot_data['EmblemsForCannonsCore'], 10))
         end
+    end
+
+    if slot_data['goal'] then
+        local goal = Tracker:FindObjectForCode("goal")
+        goal.Active =  tonumber(slot_data['goal']) > 0
+    end
+
+    if slot_data['keysanity'] then
+        local keysanity = Tracker:FindObjectForCode("keysanity")
+        keysanity.Active = (slot_data['keysanity'])
+    end
+
+    if slot_data['beetlesanity'] then
+        local beetlesanity = Tracker:FindObjectForCode("beetlesanity")
+        beetlesanity.Active = (slot_data['beetlesanity'])
+    end
+
+    if slot_data['whistlesanity'] then
+        local pipesanity = Tracker:FindObjectForCode("pipesanity")
+        local hiddensanity = Tracker:FindObjectForCode("hiddensanity")
+        local whistlesanity_value = tonumber(slot_data['whistlesanity'])
+        pipesanity.Active = (whistlesanity_value == 1 or whistlesanity_value == 3)
+        hiddensanity.Active = (whistlesanity_value == 2 or whistlesanity_value == 3)
     end
 
     if slot_data['ChaoGardenDifficulty'] then

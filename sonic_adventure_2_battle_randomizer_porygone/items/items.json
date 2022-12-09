@@ -168,6 +168,55 @@
         "codes": "rouge_iron_boots"
     },
     {
+        "name": "White Chaos Emerald",
+        "type": "toggle",
+        "img": "images/items/ap_emerald_white.png",
+        "disabled_img": "images/items/ap_emerald_none.png",
+        "codes": "white_chaos_emerald"
+    },
+    {
+        "name": "Red Chaos Emerald",
+        "type": "toggle",
+        "img": "images/items/ap_emerald_red.png",
+        "disabled_img": "images/items/ap_emerald_none.png",
+        "codes": "red_chaos_emerald"
+    },
+    {
+        "name": "Cyan Chaos Emerald",
+        "type": "toggle",
+        "img": "images/items/ap_emerald_cyan.png",
+        "disabled_img": "images/items/ap_emerald_none.png",
+        "codes": "cyan_chaos_emerald"
+    },
+    {
+        "name": "Purple Chaos Emerald",
+        "type": "toggle",
+        "img": "images/items/ap_emerald_purple.png",
+        "disabled_img": "images/items/ap_emerald_none.png",
+        "codes": "purple_chaos_emerald"
+    },
+    {
+        "name": "Green Chaos Emerald",
+        "type": "toggle",
+        "img": "images/items/ap_emerald_green.png",
+        "disabled_img": "images/items/ap_emerald_none.png",
+        "codes": "green_chaos_emerald"
+    },
+    {
+        "name": "Yellow Chaos Emerald",
+        "type": "toggle",
+        "img": "images/items/ap_emerald_yellow.png",
+        "disabled_img": "images/items/ap_emerald_none.png",
+        "codes": "yellow_chaos_emerald"
+    },
+    {
+        "name": "Blue Chaos Emerald",
+        "type": "toggle",
+        "img": "images/items/ap_emerald_blue.png",
+        "disabled_img": "images/items/ap_emerald_none.png",
+        "codes": "blue_chaos_emerald"
+    },
+    {
         "name": "Emblems",
         "type": "consumable",
         "img": "images/items/emblem.png",

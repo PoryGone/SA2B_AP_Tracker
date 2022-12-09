@@ -41,11 +41,37 @@
                     ]
                 },
                 {
-					"type": "map",
-                    "maps": [
-                        "stage_select"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Missions",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "stage_select"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Keys and Beetles",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "stage_select_keys"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Pipes and Hiddens",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "stage_select_whistles"
+                                ]
+                            }
+                        }
                     ]
-				}
+                }
             ]
         }
     },
