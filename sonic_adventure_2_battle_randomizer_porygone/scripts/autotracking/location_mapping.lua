@@ -524,6 +524,7 @@ LOCATION_MAPPING = {
 
     [0xFF0760] = {"@City Escape  /Hidden 4"},
     [0xFF0764] = {"@Green Forest  /Hidden 4"},
+    [0xFF0766] = {"@Mission Street  /Hidden 4"},
 
     [0xFF0780] = {"@City Escape  /Hidden 5"},
 }
