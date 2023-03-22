@@ -3,36 +3,36 @@
 		"name": "Eternal Engine",
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
-		"access_rules": ["eternal_engine_available"],
-		"visibility_rules": ["eternal_engine_available"],
+		"access_rules": [ "eternal_engine_available" ],
+		"visibility_rules": [ "eternal_engine_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Mission 1",
-				"access_rules": [ "tails_booster, tails_bazooka" ],
+				"access_rules": [ "[$MissionAccess|12|1|0], $MissionAccess|12|1|1, tails_booster, tails_bazooka" ],
 				"visibility_rules": [ "$MissionActive|12|1" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": ["tails_booster, tails_bazooka"],
+				"access_rules": [ "[$MissionAccess|12|2|0], $MissionAccess|12|2|1, tails_booster, tails_bazooka" ],
 				"visibility_rules": [ "$MissionActive|12|2" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 3",
-				"access_rules": ["tails_booster, [tails_mystic_melody]"],
+				"access_rules": [ "[$MissionAccess|12|3|0], $MissionAccess|12|3|1, tails_booster, [tails_mystic_melody]" ],
 				"visibility_rules": [ "$MissionActive|12|3" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 4",
-				"access_rules": ["tails_booster, tails_bazooka"],
+				"access_rules": [ "[$MissionAccess|12|4|0], $MissionAccess|12|4|1, tails_booster, tails_bazooka" ],
 				"visibility_rules": [ "$MissionActive|12|4" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 5",
-				"access_rules": ["tails_booster, tails_bazooka"],
+				"access_rules": [ "[$MissionAccess|12|5|0], $MissionAccess|12|5|1, tails_booster, tails_bazooka" ],
 				"visibility_rules": [ "$MissionActive|12|5" ],
 				"item_count": 1
 			},
@@ -57,7 +57,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": [ "eternal_engine_available" ],
-		"visibility_rules": [ "eternal_engine_available" ],
+		"visibility_rules": [ "eternal_engine_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Chao Key 1",
@@ -105,7 +105,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": [ "eternal_engine_available" ],
-		"visibility_rules": [ "eternal_engine_available" ],
+		"visibility_rules": [ "eternal_engine_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Pipe 1",
@@ -151,6 +151,118 @@
 		"map_locations": [
 			{
 				"map": "stage_select_whistles",
+				"x": 1530,
+				"y": 150
+			}
+		]
+	},
+	{
+		"name": "Eternal Engine   ",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "eternal_engine_available" ],
+		"visibility_rules": [ "eternal_engine_available, $IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Omochao 1",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 2",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 3",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 4",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 5",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 6",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 7",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 8",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 9",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 10",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, tails_bazooka" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 11",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, tails_bazooka" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 12",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, tails_bazooka" ],
+				"visibility_rules": [ "omosanity" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_omochao",
 				"x": 1530,
 				"y": 150
 			}

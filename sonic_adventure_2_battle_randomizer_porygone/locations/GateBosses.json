@@ -4,7 +4,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": [],
-		"visibility_rules": [],
+		"visibility_rules": ["$IsNoLevelGoal"],
 		"sections": [
 			{
 				"name": "Gate 1",

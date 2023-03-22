@@ -4,7 +4,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": ["route_101_available"],
-		"visibility_rules": ["route_101_available"],
+		"visibility_rules": ["route_101_available, $IsNoLevelGoal"],
 		"sections": [
 			{
 				"name": "Mission 1",

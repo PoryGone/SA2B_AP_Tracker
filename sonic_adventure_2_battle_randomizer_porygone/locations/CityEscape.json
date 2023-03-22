@@ -3,36 +3,37 @@
 		"name": "City Escape",
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
-		"access_rules": ["city_escape_available"],
-		"visibility_rules": ["city_escape_available"],
+		"access_rules": [ "city_escape_available" ],
+		"visibility_rules": [ "city_escape_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Mission 1",
-				"item_count": 1,
-				"visibility_rules": [ "$MissionActive|0|1" ]
+				"access_rules": [ "[$MissionAccess|0|1|0], $MissionAccess|0|1|1" ],
+				"visibility_rules": [ "$MissionActive|0|1" ],
+				"item_count": 1
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": [""],
-				"visibility_rules": ["$MissionActive|0|2"],
+				"access_rules": [ "[$MissionAccess|0|2|0], $MissionAccess|0|2|1" ],
+				"visibility_rules": [ "$MissionActive|0|2" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 3",
-				"access_rules": ["sonic_mystic_melody", "[sonic_mystic_melody], sonic_bounce_bracelet"],
-				"visibility_rules": ["$MissionActive|0|3"],
+				"access_rules": [ "[$MissionAccess|0|3|0], $MissionAccess|0|3|1, [sonic_mystic_melody]" ],
+				"visibility_rules": [ "$MissionActive|0|3" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 4",
-				"access_rules": [""],
-				"visibility_rules": ["$MissionActive|0|4"],
+				"access_rules": [ "[$MissionAccess|0|4|0], $MissionAccess|0|4|1" ],
+				"visibility_rules": [ "$MissionActive|0|4" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 5",
-				"access_rules": [ "[sonic_light_shoes], sonic_flame_ring" ],
-				"visibility_rules": ["$MissionActive|0|5"],
+				"access_rules": [ "[$MissionAccess|0|5|0], $MissionAccess|0|5|1, [sonic_light_shoes], sonic_flame_ring" ],
+				"visibility_rules": [ "$MissionActive|0|5" ],
 				"item_count": 1
 			},
 			{
@@ -54,7 +55,7 @@
 	{
 		"name": "City Escape ",
 		"access_rules": [ "city_escape_available" ],
-		"visibility_rules": [ "city_escape_available" ],
+		"visibility_rules": [ "city_escape_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Chao Key 1",
@@ -100,7 +101,7 @@
 	{
 		"name": "City Escape  ",
 		"access_rules": [ "city_escape_available" ],
-		"visibility_rules": [ "city_escape_available" ],
+		"visibility_rules": [ "city_escape_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Pipe 1",
@@ -178,6 +179,132 @@
 		"map_locations": [
 			{
 				"map": "stage_select_whistles",
+				"x": 90,
+				"y": 270
+			}
+		]
+	},
+	{
+		"name": "City Escape   ",
+		"access_rules": [ "city_escape_available" ],
+		"visibility_rules": [ "city_escape_available, $IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Omochao 1",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 2",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 3",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 4",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 5",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 6",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 7",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 8",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 9",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 10",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 11",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 12",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 13",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 14",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_omochao",
 				"x": 90,
 				"y": 270
 			}

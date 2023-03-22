@@ -69,6 +69,15 @@
                                     "stage_select_whistles"
                                 ]
                             }
+                        },
+                        {
+                            "title": "Omochao",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "stage_select_omochao"
+                                ]
+                            }
                         }
                     ]
                 }

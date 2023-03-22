@@ -4,7 +4,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/ChaoMap.png",
 		"access_rules": ["[$ChaoBeginnerAvailable]"],
-		"visibility_rules": ["chao_garden_difficulty:1"],
+		"visibility_rules": ["chao_garden_difficulty:1, $IsNoLevelGoal"],
 		"sections": [
 			{
 				"name": "Crab Pool",

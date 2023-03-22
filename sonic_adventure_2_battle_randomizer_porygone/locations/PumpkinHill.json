@@ -3,36 +3,36 @@
 		"name": "Pumpkin Hill",
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
-		"access_rules": ["pumpkin_hill_available"],
-		"visibility_rules": ["pumpkin_hill_available"],
+		"access_rules": [ "pumpkin_hill_available" ],
+		"visibility_rules": [ "pumpkin_hill_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Mission 1",
-				"access_rules": [ "knuckles_shovel_claws" ],
+				"access_rules": [ "[$MissionAccess|5|1|0], $MissionAccess|5|1|1, knuckles_shovel_claws" ],
 				"visibility_rules": [ "$MissionActive|5|1" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": [""],
+				"access_rules": [ "[$MissionAccess|5|2|0], $MissionAccess|5|2|1" ],
 				"visibility_rules": [ "$MissionActive|5|2" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 3",
-				"access_rules": ["[knuckles_mystic_melody]"],
+				"access_rules": [ "[$MissionAccess|5|3|0], $MissionAccess|5|3|1, [knuckles_mystic_melody]" ],
 				"visibility_rules": [ "$MissionActive|5|3" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 4",
-				"access_rules": ["knuckles_shovel_claws"],
+				"access_rules": [ "[$MissionAccess|5|4|0], $MissionAccess|5|4|1, knuckles_shovel_claws" ],
 				"visibility_rules": [ "$MissionActive|5|4" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 5",
-				"access_rules": ["knuckles_shovel_claws, [knuckles_sunglasses]"],
+				"access_rules": [ "[$MissionAccess|5|5|0], $MissionAccess|5|5|1, knuckles_shovel_claws, [knuckles_sunglasses]" ],
 				"visibility_rules": [ "$MissionActive|5|5" ],
 				"item_count": 1
 			},
@@ -56,7 +56,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": [ "pumpkin_hill_available" ],
-		"visibility_rules": [ "pumpkin_hill_available" ],
+		"visibility_rules": [ "pumpkin_hill_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Chao Key 1",
@@ -96,7 +96,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": [ "pumpkin_hill_available" ],
-		"visibility_rules": [ "pumpkin_hill_available" ],
+		"visibility_rules": [ "pumpkin_hill_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Pipe 1",
@@ -118,6 +118,110 @@
 		"map_locations": [
 			{
 				"map": "stage_select_whistles",
+				"x": 690,
+				"y": 90
+			}
+		]
+	},
+	{
+		"name": "Pumpkin Hill   ",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "pumpkin_hill_available" ],
+		"visibility_rules": [ "pumpkin_hill_available, $IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Omochao 1",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 2",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 3",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 4",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 5",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 6",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 7",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 8",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 9",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 10",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 11",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_omochao",
 				"x": 690,
 				"y": 90
 			}

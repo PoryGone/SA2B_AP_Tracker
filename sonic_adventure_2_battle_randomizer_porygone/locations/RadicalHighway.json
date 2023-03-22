@@ -3,36 +3,36 @@
 		"name": "Radical Highway",
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
-		"access_rules": ["radical_highway_available"],
-		"visibility_rules": ["radical_highway_available"],
+		"access_rules": [ "radical_highway_available" ],
+		"visibility_rules": [ "radical_highway_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Mission 1",
-				"access_rules": [ "" ],
+				"access_rules": [ "[$MissionAccess|19|1|0], $MissionAccess|19|1|1" ],
 				"visibility_rules": [ "$MissionActive|19|1" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": [""],
+				"access_rules": [ "[$MissionAccess|19|2|0], $MissionAccess|19|2|1" ],
 				"visibility_rules": [ "$MissionActive|19|2" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 3",
-				"access_rules": ["[shadow_mystic_melody]"],
+				"access_rules": [ "[$MissionAccess|19|3|0], $MissionAccess|19|3|1, [shadow_mystic_melody]" ],
 				"visibility_rules": [ "$MissionActive|19|3" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 4",
-				"access_rules": [""],
+				"access_rules": [ "[$MissionAccess|19|4|0], $MissionAccess|19|4|1" ],
 				"visibility_rules": [ "$MissionActive|19|4" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 5",
-				"access_rules": [""],
+				"access_rules": [ "[$MissionAccess|19|5|0], $MissionAccess|19|5|1" ],
 				"visibility_rules": [ "$MissionActive|19|5" ],
 				"item_count": 1
 			},
@@ -57,7 +57,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": [ "radical_highway_available" ],
-		"visibility_rules": [ "radical_highway_available" ],
+		"visibility_rules": [ "radical_highway_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Chao Key 1",
@@ -105,7 +105,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": [ "radical_highway_available" ],
-		"visibility_rules": [ "radical_highway_available" ],
+		"visibility_rules": [ "radical_highway_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Pipe 1",
@@ -159,6 +159,86 @@
 		"map_locations": [
 			{
 				"map": "stage_select_whistles",
+				"x": 270,
+				"y": 270
+			}
+		]
+	},
+	{
+		"name": "Radical Highway   ",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "radical_highway_available" ],
+		"visibility_rules": [ "radical_highway_available, $IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Omochao 1",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 2",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "[shadow_air_shoes]" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 3",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 4",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 5",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 6",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 7",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 8",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_omochao",
 				"x": 270,
 				"y": 270
 			}

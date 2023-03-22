@@ -4,7 +4,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/ChaoMap.png",
 		"access_rules": ["[$ChaoIntermediateAvailable]"],
-		"visibility_rules": ["chao_garden_difficulty:2"],
+		"visibility_rules": ["chao_garden_difficulty:2, $IsNoLevelGoal"],
 		"sections": [
 			{
 				"name": "Challenge",

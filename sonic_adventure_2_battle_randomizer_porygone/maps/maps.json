@@ -1,8 +1,8 @@
 ﻿[
     {
         "name": "stage_select",
-		"location_size": 40,
-		"location_border_thickness": 5,
+        "location_size": 40,
+        "location_border_thickness": 5,
         "img": "images/StageSelectBG.png"
     },
     {
@@ -13,6 +13,12 @@
     },
     {
         "name": "stage_select_whistles",
+        "location_size": 40,
+        "location_border_thickness": 5,
+        "img": "images/StageSelectBG.png"
+    },
+    {
+        "name": "stage_select_omochao",
         "location_size": 40,
         "location_border_thickness": 5,
         "img": "images/StageSelectBG.png"

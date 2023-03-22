@@ -129,7 +129,14 @@ function onClear(slot_data)
 
     if slot_data['goal'] then
         local goal = Tracker:FindObjectForCode("goal")
-        goal.Active =  tonumber(slot_data['goal']) > 0
+
+        if tonumber(slot_data['goal']) == 0 then
+            goal.CurrentStage = 0
+        elseif tonumber(slot_data['goal']) == 1 or tonumber(slot_data['goal']) == 2 then
+            goal.CurrentStage = 1
+        elseif tonumber(slot_data['goal']) == 3 then
+            goal.CurrentStage = 2
+        end
     end
 
     if slot_data['keysanity'] then
@@ -148,6 +155,11 @@ function onClear(slot_data)
         local whistlesanity_value = tonumber(slot_data['whistlesanity'])
         pipesanity.Active = (whistlesanity_value == 1 or whistlesanity_value == 3)
         hiddensanity.Active = (whistlesanity_value == 2 or whistlesanity_value == 3)
+    end
+
+    if slot_data['omosanity'] then
+        local omosanity = Tracker:FindObjectForCode("omosanity")
+        omosanity.Active = (slot_data['omosanity'])
     end
 
     if slot_data['ChaoGardenDifficulty'] then

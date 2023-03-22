@@ -3,36 +3,36 @@
 		"name": "Metal Harbor",
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
-		"access_rules": ["metal_harbor_available"],
-		"visibility_rules": ["metal_harbor_available"],
+		"access_rules": [ "metal_harbor_available" ],
+		"visibility_rules": [ "metal_harbor_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Mission 1",
-				"access_rules": ["[sonic_light_shoes]"],
+				"access_rules": [ "[$MissionAccess|3|1|0], $MissionAccess|3|1|1, [sonic_light_shoes]" ],
 				"visibility_rules": [ "$MissionActive|3|1" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": ["[sonic_light_shoes]"],
+				"access_rules": [ "[$MissionAccess|3|2|0], $MissionAccess|3|2|1, [sonic_light_shoes]" ],
 				"visibility_rules": [ "$MissionActive|3|2" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 3",
-				"access_rules": ["[sonic_light_shoes], [sonic_bounce_bracelet], [sonic_mystic_melody]"],
+				"access_rules": [ "[$MissionAccess|3|3|0], $MissionAccess|3|3|1, [sonic_light_shoes], [sonic_bounce_bracelet], [sonic_mystic_melody]" ],
 				"visibility_rules": [ "$MissionActive|3|3" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 4",
-				"access_rules": ["[sonic_light_shoes]"],
+				"access_rules": [ "[$MissionAccess|3|4|0], $MissionAccess|3|4|1, [sonic_light_shoes]" ],
 				"visibility_rules": [ "$MissionActive|3|4" ],
 				"item_count": 1
 			},
 			{
 				"name": "Mission 5",
-				"access_rules": ["[sonic_light_shoes]"],
+				"access_rules": [ "[$MissionAccess|3|5|0], $MissionAccess|3|5|1, [sonic_light_shoes]" ],
 				"visibility_rules": [ "$MissionActive|3|5" ],
 				"item_count": 1
 			},
@@ -56,7 +56,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": [ "metal_harbor_available" ],
-		"visibility_rules": [ "metal_harbor_available" ],
+		"visibility_rules": [ "metal_harbor_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Chao Key 1",
@@ -104,7 +104,7 @@
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": [ "metal_harbor_available" ],
-		"visibility_rules": [ "metal_harbor_available" ],
+		"visibility_rules": [ "metal_harbor_available, $IsNoLevelGoal" ],
 		"sections": [
 			{
 				"name": "Pipe 1",
@@ -118,6 +118,62 @@
 		"map_locations": [
 			{
 				"map": "stage_select_whistles",
+				"x": 810,
+				"y": 390
+			}
+		]
+	},
+	{
+		"name": "Metal Harbor   ",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "metal_harbor_available" ],
+		"visibility_rules": [ "metal_harbor_available, $IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Omochao 1",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 2",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 3",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 4",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "[sonic_light_shoes]" ],
+				"visibility_rules": [ "omosanity" ]
+			},
+			{
+				"name": "Omochao 5",
+				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
+				"chest_opened_img": "images/checks/ap_omochao.png",
+				"item_count": 1,
+				"access_rules": [ "[sonic_light_shoes]" ],
+				"visibility_rules": [ "omosanity" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_omochao",
 				"x": 810,
 				"y": 390
 			}

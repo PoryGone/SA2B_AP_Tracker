@@ -3,7 +3,7 @@
 		"name": "Chao Karate",
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/ChaoMap.png",
-		"visibility_rules": ["chao_karate"],
+		"visibility_rules": ["chao_karate, $IsNoLevelGoal"],
 		"sections": [
 			{
 				"name": "Beginner",

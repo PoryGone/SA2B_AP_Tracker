@@ -184,3 +184,39 @@ MISSION_COUNT_MAPPING = {
     [0x1D] = {"final_chase_mission_counts"},
     [0x1E] = {"cannons_core_mission_counts"}
 }
+
+
+MISSION_NAME_MAPPING = {
+    [0x00] = {"City Escape"},
+    [0x01] = {"Wild Canyon"},
+    [0x02] = {"Prison Lane"},
+    [0x03] = {"Metal Harbor"},
+    [0x04] = {"Green Forest"},
+    [0x05] = {"Pumpkin Hill"},
+    [0x06] = {"Mission Street"},
+    [0x07] = {"Aquatic Mine"},
+    [0x08] = {"Route 101"},
+    [0x09] = {"Hidden Base"},
+    [0x0A] = {"Pyramid Cave"},
+    [0x0B] = {"Death Chamber"},
+    [0x0C] = {"Eternal Engine"},
+    [0x0D] = {"Meteor Herd"},
+    [0x0E] = {"Crazy Gadget"},
+    [0x0F] = {"Final Rush"},
+
+    [0x10] = {"Iron Gate"},
+    [0x11] = {"Dry Lagoon"},
+    [0x12] = {"Sand Ocean"},
+    [0x13] = {"Radical Highway"},
+    [0x14] = {"Egg Quarters"},
+    [0x15] = {"Lost Colony"},
+    [0x16] = {"Weapons Bed"},
+    [0x17] = {"Security Hall"},
+    [0x18] = {"White Jungle"},
+    [0x19] = {"Route 280"},
+    [0x1A] = {"Sky Rail"},
+    [0x1B] = {"Mad Space"},
+    [0x1C] = {"Cosmic Wall"},
+    [0x1D] = {"Final Chase"},
+    [0x1E] = {"Cannon's Core"}
+}

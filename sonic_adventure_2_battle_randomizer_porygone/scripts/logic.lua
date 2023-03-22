@@ -58,17 +58,27 @@ function BossAvailable(boss_index)
 	return boss_available
 end
 
-function MissionAccess(level_num, mission_num)
+function MissionAccess(level_num, mission_num, glitched)
     local mission_order_id = MISSION_MAPPING[tonumber(level_num)][1]
+    local level_name_str = MISSION_NAME_MAPPING[tonumber(level_num)][1]
     local mission_order = Tracker:ProviderCountForCode(mission_order_id)
 
-	for i=1,5 do
+	for i=2,5 do
 		if MISSION_ORDERS[mission_order][i] == tonumber(mission_num) then
-			return true
+			local location_str = '@' .. level_name_str .. '/Mission ' .. tostring(MISSION_ORDERS[mission_order][i-1])
+			local location = Tracker:FindObjectForCode(location_str)
+
+			print(location_str .. ' | ' .. location.AccessibilityLevel .. ' | ' .. AccessibilityLevel.SequenceBreak .. ' | ' .. AccessibilityLevel.Normal)
+
+			if tonumber(glitched) == 1 then
+				return (location.AccessibilityLevel >= AccessibilityLevel.SequenceBreak)
+			else
+				return (location.AccessibilityLevel >= AccessibilityLevel.Normal)
+			end
 		end
 	end
 
-	return false
+	return true
 end
 
 function MissionActive(level_num, mission_num)
@@ -90,4 +100,13 @@ function MissionActive(level_num, mission_num)
 	end
 	
 	return 0
+end
+
+function IsNoLevelGoal()
+	local show_missions = Tracker:FindObjectForCode("goal")
+    if show_missions.CurrentStage == 2 then
+		return 0
+	end
+	
+	return 1
 end

@@ -18,7 +18,8 @@
                         "tails_laser_blaster",
                         "tails_booster",
                         "tails_mystic_melody",
-                        "tails_bazooka"
+                        "tails_bazooka",
+                        ""
                     ],
                     [
                         "knuckles_mystic_melody",
@@ -30,7 +31,8 @@
                         "shadow_air_shoes",
                         "shadow_ancient_light",
                         "shadow_mystic_melody",
-                        "emblems"
+                        "emblems",
+                        ""
                     ],
                     [
                         "eggman_laser_blaster",
@@ -42,6 +44,7 @@
                         "rouge_pick_nails",
                         "rouge_treasure_scope",
                         "rouge_iron_boots",
+                        "gate_count",
                         ""
                     ],
                     [
@@ -54,19 +57,21 @@
                         "blue_chaos_emerald",
                         "cannons_core_cost_100",
                         "cannons_core_cost_10",
-                        "cannons_core_cost_1"
+                        "cannons_core_cost_1",
+                        ""
                     ],
                     [
                         "chao_garden_difficulty",
                         "chao_prize_only",
                         "chao_karate",
+                        "",
                         "keysanity",
                         "beetlesanity",
                         "pipesanity",
                         "hiddensanity",
-                        "gate_count",
+                        "omosanity",
                         "goal",
-                        "show_missions"
+                        ""
                     ],
                     [
                         "city_escape_available",
@@ -78,7 +83,8 @@
                         "mission_street_available",
                         "aquatic_mine_available",
                         "route_101_available",
-                        "hidden_base_available"
+                        "hidden_base_available",
+                        ""
                     ],
                     [
                         "pyramid_cave_available",
@@ -90,7 +96,8 @@
                         "iron_gate_available",
                         "dry_lagoon_available",
                         "sand_ocean_available",
-                        "radical_highway_available"
+                        "radical_highway_available",
+                        ""
                     ],
                     [
                         "egg_quarters_available",
@@ -102,7 +109,8 @@
                         "sky_rail_available",
                         "mad_space_available",
                         "cosmic_wall_available",
-                        "final_chase_available"
+                        "final_chase_available",
+                        "show_missions"
                     ]
                 ]
             }
