@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Bosses",
+		"name": "Boss Gates",
 		"chest_unopened_img": "images/checks/CheckNotDone.png",
 		"chest_opened_img": "images/checks/CheckDone.png",
 		"access_rules": [],

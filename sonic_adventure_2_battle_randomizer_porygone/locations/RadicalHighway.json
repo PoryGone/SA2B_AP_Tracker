@@ -243,5 +243,181 @@
 				"y": 270
 			}
 		]
+	},
+	{
+		"name": "Radical Highway    ",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "radical_highway_available" ],
+		"visibility_rules": [ "radical_highway_available, $IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "1 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "2 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "3 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "4 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "5 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "6 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "7 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "8 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "9 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "10 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "11 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "12 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "13 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "14 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "15 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "16 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "17 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "18 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "19 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "20 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "shadow_flame_ring" ],
+				"visibility_rules": [ "animalsanity" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_animals",
+				"x": 270,
+				"y": 270
+			}
+		]
 	}
 ]

@@ -34,6 +34,9 @@ Tracker:AddLocations("locations/FinalChase.json")
 Tracker:AddLocations("locations/GreenHill.json")
 
 Tracker:AddLocations("locations/GateBosses.json")
+Tracker:AddLocations("locations/BossRushBosses.json")
+
+Tracker:AddLocations("locations/KartRace.json")
 
 Tracker:AddLocations("locations/ChaoGardenBeginner.json")
 Tracker:AddLocations("locations/ChaoGardenIntermediate.json")

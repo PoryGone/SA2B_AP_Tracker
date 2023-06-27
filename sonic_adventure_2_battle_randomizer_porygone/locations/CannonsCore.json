@@ -238,5 +238,171 @@
 				"y": 270
 			}
 		]
+	},
+	{
+		"name": "Cannon's Core    ",
+		"access_rules": [ "$CannonsCoreAvailable" ],
+		"visibility_rules": [ "$CannonsCoreAvailable, $IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "1 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "2 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "3 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "4 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "5 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine]", "tails_booster, [eggman_large_cannon]" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "6 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine]" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "7 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine]" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "8 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "9 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "10 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "11 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "12 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "13 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon, [knuckles_air_necklace]", "tails_booster, [eggman_jet_engine], eggman_large_cannon, [knuckles_hammer_gloves]" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "14 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon, [knuckles_air_necklace], knuckles_hammer_gloves" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "15 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon, [knuckles_air_necklace], knuckles_hammer_gloves" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "16 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon, [knuckles_air_necklace], knuckles_hammer_gloves" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "17 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon, [knuckles_air_necklace], knuckles_hammer_gloves, [sonic_flame_ring]", "tails_booster, eggman_jet_engine, [eggman_large_cannon], [knuckles_air_necklace], knuckles_hammer_gloves, [sonic_bounce_bracelet]" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "18 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon, [knuckles_air_necklace], knuckles_hammer_gloves, [sonic_bounce_bracelet]" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "19 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "tails_booster, [eggman_jet_engine], eggman_large_cannon, [knuckles_air_necklace], knuckles_hammer_gloves, [sonic_bounce_bracelet], sonic_flame_ring" ],
+				"visibility_rules": [ "animalsanity" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_animals",
+				"x": 1590,
+				"y": 270
+			}
+		]
 	}
 ]

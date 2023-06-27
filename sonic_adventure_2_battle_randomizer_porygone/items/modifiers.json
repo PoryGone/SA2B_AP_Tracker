@@ -10,6 +10,26 @@
                 "disabled_img_mods": "none",
                 "codes": "goal_1",
                 "inherit_codes": false
+            },
+            {
+                "img": "images/checks/ap_karts.png",
+                "codes": "goal_2",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/checks/ap_bosses.png",
+                "codes": "goal_3",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/checks/ap_bosses.png",
+                "codes": "goal_4",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/checks/ap_bosses.png",
+                "codes": "goal_5",
+                "inherit_codes": false
             }
         ]
     },
@@ -102,6 +122,31 @@
         "codes": "omosanity"
     },
     {
+        "name": "Animalsanity",
+        "type": "toggle",
+        "img": "images/checks/ap_animals.png",
+        "codes": "animalsanity"
+    },
+    {
+        "name": "Kart Race Checks",
+        "type": "progressive",
+        "codes": "kartsanity",
+        "stages": [
+            {
+                "img": "images/checks/ap_karts.png",
+                "disabled_img": "images/checks/ap_karts_disabled.png",
+                "disabled_img_mods": "none",
+                "codes": "kartsanity_1",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/checks/ap_karts.png",
+                "codes": "kartsanity_2",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Gate Count",
         "type": "consumable",
         "img": "images/items/gun_logo.png",
@@ -117,7 +162,7 @@
         "img": "images/items/gun_logo.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 180,
+        "max_quantity": 500,
         "increment": 1,
         "codes": "gate_cost_1"
     },
@@ -127,7 +172,7 @@
         "img": "images/items/gun_logo.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 180,
+        "max_quantity": 500,
         "increment": 1,
         "codes": "gate_cost_2"
     },
@@ -137,7 +182,7 @@
         "img": "images/items/gun_logo.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 180,
+        "max_quantity": 500,
         "increment": 1,
         "codes": "gate_cost_3"
     },
@@ -147,7 +192,7 @@
         "img": "images/items/gun_logo.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 180,
+        "max_quantity": 500,
         "increment": 1,
         "codes": "gate_cost_4"
     },
@@ -157,7 +202,7 @@
         "img": "images/items/gun_logo.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 180,
+        "max_quantity": 500,
         "increment": 1,
         "codes": "gate_cost_5"
     },
@@ -187,7 +232,7 @@
         "img": "images/checks/CheckNotDone.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 2,
+        "max_quantity": 5,
         "increment": 1,
         "codes": "cannons_core_cost_100"
     },

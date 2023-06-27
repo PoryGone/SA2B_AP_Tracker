@@ -123,4 +123,7 @@ SETTINGS_MAPPING = {
     [0xFF014F] = {"pipesanity", "toggle"},
     [0xFF0150] = {"hiddensanity", "toggle"},
     [0xFF0151] = {"show_missions", "toggle"},
+    [0xFF0152] = {"animalsanity", "toggle"},
+    [0xFF0152] = {"kartsanity", "toggle"},
+    [0xFF0152] = {"fullkartsanity", "toggle"},
 }

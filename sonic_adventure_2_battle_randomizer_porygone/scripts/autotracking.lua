@@ -136,6 +136,12 @@ function onClear(slot_data)
             goal.CurrentStage = 1
         elseif tonumber(slot_data['goal']) == 3 then
             goal.CurrentStage = 2
+        elseif tonumber(slot_data['goal']) == 4 then
+            goal.CurrentStage = 3
+        elseif tonumber(slot_data['goal']) == 5 then
+            goal.CurrentStage = 4
+        elseif tonumber(slot_data['goal']) == 6 then
+            goal.CurrentStage = 5
         end
     end
 
@@ -160,6 +166,16 @@ function onClear(slot_data)
     if slot_data['omosanity'] then
         local omosanity = Tracker:FindObjectForCode("omosanity")
         omosanity.Active = (slot_data['omosanity'])
+    end
+
+    if slot_data['animalsanity'] then
+        local animalsanity = Tracker:FindObjectForCode("animalsanity")
+        animalsanity.Active = (slot_data['animalsanity'])
+    end
+
+    if slot_data['KartRaceChecks'] then
+        local kartsanity = Tracker:FindObjectForCode("kartsanity")
+        kartsanity.CurrentStage = tonumber(slot_data['KartRaceChecks'])
     end
 
     if slot_data['ChaoGardenDifficulty'] then

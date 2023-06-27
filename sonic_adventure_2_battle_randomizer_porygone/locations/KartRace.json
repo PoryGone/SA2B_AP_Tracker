@@ -1,0 +1,123 @@
+[
+	{
+		"name": "Kart Race",
+		"chest_unopened_img": "images/checks/ap_karts_disabled.png",
+		"chest_opened_img": "images/checks/ap_karts.png",
+		"access_rules": [],
+		"visibility_rules": [],
+		"sections": [
+			{
+				"name": "Beginner - Sonic",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Beginner - Tails",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Beginner - Knuckles",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Beginner - Shadow",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Beginner - Eggman",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Beginner - Rouge",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Intermediate - Sonic",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Intermediate - Tails",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Intermediate - Knuckles",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Intermediate - Shadow",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Intermediate - Eggman",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Intermediate - Rouge",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Expert - Sonic",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Expert - Tails",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Expert - Knuckles",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Expert - Shadow",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Expert - Eggman",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Expert - Rouge",
+				"visibility_rules": [ "kartsanity_2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Beginner",
+				"visibility_rules": [ "kartsanity_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Intermediate",
+				"visibility_rules": [ "kartsanity_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Expert",
+				"visibility_rules": [ "kartsanity_1" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select",
+				"x": 210,
+				"y": 390
+			}
+		]
+	}
+]

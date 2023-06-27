@@ -243,5 +243,85 @@
 				"y": 330
 			}
 		]
+	},
+	{
+		"name": "Security Hall    ",
+		"chest_unopened_img": "images/checks/CheckNotDone.png",
+		"chest_opened_img": "images/checks/CheckDone.png",
+		"access_rules": [ "security_hall_available" ],
+		"visibility_rules": [ "security_hall_available, $IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "1 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "2 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "3 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "4 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "5 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "6 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "7 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "rouge_iron_boots", "rouge_pick_nails" ],
+				"visibility_rules": [ "animalsanity" ]
+			},
+			{
+				"name": "8 Animals",
+				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
+				"chest_opened_img": "images/checks/ap_animals.png",
+				"item_count": 1,
+				"access_rules": [ "rouge_iron_boots, rouge_pick_nails" ],
+				"visibility_rules": [ "animalsanity" ]
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_animals",
+				"x": 690,
+				"y": 330
+			}
+		]
 	}
 ]

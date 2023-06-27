@@ -221,6 +221,6 @@
         "type": "consumable",
         "img": "images/items/emblem.png",
         "codes": "emblems",
-        "max_quantity": 250
+        "max_quantity": 500
     }
 ]

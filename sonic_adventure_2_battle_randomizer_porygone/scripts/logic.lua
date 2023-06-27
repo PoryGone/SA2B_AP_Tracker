@@ -58,6 +58,33 @@ function BossAvailable(boss_index)
 	return boss_available
 end
 
+function BossRushAvailable()
+	local goal = Tracker:FindObjectForCode("goal")
+	local emblemCount = Tracker:ProviderCountForCode("emblems")
+	local cannon_core_cost = CalculateCannonsCoreCost()
+	
+	local boss_available = false
+    if goal.CurrentStage == 3 then
+		boss_available = true
+    elseif goal.CurrentStage == 4 then
+		boss_available = (emblemCount >= cannon_core_cost)
+    elseif goal.CurrentStage == 5 then
+		local emerald_1 = Tracker:ProviderCountForCode("white_chaos_emerald")
+		local emerald_2 = Tracker:ProviderCountForCode("red_chaos_emerald")
+		local emerald_3 = Tracker:ProviderCountForCode("blue_chaos_emerald")
+		local emerald_4 = Tracker:ProviderCountForCode("cyan_chaos_emerald")
+		local emerald_5 = Tracker:ProviderCountForCode("yellow_chaos_emerald")
+		local emerald_6 = Tracker:ProviderCountForCode("purple_chaos_emerald")
+		local emerald_7 = Tracker:ProviderCountForCode("green_chaos_emerald")
+
+		if emerald_1 > 0 and emerald_2 > 0 and emerald_3 > 0 and emerald_4 > 0 and emerald_5 > 0 and emerald_6 > 0 and emerald_7 > 0 then
+			boss_available = true
+		end
+	end
+
+	return boss_available
+end
+
 function MissionAccess(level_num, mission_num, glitched)
     local mission_order_id = MISSION_MAPPING[tonumber(level_num)][1]
     local level_name_str = MISSION_NAME_MAPPING[tonumber(level_num)][1]

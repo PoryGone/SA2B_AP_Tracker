@@ -22,5 +22,11 @@
         "location_size": 40,
         "location_border_thickness": 5,
         "img": "images/StageSelectBG.png"
+    },
+    {
+        "name": "stage_select_animals",
+        "location_size": 40,
+        "location_border_thickness": 5,
+        "img": "images/StageSelectBG.png"
     }
 ]

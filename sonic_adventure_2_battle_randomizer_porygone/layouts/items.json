@@ -61,16 +61,29 @@
                         ""
                     ],
                     [
-                        "chao_garden_difficulty",
-                        "chao_prize_only",
-                        "chao_karate",
-                        "",
                         "keysanity",
                         "beetlesanity",
                         "pipesanity",
                         "hiddensanity",
                         "omosanity",
+                        "animalsanity",
+                        "",
+                        "",
+                        "kartsanity",
                         "goal",
+                        ""
+                    ],
+                    [
+                        "chao_garden_difficulty",
+                        "chao_prize_only",
+                        "chao_karate",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
                         ""
                     ],
                     [

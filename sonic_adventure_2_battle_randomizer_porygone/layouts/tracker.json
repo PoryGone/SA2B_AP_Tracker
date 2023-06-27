@@ -78,6 +78,15 @@
                                     "stage_select_omochao"
                                 ]
                             }
+                        },
+                        {
+                            "title": "Animals",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "stage_select_animals"
+                                ]
+                            }
                         }
                     ]
                 }
