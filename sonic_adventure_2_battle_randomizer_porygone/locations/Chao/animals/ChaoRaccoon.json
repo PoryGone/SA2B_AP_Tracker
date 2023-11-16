@@ -1,0 +1,51 @@
+[
+	{
+		"name": "Raccoon",
+		"chest_unopened_img": "images/checks/chao/animals/Raccoon_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Raccoon.png",
+		"access_rules": [
+			"city_escape_available",
+			"metal_harbor_available",
+			"green_forest_available",
+			"eternal_engine_available",
+			"sand_ocean_available",
+			"radical_highway_available",
+			"lost_colony_available, eggman_jet_engine",
+			"lost_colony_available, $NotKeysanity",
+			"security_hall_available",
+			"mad_space_available, [rouge_iron_boots]",
+			"$CannonsCoreAvailable, [eggman_jet_engine]",
+			"$CannonsCoreAvailable, eggman_large_cannon"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Arms",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Ears",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Raccoon",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 450,
+				"y": 270
+			}
+		]
+	}
+]

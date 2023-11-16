@@ -221,6 +221,13 @@
         "type": "consumable",
         "img": "images/items/emblem.png",
         "codes": "emblems",
-        "max_quantity": 500
+        "max_quantity": 1000
+    },
+    {
+        "name": "Chao Coins",
+        "type": "consumable",
+        "img": "images/items/black_market_token.png",
+        "codes": "black_market_tokens",
+        "max_quantity": 64
     }
 ]

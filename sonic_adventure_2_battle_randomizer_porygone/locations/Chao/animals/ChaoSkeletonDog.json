@@ -1,0 +1,31 @@
+[
+	{
+		"name": "Skeleton Dog",
+		"chest_unopened_img": "images/checks/chao/animals/SkeletonDog_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/SkeletonDog.png",
+		"access_rules": [
+			"pumpkin_hill_available",
+			"pyramid_cave_available, sonic_bounce_bracelet, sonic_flame_ring",
+			"pyramid_cave_available, [sonic_light_shoes], [sonic_bounce_bracelet], [sonic_mystic_melody], $NotKeysanity",
+			"death_chamber_available, knuckles_shovel_claws, knuckles_hammer_gloves, $NotKeysanity",
+			"sand_ocean_available, eggman_jet_engine, [eggman_large_cannon]",
+			"sand_ocean_available, $NotKeysanity",
+			"lost_colony_available, $NotKeysanity"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Skeleton Dog",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 750,
+				"y": 210
+			}
+		]
+	}
+]

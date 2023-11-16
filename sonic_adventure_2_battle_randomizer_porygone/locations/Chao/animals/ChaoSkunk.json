@@ -1,0 +1,54 @@
+[
+	{
+		"name": "Skunk",
+		"chest_unopened_img": "images/checks/chao/animals/Skunk_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Skunk.png",
+		"access_rules": [
+			"city_escape_available",
+			"aquatic_mine_available",
+			"hidden_base_available",
+			"death_chamber_available",
+			"crazy_gadget_available, sonic_bounce_bracelet",
+			"iron_gate_available",
+			"egg_quarters_available",
+			"white_jungle_available",
+			"final_chase_available",
+			"$CannonsCoreAvailable"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Arms",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Forehead",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tail",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Skunk",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 330,
+				"y": 270
+			}
+		]
+	}
+]

@@ -14,7 +14,7 @@
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": [ "[$MissionAccess|12|2|0], $MissionAccess|12|2|1, tails_booster, tails_bazooka" ],
+				"access_rules": [ "[$MissionAccess|12|2|0], $MissionAccess|12|2|1, tails_booster" ],
 				"visibility_rules": [ "$MissionActive|12|2" ],
 				"item_count": 1
 			},

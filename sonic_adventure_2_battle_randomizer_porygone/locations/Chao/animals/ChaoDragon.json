@@ -1,0 +1,62 @@
+[
+	{
+		"name": "Dragon",
+		"chest_unopened_img": "images/checks/chao/animals/Dragon_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Dragon.png",
+		"access_rules": [
+			"wild_canyon_available, knuckles_shovel_claws",
+			"wild_canyon_available, $NotKeysanity",
+			"aquatic_mine_available",
+			"final_rush_available, sonic_bounce_bracelet",
+			"iron_gate_available, eggman_jet_engine, [eggman_large_cannon]",
+			"iron_gate_available, $NotKeysanity",
+			"white_jungle_available, [shadow_air_shoes], $NotKeysanity",
+			"$CannonsCoreAvailable, tails_booster, [eggman_jet_engine], [knuckles_air_necklace], knuckles_hammer_gloves, $NotKeysanity"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Arms",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Ears",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Horn",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tail",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Wings",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Dragon",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 510,
+				"y": 270
+			}
+		]
+	}
+]

@@ -1,0 +1,54 @@
+[
+	{
+		"name": "Unicorn",
+		"chest_unopened_img": "images/checks/chao/animals/Unicorn_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Unicorn.png",
+		"access_rules": [
+			"city_escape_available, $NotKeysanity",
+			"prison_lane_available, tails_booster",
+			"dry_lagoon_available",
+			"radical_highway_available, $NotKeysanity",
+			"cosmic_wall_available, eggman_jet_engine"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Arms",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Ears",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Forehead",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tail",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Unicorn",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 570,
+				"y": 270
+			}
+		]
+	}
+]

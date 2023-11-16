@@ -152,7 +152,7 @@
 				"chest_unopened_img": "images/checks/ap_omochao_disabled.png",
 				"chest_opened_img": "images/checks/ap_omochao.png",
 				"item_count": 1,
-				"access_rules": [],
+				"access_rules": [ "" ],
 				"visibility_rules": [ "omosanity" ]
 			},
 			{

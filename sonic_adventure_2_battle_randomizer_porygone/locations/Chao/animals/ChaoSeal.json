@@ -1,0 +1,41 @@
+[
+	{
+		"name": "Seal",
+		"chest_unopened_img": "images/checks/chao/animals/Seal_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Seal.png",
+		"access_rules": [
+			"metal_harbor_available",
+			"aquatic_mine_available",
+			"meteor_herd_available",
+			"crazy_gadget_available",
+			"radical_highway_available",
+			"weapons_bed_available",
+			"$CannonsCoreAvailable"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Arms",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tail",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Seal",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 210,
+				"y": 210
+			}
+		]
+	}
+]

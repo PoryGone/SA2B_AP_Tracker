@@ -1,0 +1,28 @@
+[
+	{
+		"name": "Bat",
+		"chest_unopened_img": "images/checks/chao/animals/Bat_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Bat.png",
+		"access_rules": [
+			"pumpkin_hill_available",
+			"pyramid_cave_available",
+			"sand_ocean_available",
+			"lost_colony_available"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Bat",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 690,
+				"y": 270
+			}
+		]
+	}
+]

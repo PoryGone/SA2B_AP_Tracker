@@ -1,0 +1,112 @@
+[
+	{
+		"name": "Chao Race Expert",
+		"access_rules": ["[$ChaoRaceExpertAvailable]"],
+		"visibility_rules": ["chao_race_difficulty_3, $IsNoLevelGoal"],
+		"sections": [
+			{
+				"name": "Aquamarine",
+				"chest_unopened_img": "images/checks/chao/ap_aquamarine_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_aquamarine.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "$NotChaoPrizeOnly" ],
+				"item_count": 5
+			},
+			{
+				"name": "Aquamarine Prize",
+				"chest_unopened_img": "images/checks/chao/ap_aquamarine_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_aquamarine.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "chao_prize_only" ],
+				"item_count": 1
+			},
+			{
+				"name": "Topaz",
+				"chest_unopened_img": "images/checks/chao/ap_topaz_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_topaz.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "$NotChaoPrizeOnly" ],
+				"item_count": 5
+			},
+			{
+				"name": "Topaz Prize",
+				"chest_unopened_img": "images/checks/chao/ap_topaz_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_topaz.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "chao_prize_only" ],
+				"item_count": 1
+			},
+			{
+				"name": "Peridot",
+				"chest_unopened_img": "images/checks/chao/ap_peridot_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_peridot.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "$NotChaoPrizeOnly" ],
+				"item_count": 5
+			},
+			{
+				"name": "Peridot Prize",
+				"chest_unopened_img": "images/checks/chao/ap_peridot_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_peridot.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "chao_prize_only" ],
+				"item_count": 1
+			},
+			{
+				"name": "Garnet",
+				"chest_unopened_img": "images/checks/chao/ap_garnet_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_garnet.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "$NotChaoPrizeOnly" ],
+				"item_count": 5
+			},
+			{
+				"name": "Garnet Prize",
+				"chest_unopened_img": "images/checks/chao/ap_garnet_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_garnet.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "chao_prize_only" ],
+				"item_count": 1
+			},
+			{
+				"name": "Onyx",
+				"chest_unopened_img": "images/checks/chao/ap_onyx_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_onyx.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "$NotChaoPrizeOnly" ],
+				"item_count": 5
+			},
+			{
+				"name": "Onyx Prize",
+				"chest_unopened_img": "images/checks/chao/ap_onyx_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_onyx.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "chao_prize_only" ],
+				"item_count": 1
+			},
+			{
+				"name": "Diamond",
+				"chest_unopened_img": "images/checks/chao/ap_diamond_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_diamond.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "$NotChaoPrizeOnly" ],
+				"item_count": 5
+			},
+			{
+				"name": "Diamond Prize",
+				"chest_unopened_img": "images/checks/chao/ap_diamond_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_diamond.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "chao_prize_only" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 270,
+				"y": 90
+			}
+		]
+	}
+]

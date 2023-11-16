@@ -1,0 +1,55 @@
+[
+	{
+		"name": "Phoenix",
+		"chest_unopened_img": "images/checks/chao/animals/Phoenix_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Phoenix.png",
+		"access_rules": [
+			"metal_harbor_available, [sonic_light_shoes]",
+			"mission_street_available, tails_booster, $NotKeysanity",
+			"mission_street_available, tails_booster, tails_bazooka",
+			"meteor_herd_available",
+			"crazy_gadget_available, sonic_light_shoes, [sonic_bounce_bracelet], sonic_flame_ring",
+			"weapons_bed_available, eggman_jet_engine, [eggman_large_cannon]",
+			"security_hall_available, rouge_pick_nails, $NotKeysanity",
+			"sky_rail_available, $NotKeysanity",
+			"mad_space_available, [iron_boots]",
+			"final_chase_available",
+			"$CannonsCoreAvailable, tails_booster, [eggman_jet_engine]"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Forehead",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tail",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Wings",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Phoenix",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 630,
+				"y": 270
+			}
+		]
+	}
+]

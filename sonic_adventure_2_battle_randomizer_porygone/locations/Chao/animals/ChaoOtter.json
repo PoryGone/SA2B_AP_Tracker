@@ -1,0 +1,56 @@
+[
+	{
+		"name": "Otter",
+		"chest_unopened_img": "images/checks/chao/animals/Otter_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Otter.png",
+		"access_rules": [
+			"prison_lane_available",
+			"hidden_base_available, tails_booster",
+			"dry_lagoon_available",
+			"weapons_bed_available",
+			"cosmic_wall_available, eggman_jet_engine",
+			"final_chase_available",
+			"$CannonsCoreAvailable, tails_booster, [eggman_jet_engine]"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Arms",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Ears",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Face",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tail",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Otter",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 270,
+				"y": 210
+			}
+		]
+	}
+]

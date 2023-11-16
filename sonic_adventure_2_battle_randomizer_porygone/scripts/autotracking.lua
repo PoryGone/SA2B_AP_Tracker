@@ -11,7 +11,7 @@ SLOT_DATA = nil
 
 
 function updateGateUnlocks(newEmblemCount)
-    print("updateGateUnlocks: ")
+    --print("updateGateUnlocks: ")
     local bosses_complete = Tracker:ProviderCountForCode("bosses_complete")
     for k,v in pairs(LEVEL_UNLOCKS) do
         local boss_beaten = false
@@ -21,7 +21,7 @@ function updateGateUnlocks(newEmblemCount)
             end
         end
         if (v <= newEmblemCount) and boss_beaten then
-            print(k, v, newEmblemCount, boss_beaten)
+            --print(k, v, newEmblemCount, boss_beaten)
             local obj = Tracker:FindObjectForCode(LEVEL_MAPPING[tonumber(k)][1])
             if obj then
                 obj.Active = true
@@ -40,7 +40,7 @@ end
 
 function setupMissions(slot_data)
     for k,v in pairs(slot_data['MissionMap']) do
-        print(k, v)
+        --print(k, v)
         local obj = Tracker:FindObjectForCode(MISSION_MAPPING[tonumber(k)][1])
         if obj then
             obj.AcquiredCount = v
@@ -48,7 +48,7 @@ function setupMissions(slot_data)
     end
 
     for k,v in pairs(slot_data['MissionCountMap']) do
-        print(k, v)
+        --print(k, v)
         local obj = Tracker:FindObjectForCode(MISSION_COUNT_MAPPING[tonumber(k)][1])
         if obj then
             obj.AcquiredCount = v
@@ -117,60 +117,56 @@ function onClear(slot_data)
     end
 
     if slot_data['EmblemsForCannonsCore'] then
-        local obj100 = Tracker:FindObjectForCode("cannons_core_cost_100")
-        local obj10 = Tracker:FindObjectForCode("cannons_core_cost_10")
-        local obj1 = Tracker:FindObjectForCode("cannons_core_cost_1")
-        if obj100 and obj10 and obj1 then
-            obj100.AcquiredCount = (slot_data['EmblemsForCannonsCore'] // 100)
-            obj10.AcquiredCount = (math.fmod(slot_data['EmblemsForCannonsCore'], 100) // 10)
-            obj1.AcquiredCount = (math.fmod(slot_data['EmblemsForCannonsCore'], 10))
+        local cost = Tracker:FindObjectForCode("cannons_core_cost")
+        if cost then
+            cost.AcquiredCount = (slot_data['EmblemsForCannonsCore'])
         end
     end
 
-    if slot_data['goal'] then
+    if slot_data['Goal'] then
         local goal = Tracker:FindObjectForCode("goal")
 
-        if tonumber(slot_data['goal']) == 0 then
+        if tonumber(slot_data['Goal']) == 0 then
             goal.CurrentStage = 0
-        elseif tonumber(slot_data['goal']) == 1 or tonumber(slot_data['goal']) == 2 then
+        elseif tonumber(slot_data['Goal']) == 1 or tonumber(slot_data['Goal']) == 2 then
             goal.CurrentStage = 1
-        elseif tonumber(slot_data['goal']) == 3 then
+        elseif tonumber(slot_data['Goal']) == 3 then
             goal.CurrentStage = 2
-        elseif tonumber(slot_data['goal']) == 4 then
+        elseif tonumber(slot_data['Goal']) == 4 then
             goal.CurrentStage = 3
-        elseif tonumber(slot_data['goal']) == 5 then
+        elseif tonumber(slot_data['Goal']) == 5 then
             goal.CurrentStage = 4
-        elseif tonumber(slot_data['goal']) == 6 then
+        elseif tonumber(slot_data['Goal']) == 6 then
             goal.CurrentStage = 5
         end
     end
 
-    if slot_data['keysanity'] then
+    if slot_data['ChaoKeys'] then
         local keysanity = Tracker:FindObjectForCode("keysanity")
-        keysanity.Active = (slot_data['keysanity'])
+        keysanity.Active = (slot_data['ChaoKeys'])
     end
 
-    if slot_data['beetlesanity'] then
+    if slot_data['GoldBeetles'] then
         local beetlesanity = Tracker:FindObjectForCode("beetlesanity")
-        beetlesanity.Active = (slot_data['beetlesanity'])
+        beetlesanity.Active = (slot_data['GoldBeetles'])
     end
 
-    if slot_data['whistlesanity'] then
+    if slot_data['Whistlesanity'] then
         local pipesanity = Tracker:FindObjectForCode("pipesanity")
         local hiddensanity = Tracker:FindObjectForCode("hiddensanity")
-        local whistlesanity_value = tonumber(slot_data['whistlesanity'])
+        local whistlesanity_value = tonumber(slot_data['Whistlesanity'])
         pipesanity.Active = (whistlesanity_value == 1 or whistlesanity_value == 3)
         hiddensanity.Active = (whistlesanity_value == 2 or whistlesanity_value == 3)
     end
 
-    if slot_data['omosanity'] then
+    if slot_data['OmochaoChecks'] then
         local omosanity = Tracker:FindObjectForCode("omosanity")
-        omosanity.Active = (slot_data['omosanity'])
+        omosanity.Active = (slot_data['OmochaoChecks'])
     end
 
-    if slot_data['animalsanity'] then
+    if slot_data['AnimalChecks'] then
         local animalsanity = Tracker:FindObjectForCode("animalsanity")
-        animalsanity.Active = (slot_data['animalsanity'])
+        animalsanity.Active = (slot_data['AnimalChecks'])
     end
 
     if slot_data['KartRaceChecks'] then
@@ -178,56 +174,129 @@ function onClear(slot_data)
         kartsanity.CurrentStage = tonumber(slot_data['KartRaceChecks'])
     end
 
-    if slot_data['ChaoGardenDifficulty'] then
-        local chao_diff = Tracker:FindObjectForCode("chao_garden_difficulty")
-        chao_diff.AcquiredCount = (slot_data['ChaoGardenDifficulty'])
+    if slot_data['ChaoRaceDifficulty'] then
+        local chao_diff = Tracker:FindObjectForCode("chao_race_difficulty")
+        chao_diff.CurrentStage = (slot_data['ChaoRaceDifficulty'])
     end
 
-    if slot_data['include_chao_karate'] then
-        local chao_karate = Tracker:FindObjectForCode("chao_karate")
-        chao_karate.Active = (slot_data['include_chao_karate'])
+    if slot_data['ChaoKarateDifficulty'] then
+        local chao_diff = Tracker:FindObjectForCode("chao_karate_difficulty")
+        chao_diff.AcquiredCount = (slot_data['ChaoKarateDifficulty'])
     end
 
-    if slot_data['ChaoRaceChecks'] then
+    if slot_data['ChaoStadiumChecks'] then
         local chao_prize = Tracker:FindObjectForCode("chao_prize_only")
-        chao_prize.Active = (slot_data['ChaoRaceChecks'])
+        chao_prize.Active = (slot_data['ChaoStadiumChecks'])
+    end
+
+    if slot_data['ChaoStats'] then
+        local chao_stats = Tracker:FindObjectForCode("chao_stats")
+        chao_stats.AcquiredCount = (slot_data['ChaoStats'])
+    end
+
+    if slot_data['ChaoStatsFrequency'] then
+        local chao_stats_frequency = Tracker:FindObjectForCode("chao_stats_frequency")
+        chao_stats_frequency.AcquiredCount = (slot_data['ChaoStatsFrequency'])
+    end
+
+    if slot_data['ChaoStatsStamina'] then
+        local chao_stats_stamina = Tracker:FindObjectForCode("chao_stats_stamina")
+        chao_stats_stamina.Active = (slot_data['ChaoStatsStamina'])
+    end
+
+    if slot_data['ChaoStatsHidden'] then
+        local chao_stats_hidden = Tracker:FindObjectForCode("chao_stats_hidden")
+        chao_stats_hidden.Active = (slot_data['ChaoStatsHidden'])
+    end
+
+    if slot_data['ChaoAnimalParts'] then
+        local chao_body_parts = Tracker:FindObjectForCode("chao_body_parts")
+        chao_body_parts.Active = (slot_data['ChaoAnimalParts'])
+    end
+
+    if slot_data['ChaoAnimalParts'] then
+        local chao_body_parts = Tracker:FindObjectForCode("chao_body_parts")
+        chao_body_parts.Active = (slot_data['ChaoAnimalParts'])
+    end
+
+    if slot_data['ChaoKindergarten'] then
+        local chao_kindergarten = Tracker:FindObjectForCode("chao_kindergarten")
+        chao_kindergarten.CurrentStage = (slot_data['ChaoKindergarten'])
+    end
+
+    if slot_data['BlackMarketSlots'] then
+        local black_market_slots = Tracker:FindObjectForCode("black_market_slots")
+        black_market_slots.AcquiredCount = (slot_data['BlackMarketSlots'])
+    end
+
+    if slot_data['BlackMarketUnlockSetting'] then
+        local black_market_costs = Tracker:FindObjectForCode("black_market_unlock_costs")
+        black_market_costs.AcquiredCount = (slot_data['BlackMarketUnlockSetting'])
     end
 
     if slot_data['GateCosts'] then
-        local chao_beg = Tracker:FindObjectForCode("chao_beginner_cost")
-        local chao_int = Tracker:FindObjectForCode("chao_intermediate_cost")
-        local chao_exp = Tracker:FindObjectForCode("chao_expert_cost")
+        local chao_race_beg = Tracker:FindObjectForCode("chao_race_beginner_cost")
+        local chao_race_int = Tracker:FindObjectForCode("chao_race_intermediate_cost")
+        local chao_race_exp = Tracker:FindObjectForCode("chao_race_expert_cost")
+        local chao_karate_beg = Tracker:FindObjectForCode("chao_karate_beginner_cost")
+        local chao_karate_int = Tracker:FindObjectForCode("chao_karate_intermediate_cost")
+        local chao_karate_exp = Tracker:FindObjectForCode("chao_karate_expert_cost")
+        local chao_karate_sup = Tracker:FindObjectForCode("chao_karate_super_cost")
         local gate_count = Tracker:FindObjectForCode("gate_count")
 
         if slot_data['GateCosts']["5"] then
-            chao_beg.AcquiredCount = (slot_data['GateCosts']["1"])
-            chao_int.AcquiredCount = (slot_data['GateCosts']["2"])
-            chao_exp.AcquiredCount = (slot_data['GateCosts']["4"])
+            chao_race_beg.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_race_int.AcquiredCount = (slot_data['GateCosts']["2"])
+            chao_race_exp.AcquiredCount = (slot_data['GateCosts']["4"])
+            chao_karate_beg.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_karate_int.AcquiredCount = (slot_data['GateCosts']["2"])
+            chao_karate_exp.AcquiredCount = (slot_data['GateCosts']["3"])
+            chao_karate_sup.AcquiredCount = (slot_data['GateCosts']["4"])
             gate_count.AcquiredCount = 5
         elseif slot_data['GateCosts']["4"] then
-            chao_beg.AcquiredCount = (slot_data['GateCosts']["1"])
-            chao_int.AcquiredCount = (slot_data['GateCosts']["2"])
-            chao_exp.AcquiredCount = (slot_data['GateCosts']["3"])
+            chao_race_beg.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_race_int.AcquiredCount = (slot_data['GateCosts']["2"])
+            chao_race_exp.AcquiredCount = (slot_data['GateCosts']["3"])
+            chao_karate_beg.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_karate_int.AcquiredCount = (slot_data['GateCosts']["2"])
+            chao_karate_exp.AcquiredCount = (slot_data['GateCosts']["3"])
+            chao_karate_sup.AcquiredCount = (slot_data['GateCosts']["4"])
             gate_count.AcquiredCount = 4
         elseif slot_data['GateCosts']["3"] then
-            chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
-            chao_int.AcquiredCount = (slot_data['GateCosts']["1"])
-            chao_exp.AcquiredCount = (slot_data['GateCosts']["3"])
+            chao_race_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_race_int.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_race_exp.AcquiredCount = (slot_data['GateCosts']["3"])
+            chao_karate_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_karate_int.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_karate_exp.AcquiredCount = (slot_data['GateCosts']["2"])
+            chao_karate_sup.AcquiredCount = (slot_data['GateCosts']["3"])
             gate_count.AcquiredCount = 3
         elseif slot_data['GateCosts']["2"] then
-            chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
-            chao_int.AcquiredCount = (slot_data['GateCosts']["1"])
-            chao_exp.AcquiredCount = (slot_data['GateCosts']["2"])
+            chao_race_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_race_int.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_race_exp.AcquiredCount = (slot_data['GateCosts']["2"])
+            chao_karate_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_karate_int.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_karate_exp.AcquiredCount = (slot_data['GateCosts']["2"])
+            chao_karate_sup.AcquiredCount = (slot_data['GateCosts']["2"])
             gate_count.AcquiredCount = 2
         elseif slot_data['GateCosts']["1"] then
-            chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
-            chao_int.AcquiredCount = (slot_data['GateCosts']["0"])
-            chao_exp.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_race_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_race_int.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_race_exp.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_karate_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_karate_int.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_karate_exp.AcquiredCount = (slot_data['GateCosts']["1"])
+            chao_karate_sup.AcquiredCount = (slot_data['GateCosts']["1"])
             gate_count.AcquiredCount = 1
         elseif slot_data['GateCosts']["0"] then
-            chao_beg.AcquiredCount = (slot_data['GateCosts']["0"])
-            chao_int.AcquiredCount = (slot_data['GateCosts']["0"])
-            chao_exp.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_race_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_race_int.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_race_exp.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_karate_beg.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_karate_int.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_karate_exp.AcquiredCount = (slot_data['GateCosts']["0"])
+            chao_karate_sup.AcquiredCount = (slot_data['GateCosts']["0"])
             gate_count.AcquiredCount = 0
         end
 

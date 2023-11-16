@@ -1,0 +1,47 @@
+[
+	{
+		"name": "Chao Class - Song",
+		"chest_unopened_img": "images/checks/chao/ap_song_disabled.png",
+		"chest_opened_img": "images/checks/chao/ap_song.png",
+		"visibility_rules": [ "$IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Song 1",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Song 2",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Song 3",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Song 4",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Song 5",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Any Song",
+				"visibility_rules": [ "chao_kindergarten_2" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 270,
+				"y": 330
+			}
+		]
+	}
+]

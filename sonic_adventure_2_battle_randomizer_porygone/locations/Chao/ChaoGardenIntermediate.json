@@ -1,0 +1,64 @@
+[
+	{
+		"name": "Chao Race Intermediate",
+		"access_rules": ["[$ChaoRaceIntermediateAvailable]"],
+		"visibility_rules": [ "chao_race_difficulty_2, $IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Challenge",
+				"chest_unopened_img": "images/checks/chao/ap_challenge_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_challenge.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "$NotChaoPrizeOnly" ],
+				"item_count": 12
+			},
+			{
+				"name": "Challenge Prize",
+				"chest_unopened_img": "images/checks/chao/ap_challenge_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_challenge.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "chao_prize_only" ],
+				"item_count": 3
+			},
+			{
+				"name": "Hero",
+				"chest_unopened_img": "images/checks/chao/ap_hero_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_hero.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "$NotChaoPrizeOnly" ],
+				"item_count": 4
+			},
+			{
+				"name": "Hero Prize",
+				"chest_unopened_img": "images/checks/chao/ap_hero_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_hero.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "chao_prize_only" ],
+				"item_count": 2
+			},
+			{
+				"name": "Dark",
+				"chest_unopened_img": "images/checks/chao/ap_dark_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_dark.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "$NotChaoPrizeOnly" ],
+				"item_count": 4
+			},
+			{
+				"name": "Dark Prize",
+				"chest_unopened_img": "images/checks/chao/ap_dark_disabled.png",
+				"chest_opened_img": "images/checks/chao/ap_dark.png",
+				"clear_as_group": "false",
+				"visibility_rules": [ "chao_prize_only" ],
+				"item_count": 2
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 210,
+				"y": 90
+			}
+		]
+	}
+]

@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Tiger",
+		"chest_unopened_img": "images/checks/chao/animals/Tiger_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Tiger.png",
+		"access_rules": [
+			"prison_lane_available",
+			"hidden_base_available, tails_booster",
+			"death_chamber_available",
+			"crazy_gadget_available",
+			"iron_gate_available",
+			"security_hall_available",
+			"sky_rail_available",
+			"final_chase_available"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Arms",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Ears",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tail",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tiger",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 570,
+				"y": 210
+			}
+		]
+	}
+]

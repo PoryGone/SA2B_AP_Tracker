@@ -1,0 +1,47 @@
+[
+	{
+		"name": "Chao Class - Dance",
+		"chest_unopened_img": "images/checks/chao/ap_dance_disabled.png",
+		"chest_opened_img": "images/checks/chao/ap_dance.png",
+		"visibility_rules": [ "$IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Shake Dance",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Spin Dance",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Step Dance",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Go-Go Dance",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Exercise",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Any Dance",
+				"visibility_rules": [ "chao_kindergarten_2" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 210,
+				"y": 330
+			}
+		]
+	}
+]

@@ -1,0 +1,51 @@
+[
+	{
+		"name": "Gorilla",
+		"chest_unopened_img": "images/checks/chao/animals/Gorilla_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Gorilla.png",
+		"access_rules": [
+			"prison_lane_available",
+			"mission_street_available",
+			"death_chamber_available",
+			"iron_gate_available",
+			"egg_quarters_available",
+			"mad_space_available, [rouge_iron_boots]",
+			"$CannonsCoreAvailable"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Arms",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Ears",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Forehead",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Gorilla",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 630,
+				"y": 210
+			}
+		]
+	}
+]

@@ -44,7 +44,7 @@
                         "rouge_pick_nails",
                         "rouge_treasure_scope",
                         "rouge_iron_boots",
-                        "gate_count",
+                        "black_market_tokens",
                         ""
                     ],
                     [
@@ -55,11 +55,25 @@
                         "green_chaos_emerald",
                         "yellow_chaos_emerald",
                         "blue_chaos_emerald",
-                        "cannons_core_cost_100",
-                        "cannons_core_cost_10",
-                        "cannons_core_cost_1",
+                        "",
+                        "",
+                        "",
                         ""
-                    ],
+                    ]
+                ]
+            }
+        ]
+    },
+
+    "tracker_settings": {
+        "type": "array",
+        "orientation": "horizontal",
+        "content": [
+            {
+                "type": "itemgrid",
+                "h_alignment": "left",
+                "item_margin": "2,2",
+                "rows": [
                     [
                         "keysanity",
                         "beetlesanity",
@@ -67,62 +81,33 @@
                         "hiddensanity",
                         "omosanity",
                         "animalsanity",
-                        "",
-                        "",
                         "kartsanity",
-                        "goal",
+                    ],
+                    [
+                        "chao_race_difficulty",
+                        "chao_stats",
+                        "chao_body_parts",
+                        "chao_kindergarten",
+                        "black_market_slots",
+                        "",
                         ""
                     ],
                     [
-                        "chao_garden_difficulty",
+                        "chao_karate_difficulty",
+                        "chao_stats_stamina",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    [
                         "chao_prize_only",
-                        "chao_karate",
+                        "chao_stats_hidden",
                         "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ],
-                    [
-                        "city_escape_available",
-                        "wild_canyon_available",
-                        "prison_lane_available",
-                        "metal_harbor_available",
-                        "green_forest_available",
-                        "pumpkin_hill_available",
-                        "mission_street_available",
-                        "aquatic_mine_available",
-                        "route_101_available",
-                        "hidden_base_available",
-                        ""
-                    ],
-                    [
-                        "pyramid_cave_available",
-                        "death_chamber_available",
-                        "eternal_engine_available",
-                        "meteor_herd_available",
-                        "crazy_gadget_available",
-                        "final_rush_available",
-                        "iron_gate_available",
-                        "dry_lagoon_available",
-                        "sand_ocean_available",
-                        "radical_highway_available",
-                        ""
-                    ],
-                    [
-                        "egg_quarters_available",
-                        "lost_colony_available",
-                        "weapons_bed_available",
-                        "security_hall_available",
-                        "white_jungle_available",
-                        "route_280_available",
-                        "sky_rail_available",
-                        "mad_space_available",
-                        "cosmic_wall_available",
-                        "final_chase_available",
+                        "gate_count",
+                        "cannons_core_cost",
+                        "goal",
                         "show_missions"
                     ]
                 ]

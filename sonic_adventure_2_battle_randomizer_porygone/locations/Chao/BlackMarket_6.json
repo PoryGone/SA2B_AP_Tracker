@@ -1,0 +1,65 @@
+[
+	{
+		"name": "Black Market Set 6",
+		"chest_unopened_img": "images/checks/chao/black_market_disabled.png",
+		"chest_opened_img": "images/checks/chao/black_market.png",
+		"visibility_rules": [ "$IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Black Market - 41",
+				"access_rules": [ "$BlackMarketAvailable|41" ],
+				"visibility_rules": [ "black_market_slots:41" ],
+				"item_count": 1
+			},
+			{
+				"name": "Black Market - 42",
+				"access_rules": [ "$BlackMarketAvailable|42" ],
+				"visibility_rules": [ "black_market_slots:42" ],
+				"item_count": 1
+			},
+			{
+				"name": "Black Market - 43",
+				"access_rules": [ "$BlackMarketAvailable|43" ],
+				"visibility_rules": [ "black_market_slots:43" ],
+				"item_count": 1
+			},
+			{
+				"name": "Black Market - 44",
+				"access_rules": [ "$BlackMarketAvailable|44" ],
+				"visibility_rules": [ "black_market_slots:44" ],
+				"item_count": 1
+			},
+			{
+				"name": "Black Market - 45",
+				"access_rules": [ "$BlackMarketAvailable|45" ],
+				"visibility_rules": [ "black_market_slots:45" ],
+				"item_count": 1
+			},
+			{
+				"name": "Black Market - 46",
+				"access_rules": [ "$BlackMarketAvailable|46" ],
+				"visibility_rules": [ "black_market_slots:46" ],
+				"item_count": 1
+			},
+			{
+				"name": "Black Market - 47",
+				"access_rules": [ "$BlackMarketAvailable|47" ],
+				"visibility_rules": [ "black_market_slots:47" ],
+				"item_count": 1
+			},
+			{
+				"name": "Black Market - 48",
+				"access_rules": [ "$BlackMarketAvailable|48" ],
+				"visibility_rules": [ "black_market_slots:48" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 450,
+				"y": 390
+			}
+		]
+	}
+]

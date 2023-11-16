@@ -1,0 +1,46 @@
+[
+	{
+		"name": "Penguin",
+		"chest_unopened_img": "images/checks/chao/animals/Penguin_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Penguin.png",
+		"access_rules": [
+			"metal_harbor_available",
+			"aquatic_mine_available",
+			"hidden_base_available, tails_booster",
+			"meteor_herd_available",
+			"final_rush_available",
+			"dry_lagoon_available",
+			"final_chase_available"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Arms",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Forehead",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Penguin",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 150,
+				"y": 210
+			}
+		]
+	}
+]

@@ -1,0 +1,66 @@
+[
+	{
+		"name": "Chao Karate",
+		"chest_unopened_img": "images/checks/chao/ap_karate_disabled.png",
+		"chest_opened_img": "images/checks/chao/ap_karate.png",
+		"visibility_rules": [ "$IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Beginner",
+				"clear_as_group": "false",
+				"access_rules": [ "[$ChaoKarateBeginnerAvailable]" ],
+				"visibility_rules": [ "$NotChaoPrizeOnly, chao_karate_difficulty:1" ],
+				"item_count": 5
+			},
+			{
+				"name": "Beginner Prize",
+				"access_rules": [ "[$ChaoKarateBeginnerAvailable]" ],
+				"visibility_rules": [ "chao_prize_only, chao_karate_difficulty:1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Standard",
+				"access_rules": [ "[$ChaoKarateStandardAvailable]" ],
+				"visibility_rules": [ "$NotChaoPrizeOnly, chao_karate_difficulty:2" ],
+				"item_count": 5
+			},
+			{
+				"name": "Standard Prize",
+				"access_rules": [ "[$ChaoKarateStandardAvailable]" ],
+				"visibility_rules": [ "chao_prize_only, chao_karate_difficulty:2" ],
+				"item_count": 1
+			},
+			{
+				"name": "Expert",
+				"access_rules": [ "[$ChaoKarateExpertAvailable]" ],
+				"visibility_rules": [ "$NotChaoPrizeOnly, chao_karate_difficulty:3" ],
+				"item_count": 5
+			},
+			{
+				"name": "Expert Prize",
+				"access_rules": [ "[$ChaoKarateExpertAvailable]" ],
+				"visibility_rules": [ "chao_prize_only, chao_karate_difficulty:3" ],
+				"item_count": 1
+			},
+			{
+				"name": "Super",
+				"access_rules": [ "[$ChaoKarateSuperAvailable]" ],
+				"visibility_rules": [ "$NotChaoPrizeOnly, chao_karate_difficulty:4" ],
+				"item_count": 5
+			},
+			{
+				"name": "Super Prize",
+				"access_rules": [ "[$ChaoKarateSuperAvailable]" ],
+				"visibility_rules": [ "chao_prize_only, chao_karate_difficulty:4" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 330,
+				"y": 90
+			}
+		]
+	}
+]

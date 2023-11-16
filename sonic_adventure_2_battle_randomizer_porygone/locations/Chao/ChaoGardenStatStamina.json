@@ -1,0 +1,24 @@
+[
+	{
+		"name": "Chao Stat - Stamina",
+		"chest_unopened_img": "images/checks/chao/ap_chao_stamina_disabled.png",
+		"chest_opened_img": "images/checks/chao/ap_chao_stamina.png",
+		"visibility_rules": [ "$IsNoLevelGoal, chao_stats_stamina" ],
+		"sections": [
+			{
+				"name": "Level",
+				"clear_as_group": "false",
+				"access_rules": [ "" ],
+				"visibility_rules": [ "chao_stats:1" ],
+				"item_count": 99
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 390,
+				"y": 150
+			}
+		]
+	}
+]

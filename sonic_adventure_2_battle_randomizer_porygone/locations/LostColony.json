@@ -14,7 +14,7 @@
 			},
 			{
 				"name": "Mission 2",
-				"access_rules": [ "[$MissionAccess|21|2|0], $MissionAccess|21|2|1, eggman_jet_engine" ],
+				"access_rules": [ "[$MissionAccess|21|2|0], $MissionAccess|21|2|1, [eggman_jet_engine]" ],
 				"visibility_rules": [ "$MissionActive|21|2" ],
 				"item_count": 1
 			},
@@ -295,7 +295,7 @@
 				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
 				"chest_opened_img": "images/checks/ap_animals.png",
 				"item_count": 1,
-				"access_rules": [ "[eggman_jet_engine]" ],
+				"access_rules": [ "eggman_jet_engine", "[eggman_jet_engine], eggman_large_cannon" ],
 				"visibility_rules": [ "animalsanity" ]
 			},
 			{
@@ -303,7 +303,7 @@
 				"chest_unopened_img": "images/checks/ap_animals_disabled.png",
 				"chest_opened_img": "images/checks/ap_animals.png",
 				"item_count": 1,
-				"access_rules": [ "eggman_jet_engine", "[eggman_jet_engine], eggman_large_cannon" ],
+				"access_rules": [ "eggman_jet_engine" ],
 				"visibility_rules": [ "animalsanity" ]
 			},
 			{

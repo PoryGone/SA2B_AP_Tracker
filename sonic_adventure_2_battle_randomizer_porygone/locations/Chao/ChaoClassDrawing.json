@@ -1,0 +1,47 @@
+[
+	{
+		"name": "Chao Class - Drawing",
+		"chest_unopened_img": "images/checks/chao/ap_drawing_disabled.png",
+		"chest_opened_img": "images/checks/chao/ap_drawing.png",
+		"visibility_rules": [ "$IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Drawing 1",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Drawing 2",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Drawing 3",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Drawing 4",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Drawing 5",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Any Drawing",
+				"visibility_rules": [ "chao_kindergarten_2" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 150,
+				"y": 330
+			}
+		]
+	}
+]

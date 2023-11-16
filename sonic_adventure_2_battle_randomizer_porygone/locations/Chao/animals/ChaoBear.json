@@ -1,0 +1,44 @@
+[
+	{
+		"name": "Bear",
+		"chest_unopened_img": "images/checks/chao/animals/Bear_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Bear.png",
+		"access_rules": [
+			"crazy_gadget_available",
+			"egg_quarters_available",
+			"white_jungle_available",
+			"sky_rail_available",
+			"$CannonsCoreAvailable, tails_booster"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Arms",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Ears",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Bear",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 510,
+				"y": 210
+			}
+		]
+	}
+]

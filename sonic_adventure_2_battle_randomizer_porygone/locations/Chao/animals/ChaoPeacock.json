@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Peacock",
+		"chest_unopened_img": "images/checks/chao/animals/Peacock_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Peacock.png",
+		"access_rules": [
+			"wild_canyon_available",
+			"metal_harbor_available",
+			"pyramid_cave_available",
+			"final_rush_available",
+			"dry_lagoon_available",
+			"sand_ocean_available",
+			"white_jungle_available",
+			"mad_space_available"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Forehead",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tail",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Wings",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Peacock",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 150,
+				"y": 270
+			}
+		]
+	}
+]

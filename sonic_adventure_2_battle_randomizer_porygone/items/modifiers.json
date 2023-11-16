@@ -30,6 +30,11 @@
                 "img": "images/checks/ap_bosses.png",
                 "codes": "goal_5",
                 "inherit_codes": false
+            },
+            {
+                "img": "images/checks/chao/ap_karate.png",
+                "codes": "goal_6",
+                "inherit_codes": false
             }
         ]
     },
@@ -40,20 +45,35 @@
         "codes": "show_missions"
     },
     {
-        "name": "Chao Garden Difficulty",
-        "type": "consumable",
-        "img": "images/ChaoMap.png",
-        "initial_quantity": 0,
-        "min_quantity": 0,
-        "max_quantity": 3,
-        "increment": 1,
-        "codes": "chao_garden_difficulty"
+        "name": "Chao Race Difficulty",
+        "type": "progressive",
+        "codes": "chao_race_difficulty",
+        "stages": [
+            {
+                "img": "images/checks/chao/ap_beginner.png",
+                "disabled_img": "images/checks/chao/ap_beginner_disabled.png",
+                "disabled_img_mods": "none",
+                "codes": "chao_race_difficulty_1"
+            },
+            {
+                "img": "images/checks/chao/ap_challenge.png",
+                "codes": "chao_race_difficulty_2"
+            },
+            {
+                "img": "images/checks/chao/ap_onyx.png",
+                "codes": "chao_race_difficulty_3"
+            }
+        ]
     },
     {
-        "name": "Chao Karate",
-        "type": "toggle",
-        "img": "images/ChaoMap.png",
-        "codes": "chao_karate"
+        "name": "Chao Karate Difficulty",
+        "type": "consumable",
+        "img": "images/Checks/Chao/ap_karate.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 4,
+        "increment": 1,
+        "codes": "chao_karate_difficulty"
     },
     {
         "name": "Chao Checks - Prize Only",
@@ -62,34 +82,149 @@
         "codes": "chao_prize_only"
     },
     {
-        "name": "Chao Beginner Emblem Requirement",
+        "name": "Chao Race Beginner Emblem Requirement",
         "type": "consumable",
         "img": "images/ChaoMap.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 180,
+        "max_quantity": 1000,
         "increment": 1,
-        "codes": "chao_beginner_cost"
+        "codes": "chao_race_beginner_cost"
     },
     {
-        "name": "Chao Intermediate Emblem Requirement",
+        "name": "Chao Race Intermediate Emblem Requirement",
         "type": "consumable",
         "img": "images/ChaoMap.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 180,
+        "max_quantity": 1000,
         "increment": 1,
-        "codes": "chao_intermediate_cost"
+        "codes": "chao_race_intermediate_cost"
     },
     {
-        "name": "Chao Expert Emblem Requirement",
+        "name": "Chao Race Expert Emblem Requirement",
         "type": "consumable",
         "img": "images/ChaoMap.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 180,
+        "max_quantity": 1000,
         "increment": 1,
-        "codes": "chao_expert_cost"
+        "codes": "chao_race_expert_cost"
+    },
+    {
+        "name": "Chao Karate Beginner Emblem Requirement",
+        "type": "consumable",
+        "img": "images/ChaoMap.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 1000,
+        "increment": 1,
+        "codes": "chao_karate_beginner_cost"
+    },
+    {
+        "name": "Chao Karate Intermediate Emblem Requirement",
+        "type": "consumable",
+        "img": "images/ChaoMap.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 1000,
+        "increment": 1,
+        "codes": "chao_karate_intermediate_cost"
+    },
+    {
+        "name": "Chao Karate Expert Emblem Requirement",
+        "type": "consumable",
+        "img": "images/ChaoMap.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 1000,
+        "increment": 1,
+        "codes": "chao_karate_expert_cost"
+    },
+    {
+        "name": "Chao Karate Super Emblem Requirement",
+        "type": "consumable",
+        "img": "images/ChaoMap.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 1000,
+        "increment": 1,
+        "codes": "chao_karate_super_cost"
+    },
+    {
+        "name": "Chao Stats",
+        "type": "consumable",
+        "img": "images/checks/chao/ap_chao_power.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 99,
+        "increment": 1,
+        "codes": "chao_stats"
+    },
+    {
+        "name": "Chao Stats - Frequency",
+        "type": "consumable",
+        "img": "images/checks/chao/ap_chao_power.png",
+        "initial_quantity": 1,
+        "min_quantity": 1,
+        "max_quantity": 20,
+        "increment": 1,
+        "codes": "chao_stats_frequency"
+    },
+    {
+        "name": "Chao Stats - Stamina",
+        "type": "toggle",
+        "img": "images/checks/chao/ap_chao_stamina.png",
+        "codes": "chao_stats_stamina"
+    },
+    {
+        "name": "Chao Stats - Luck and Intelligence",
+        "type": "toggle",
+        "img": "images/checks/chao/ap_chao_luck.png",
+        "codes": "chao_stats_hidden"
+    },
+    {
+        "name": "Chao Animal Parts",
+        "type": "toggle",
+        "img": "images/checks/chao/animals.png",
+        "codes": "chao_body_parts"
+    },
+    {
+        "name": "Chao Kindergarten",
+        "type": "progressive",
+        "codes": "chao_kindergarten",
+        "stages": [
+            {
+                "img": "images/checks/chao/ap_instrument.png",
+                "codes": "chao_kindergarten_2",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/checks/chao/ap_instrument.png",
+                "codes": "chao_kindergarten_1",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Black Market Slots",
+        "type": "consumable",
+        "img": "images/checks/chao/black_market.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 64,
+        "increment": 1,
+        "codes": "black_market_slots"
+    },
+    {
+        "name": "Black Market Unlock Costs",
+        "type": "consumable",
+        "img": "images/checks/chao/black_market.png",
+        "initial_quantity": 0,
+        "min_quantity": 0,
+        "max_quantity": 2,
+        "increment": 1,
+        "codes": "black_market_unlock_costs"
     },
     {
         "name": "Keysanity",
@@ -162,7 +297,7 @@
         "img": "images/items/gun_logo.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 500,
+        "max_quantity": 1000,
         "increment": 1,
         "codes": "gate_cost_1"
     },
@@ -172,7 +307,7 @@
         "img": "images/items/gun_logo.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 500,
+        "max_quantity": 1000,
         "increment": 1,
         "codes": "gate_cost_2"
     },
@@ -182,7 +317,7 @@
         "img": "images/items/gun_logo.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 500,
+        "max_quantity": 1000,
         "increment": 1,
         "codes": "gate_cost_3"
     },
@@ -192,7 +327,7 @@
         "img": "images/items/gun_logo.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 500,
+        "max_quantity": 1000,
         "increment": 1,
         "codes": "gate_cost_4"
     },
@@ -202,7 +337,7 @@
         "img": "images/items/gun_logo.png",
         "initial_quantity": 0,
         "min_quantity": 0,
-        "max_quantity": 500,
+        "max_quantity": 1000,
         "increment": 1,
         "codes": "gate_cost_5"
     },
@@ -227,34 +362,14 @@
         "codes": "mission_count"
     },
     {
-        "name": "Cannon's Core Cost - Hundreds",
-        "type": "consumable",
-        "img": "images/checks/CheckNotDone.png",
-        "initial_quantity": 0,
-        "min_quantity": 0,
-        "max_quantity": 5,
-        "increment": 1,
-        "codes": "cannons_core_cost_100"
-    },
-    {
-        "name": "Cannon's Core Cost - Tens",
-        "type": "consumable",
-        "img": "images/checks/CheckNotDone.png",
-        "initial_quantity": 0,
-        "min_quantity": 0,
-        "max_quantity": 9,
-        "increment": 1,
-        "codes": "cannons_core_cost_10"
-    },
-    {
-        "name": "Cannon's Core Cost - Ones",
+        "name": "Cannon's Core Cost",
         "type": "consumable",
         "img": "images/checks/CheckNotDone.png",
         "initial_quantity": 1,
         "min_quantity": 0,
-        "max_quantity": 9,
+        "max_quantity": 1000,
         "increment": 1,
-        "codes": "cannons_core_cost_1"
+        "codes": "cannons_core_cost"
     },
     {
         "name": "City Escape",

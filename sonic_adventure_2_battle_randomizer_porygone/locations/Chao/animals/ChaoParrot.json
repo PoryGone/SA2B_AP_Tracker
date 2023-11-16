@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Parrot",
+		"chest_unopened_img": "images/checks/chao/animals/Parrot_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Parrot.png",
+		"access_rules": [
+			"green_forest_available",
+			"eternal_engine_available, tails_booster",
+			"sand_ocean_available",
+			"egg_quarters_available",
+			"security_hall_available",
+			"white_jungle_available",
+			"mad_space_available",
+			"$CannonsCoreAvailable, tails_booster, [eggman_jet_engine], [knuckles_air_necklace], knuckles_hammer_gloves, [sonic_bounce_bracelet]"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Forehead",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tail",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Wings",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Parrot",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 210,
+				"y": 270
+			}
+		]
+	}
+]

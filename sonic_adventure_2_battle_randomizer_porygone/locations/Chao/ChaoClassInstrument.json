@@ -1,0 +1,62 @@
+[
+	{
+		"name": "Chao Class - Instrument",
+		"chest_unopened_img": "images/checks/chao/ap_instrument_disabled.png",
+		"chest_opened_img": "images/checks/chao/ap_instrument.png",
+		"visibility_rules": [ "$IsNoLevelGoal" ],
+		"sections": [
+			{
+				"name": "Bell",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Castanets",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Cymbals",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Drum",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Flute",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Maracas",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Trumpet",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tambourine",
+				"visibility_rules": [ "chao_kindergarten_1" ],
+				"item_count": 1
+			},
+			{
+				"name": "Any Instrument",
+				"visibility_rules": [ "chao_kindergarten_2" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 330,
+				"y": 330
+			}
+		]
+	}
+]

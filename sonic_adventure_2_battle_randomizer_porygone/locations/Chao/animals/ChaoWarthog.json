@@ -1,0 +1,55 @@
+[
+	{
+		"name": "Warthog",
+		"chest_unopened_img": "images/checks/chao/animals/Warthog_disabled.png",
+		"chest_opened_img": "images/checks/chao/animals/Warthog.png",
+		"access_rules": [
+			"pumpkin_hill_available",
+			"mission_street_available",
+			"eternal_engine_available",
+			"radical_highway_available",
+			"lost_colony_available",
+			"$CannonsCoreAvailable, tails_booster, [eggman_jet_engine]"
+		],
+		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
+		"sections": [
+			{
+				"name": "Arms",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Ears",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Face",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Legs",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Tail",
+				"visibility_rules": [ "chao_body_parts" ],
+				"item_count": 1
+			},
+			{
+				"name": "Warthog",
+				"visibility_rules": [ "goal_6" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "stage_select_chao",
+				"x": 450,
+				"y": 210
+			}
+		]
+	}
+]
