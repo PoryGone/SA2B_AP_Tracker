@@ -14,7 +14,7 @@
 			"dry_lagoon_available",
 			"weapons_bed_available",
 			"sky_rail_available",
-			"cosmic_wall_available, eggman_jet_engine"
+			"cosmic_wall_available, $LocationAccess|28|100|14"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
 		"sections": [

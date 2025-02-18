@@ -11,7 +11,7 @@
 			"final_rush_available",
 			"security_hall_available",
 			"sky_rail_available",
-			"$CannonsCoreAvailable, tails_booster, [eggman_jet_engine]"
+			"$CannonsCoreAvailable, $LocationAccess|30|100|12"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
 		"sections": [

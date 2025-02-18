@@ -41,18 +41,6 @@
                                 "layout": "settings_popup"
                             }
                         },
-                        {
-                            "type": "group",
-                            "header": "Pinned Locations",
-                            "content": {
-                                "type": "recentpins",
-                                "style": "wrap",
-                                "h_alignment": "stretch",
-                                "v_alignment": "stretch",
-                                "orientation": "horizontal",
-                                "compact": true
-                            }
-                        }
                     ]
                 },
                 {
@@ -68,7 +56,7 @@
                             }
                         },
                         {
-                            "title": "Keys and Beetles",
+                            "title": "Keys, Beetles, and Big",
                             "content": {
                                 "type": "map",
                                 "maps": [
@@ -100,6 +88,15 @@
                                 "type": "map",
                                 "maps": [
                                     "stage_select_animals"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Item Boxes",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "stage_select_itemboxes"
                                 ]
                             }
                         },

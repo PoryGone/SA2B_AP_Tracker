@@ -141,6 +141,13 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data['MinigameMadnessAmount'] then
+        local minigame_goal_requirement = Tracker:FindObjectForCode("minigame_goal_requirement")
+        if minigame_goal_requirement then
+            minigame_goal_requirement.AcquiredCount = (slot_data['MinigameMadnessAmount'])
+        end
+    end
+
     if slot_data['ChaoKeys'] then
         local keysanity = Tracker:FindObjectForCode("keysanity")
         keysanity.Active = (slot_data['ChaoKeys'])
@@ -167,6 +174,19 @@ function onClear(slot_data)
     if slot_data['AnimalChecks'] then
         local animalsanity = Tracker:FindObjectForCode("animalsanity")
         animalsanity.Active = (slot_data['AnimalChecks'])
+    end
+
+    if slot_data['ItemBoxChecks'] then
+        local lifeboxsanity = Tracker:FindObjectForCode("lifeboxsanity")
+        local itemboxsanity = Tracker:FindObjectForCode("itemboxsanity")
+        local whistlesanity_value = tonumber(slot_data['ItemBoxChecks'])
+        lifeboxsanity.Active = (whistlesanity_value == 1 or whistlesanity_value == 2)
+        itemboxsanity.Active = (whistlesanity_value == 2)
+    end
+
+    if slot_data['BigChecks'] then
+        local bigsanity = Tracker:FindObjectForCode("bigsanity")
+        bigsanity.Active = (slot_data['BigChecks'])
     end
 
     if slot_data['KartRaceChecks'] then

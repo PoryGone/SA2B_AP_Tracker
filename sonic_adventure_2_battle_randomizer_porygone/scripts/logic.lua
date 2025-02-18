@@ -1,5 +1,6 @@
 
 ScriptHost:LoadScript("scripts/autotracking/mission_data.lua")
+ScriptHost:LoadScript("scripts/autotracking/logic_data.lua")
 
 
 function CalculateCannonsCoreCost()
@@ -133,15 +134,52 @@ function MissionAccess(level_num, mission_num, glitched)
 
 			--print(location_str .. ' | ' .. location.AccessibilityLevel .. ' | ' .. AccessibilityLevel.SequenceBreak .. ' | ' .. AccessibilityLevel.Normal)
 
-			if tonumber(glitched) == 1 then
-				return (location.AccessibilityLevel >= AccessibilityLevel.SequenceBreak)
-			else
-				return (location.AccessibilityLevel >= AccessibilityLevel.Normal)
-			end
+			return (location.AccessibilityLevel >= AccessibilityLevel.Normal) and (location.AccessibilityLevel ~= AccessibilityLevel.Cleared)
 		end
 	end
 
 	return true
+end
+
+function LocationAccess(level_num, location_type, location_num)
+	local difficulty = Tracker:FindObjectForCode("logic_difficulty")
+	local possible_itemsets = {}
+
+	local key_str = level_num .. "_" .. location_type .. "_" .. location_num
+
+	if difficulty.CurrentStage == 2 then
+		possible_itemsets = expert_logic[key_str]
+	elseif difficulty.CurrentStage == 1 then
+		possible_itemsets = hard_logic[key_str]
+	else
+		possible_itemsets = standard_logic[key_str]
+	end
+
+	if possible_itemsets == nil then
+		-- If there is no entry, mark it as inaccessible for visibility
+		return 0
+	end
+	
+	if next(possible_itemsets) == nil then
+		return 1
+	end
+
+	for _, itemset in ipairs(possible_itemsets) do
+		local have_all_in_set = true
+
+		for _, item in ipairs(itemset) do
+			if Tracker:ProviderCountForCode(item) == 0 then
+				have_all_in_set = false
+				break
+			end
+		end
+
+		if have_all_in_set then
+			return 1
+		end
+	end
+
+	return 0
 end
 
 function MissionActive(level_num, mission_num)
@@ -232,7 +270,7 @@ function ShowMissionsCallback(code)
 	Tracker:FindObjectForCode("mad_space_available").Active = show_missions.Active
 	Tracker:FindObjectForCode("cosmic_wall_available").Active = show_missions.Active
 	Tracker:FindObjectForCode("final_chase_available").Active = show_missions.Active
-	Tracker:FindObjectForCode("cannons_core_available").Active = show_missions.Active
+	--Tracker:FindObjectForCode("cannons_core_available").Active = show_missions.Active
 end
 
 ScriptHost:AddWatchForCode("update_chao_stats", "chao_stats", ChaoStatCallback)

@@ -9,8 +9,8 @@
 			"pumpkin_hill_available",
 			"radical_highway_available",
 			"weapons_bed_available",
-			"cosmic_wall_available, eggman_jet_engine",
-			"$CannonsCoreAvailable, tails_booster, [eggman_jet_engine]"
+			"cosmic_wall_available, $LocationAccess|28|100|5",
+			"$CannonsCoreAvailable, $LocationAccess|30|100|5"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
 		"sections": [

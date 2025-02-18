@@ -5,13 +5,13 @@
 		"chest_opened_img": "images/checks/chao/animals/Parrot.png",
 		"access_rules": [
 			"green_forest_available",
-			"eternal_engine_available, tails_booster",
+			"eternal_engine_available, $LocationAccess|12|100|11",
 			"sand_ocean_available",
 			"egg_quarters_available",
 			"security_hall_available",
 			"white_jungle_available",
 			"mad_space_available",
-			"$CannonsCoreAvailable, tails_booster, [eggman_jet_engine], [knuckles_air_necklace], knuckles_hammer_gloves, [sonic_bounce_bracelet]"
+			"$CannonsCoreAvailable, $LocationAccess|30|100|11"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
 		"sections": [

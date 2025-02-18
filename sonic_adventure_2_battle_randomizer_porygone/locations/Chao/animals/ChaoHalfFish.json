@@ -6,8 +6,8 @@
 		"access_rules": [
 			"green_forest_available",
 			"pumpkin_hill_available, $NotKeysanity",
-			"hidden_base_available, tails_booster",
-			"eternal_engine_available, tails_booster, tails_bazooka, $NotKeysanity",
+			"hidden_base_available, $LocationAccess|9|100|16",
+			"eternal_engine_available, $NotKeysanity, $LocationAccess|12|101|16",
 			"egg_quarters_available"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],

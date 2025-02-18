@@ -9,7 +9,7 @@
 			"death_chamber_available",
 			"iron_gate_available",
 			"egg_quarters_available",
-			"mad_space_available, [rouge_iron_boots]",
+			"mad_space_available, $LocationAccess|27|100|9",
 			"$CannonsCoreAvailable"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],

@@ -8,7 +8,7 @@
 			"egg_quarters_available",
 			"white_jungle_available",
 			"sky_rail_available",
-			"$CannonsCoreAvailable, tails_booster"
+			"$CannonsCoreAvailable, $LocationAccess|30|100|7"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
 		"sections": [

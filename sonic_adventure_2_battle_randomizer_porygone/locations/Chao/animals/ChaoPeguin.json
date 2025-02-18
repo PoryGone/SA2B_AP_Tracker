@@ -6,7 +6,7 @@
 		"access_rules": [
 			"metal_harbor_available",
 			"aquatic_mine_available",
-			"hidden_base_available, tails_booster",
+			"hidden_base_available, $LocationAccess|9|100|1",
 			"meteor_herd_available",
 			"final_rush_available",
 			"dry_lagoon_available",

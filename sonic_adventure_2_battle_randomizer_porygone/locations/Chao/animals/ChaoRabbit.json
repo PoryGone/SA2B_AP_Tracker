@@ -12,7 +12,7 @@
 			"iron_gate_available",
 			"lost_colony_available",
 			"cosmic_wall_available",
-			"$CannonsCoreAvailable, tails_booster, [eggman_jet_engine], [knuckles_air_necklace], knuckles_hammer_gloves"
+			"$CannonsCoreAvailable, $LocationAccess|30|100|4"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
 		"sections": [

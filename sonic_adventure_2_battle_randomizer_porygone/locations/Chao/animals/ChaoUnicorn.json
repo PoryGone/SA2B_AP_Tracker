@@ -5,10 +5,10 @@
 		"chest_opened_img": "images/checks/chao/animals/Unicorn.png",
 		"access_rules": [
 			"city_escape_available, $NotKeysanity",
-			"prison_lane_available, tails_booster",
+			"prison_lane_available, $LocationAccess|2|100|20",
 			"dry_lagoon_available",
 			"radical_highway_available, $NotKeysanity",
-			"cosmic_wall_available, eggman_jet_engine"
+			"cosmic_wall_available, $LocationAccess|28|100|20"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
 		"sections": [

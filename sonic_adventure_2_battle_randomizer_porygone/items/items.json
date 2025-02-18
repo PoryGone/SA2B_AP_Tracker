@@ -229,5 +229,89 @@
         "img": "images/items/black_market_token.png",
         "codes": "black_market_tokens",
         "max_quantity": 64
+    },
+    {
+        "name": "Pong Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_pong_trap.png",
+        "codes": "pong_traps",
+        "max_quantity": 10
+    },
+    {
+        "name": "Breakout Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_breakout_trap.png",
+        "codes": "breakout_traps",
+        "max_quantity": 10
+    },
+    {
+        "name": "Fishing Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_fishing_trap.png",
+        "codes": "fishing_traps",
+        "max_quantity": 10
+    },
+    {
+        "name": "Trivia Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_trivia_trap.png",
+        "codes": "trivia_traps",
+        "max_quantity": 10
+    },
+    {
+        "name": "Pokemon Trivia Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_pokequiz_trap.png",
+        "codes": "pokemon_trivia_traps",
+        "max_quantity": 10
+    },
+    {
+        "name": "Pokemon Count Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_pokeparade_trap.png",
+        "codes": "pokemon_count_traps",
+        "max_quantity": 10
+    },
+    {
+        "name": "Number Sequence Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_numbersequence_trap.png",
+        "codes": "number_sequence_traps",
+        "max_quantity": 10
+    },
+    {
+        "name": "Light Up Path Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_lightpath_trap.png",
+        "codes": "light_up_path_traps",
+        "max_quantity": 10
+    },
+    {
+        "name": "Pinball Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_pinball_trap.png",
+        "codes": "pinball_traps",
+        "max_quantity": 10
+    },
+    {
+        "name": "Math Quiz Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_math_trap.png",
+        "codes": "math_quiz_traps",
+        "max_quantity": 10
+    },
+    {
+        "name": "Snake Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_snake_trap.png",
+        "codes": "snake_traps",
+        "max_quantity": 10
+    },
+    {
+        "name": "Input Sequence Traps",
+        "type": "consumable",
+        "img": "images/items/minigames/ap_input_trap.png",
+        "codes": "input_sequence_traps",
+        "max_quantity": 10
     }
 ]

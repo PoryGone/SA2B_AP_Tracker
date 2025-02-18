@@ -8,7 +8,7 @@
 			"aquatic_mine_available",
 			"hidden_base_available",
 			"death_chamber_available",
-			"crazy_gadget_available, sonic_bounce_bracelet",
+			"crazy_gadget_available, $LocationAccess|14|100|13",
 			"iron_gate_available",
 			"egg_quarters_available",
 			"white_jungle_available",

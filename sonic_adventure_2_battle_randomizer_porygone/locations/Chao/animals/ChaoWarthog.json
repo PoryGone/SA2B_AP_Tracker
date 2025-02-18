@@ -9,7 +9,7 @@
 			"eternal_engine_available",
 			"radical_highway_available",
 			"lost_colony_available",
-			"$CannonsCoreAvailable, tails_booster, [eggman_jet_engine]"
+			"$CannonsCoreAvailable, $LocationAccess|30|100|6"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
 		"sections": [

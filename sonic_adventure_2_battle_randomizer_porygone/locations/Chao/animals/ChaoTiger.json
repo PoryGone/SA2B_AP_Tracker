@@ -5,7 +5,7 @@
 		"chest_opened_img": "images/checks/chao/animals/Tiger.png",
 		"access_rules": [
 			"prison_lane_available",
-			"hidden_base_available, tails_booster",
+			"hidden_base_available, $LocationAccess|9|100|8",
 			"death_chamber_available",
 			"crazy_gadget_available",
 			"iron_gate_available",

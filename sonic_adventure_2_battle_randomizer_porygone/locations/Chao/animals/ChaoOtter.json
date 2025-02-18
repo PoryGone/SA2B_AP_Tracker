@@ -5,12 +5,12 @@
 		"chest_opened_img": "images/checks/chao/animals/Otter.png",
 		"access_rules": [
 			"prison_lane_available",
-			"hidden_base_available, tails_booster",
+			"hidden_base_available, $LocationAccess|9|100|3",
 			"dry_lagoon_available",
 			"weapons_bed_available",
-			"cosmic_wall_available, eggman_jet_engine",
+			"cosmic_wall_available, $LocationAccess|28|100|3",
 			"final_chase_available",
-			"$CannonsCoreAvailable, tails_booster, [eggman_jet_engine]"
+			"$CannonsCoreAvailable, $LocationAccess|30|100|3"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
 		"sections": [

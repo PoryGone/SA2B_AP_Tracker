@@ -7,6 +7,7 @@
                 "type": "itemgrid",
                 "h_alignment": "left",
                 "item_margin": "2,2",
+                "item_size": "4",
                 "rows": [
                     [
                         "sonic_magic_gloves",
@@ -19,7 +20,10 @@
                         "tails_booster",
                         "tails_mystic_melody",
                         "tails_bazooka",
-                        ""
+                        "",
+                        "pong_traps",
+                        "pokemon_trivia_traps",
+                        "pinball_traps"
                     ],
                     [
                         "knuckles_mystic_melody",
@@ -32,7 +36,10 @@
                         "shadow_ancient_light",
                         "shadow_mystic_melody",
                         "emblems",
-                        ""
+                        "",
+                        "breakout_traps",
+                        "pokemon_count_traps",
+                        "math_quiz_traps"
                     ],
                     [
                         "eggman_laser_blaster",
@@ -45,7 +52,10 @@
                         "rouge_treasure_scope",
                         "rouge_iron_boots",
                         "black_market_tokens",
-                        ""
+                        "",
+                        "fishing_traps",
+                        "number_sequence_traps",
+                        "snake_traps"
                     ],
                     [
                         "white_chaos_emerald",
@@ -58,7 +68,10 @@
                         "",
                         "",
                         "",
-                        ""
+                        "",
+                        "trivia_traps",
+                        "light_up_path_traps",
+                        "input_sequence_traps"
                     ]
                 ]
             }
@@ -73,40 +86,53 @@
                 "type": "itemgrid",
                 "h_alignment": "left",
                 "item_margin": "2,2",
+                "item_size": "4",
                 "rows": [
                     [
                         "keysanity",
-                        "beetlesanity",
                         "pipesanity",
                         "hiddensanity",
-                        "omosanity",
-                        "animalsanity",
-                        "kartsanity",
-                    ],
-                    [
+                        "",
                         "chao_race_difficulty",
                         "chao_stats",
                         "chao_body_parts",
-                        "chao_kindergarten",
-                        "black_market_slots",
                         "",
+                        "minigame_goal_requirement",
                         ""
                     ],
                     [
+                        "beetlesanity",
+                        "omosanity",
+                        "animalsanity",
+                        "",
                         "chao_karate_difficulty",
                         "chao_stats_stamina",
+                        "chao_kindergarten",
                         "",
-                        "",
-                        "",
-                        "",
+                        "gate_count",
                         ""
                     ],
                     [
+                        "bigsanity",
+                        "lifeboxsanity",
+                        "itemboxsanity",
+                        "",
                         "chao_prize_only",
                         "chao_stats_hidden",
+                        "black_market_slots",
                         "",
-                        "gate_count",
                         "cannons_core_cost",
+                        ""
+                    ],
+                    [
+                        "kartsanity",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "logic_difficulty",
                         "goal",
                         "show_missions"
                     ]

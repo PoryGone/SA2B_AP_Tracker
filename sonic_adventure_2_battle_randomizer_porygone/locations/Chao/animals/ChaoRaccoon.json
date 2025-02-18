@@ -10,12 +10,11 @@
 			"eternal_engine_available",
 			"sand_ocean_available",
 			"radical_highway_available",
-			"lost_colony_available, eggman_jet_engine",
+			"lost_colony_available, $LocationAccess|21|100|15",
 			"lost_colony_available, $NotKeysanity",
 			"security_hall_available",
-			"mad_space_available, [rouge_iron_boots]",
-			"$CannonsCoreAvailable, [eggman_jet_engine]",
-			"$CannonsCoreAvailable, eggman_large_cannon"
+			"mad_space_available, $LocationAccess|27|100|15",
+			"$CannonsCoreAvailable, $LocationAccess|30|100|15"
 		],
 		"visibility_rules": [ "$IsNoLevelGoal, chao_body_parts", "goal_6" ],
 		"sections": [
