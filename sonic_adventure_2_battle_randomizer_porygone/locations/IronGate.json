@@ -40,7 +40,7 @@
 				"name": "Upgrade",
 				"chest_unopened_img": "images/checks/level_upgrade_disabled.png",
 				"chest_opened_img": "images/checks/level_upgrade.png",
-				"access_rules": [ "$LocationAccess|15|1|1" ],
+				"access_rules": [ "$LocationAccess|16|1|1" ],
 				"item_count": 1
 			}
 		],

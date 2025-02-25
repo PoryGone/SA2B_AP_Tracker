@@ -206,7 +206,7 @@ standard_logic = {
     ["2_7_14"] = {{"tails_bazooka"}},
     ["2_7_15"] = {{"tails_booster", "tails_bazooka"}},
 -- LifeBoxes
-    ["2_8_1"] = {{"tails_booster"}, {"tails_bazooka"}},
+    ["2_8_1"] = {{"tails_bazooka"}},
     ["2_8_2"] = {{"tails_booster"}},
 -- ItemBoxes
     ["2_9_1"] = {{"tails_booster"}},
@@ -889,7 +889,7 @@ standard_logic = {
 -- ItemBoxes
     ["14_9_1"] = {},
     ["14_9_2"] = {{"sonic_flame_ring"}},
-    ["14_9_3"] = {},
+    ["14_9_3"] = {{"sonic_flame_ring"}},
     ["14_9_4"] = {{"sonic_bounce_bracelet"}},
     ["14_9_5"] = {{"sonic_bounce_bracelet"}},
     ["14_9_6"] = {{"sonic_bounce_bracelet"}},
@@ -1702,12 +1702,12 @@ standard_logic = {
     ["27_9_1"] = {},
     ["27_9_2"] = {{"rouge_treasure_scope"}},
     ["27_9_3"] = {},
-    ["27_9_4"] = {},
+    ["27_9_4"] = {{"rouge_iron_boots"}},
     ["27_9_5"] = {{"rouge_treasure_scope"}},
     ["27_9_6"] = {{"rouge_treasure_scope"}},
     ["27_9_7"] = {},
-    ["27_9_8"] = {},
-    ["27_9_9"] = {},
+    ["27_9_8"] = {{"rouge_iron_boots"}},
+    ["27_9_9"] = {{"rouge_iron_boots"}},
     ["27_9_10"] = {{"rouge_iron_boots"}},
     ["27_9_11"] = {{"rouge_iron_boots"}},
     ["27_9_12"] = {{"rouge_treasure_scope", "rouge_iron_boots"}},
@@ -1800,7 +1800,7 @@ standard_logic = {
 -- Missions
     ["29_0_1"] = {},
     ["29_0_2"] = {},
-    ["29_0_3"] = {},
+    ["29_0_3"] = {{"shadow_air_shoes, shadow_mystic_melody"}},
     ["29_0_4"] = {},
     ["29_0_5"] = {},
 -- Upgrade
@@ -1880,9 +1880,9 @@ standard_logic = {
     ["29_9_30"] = {},
     ["29_9_31"] = {},
     ["29_9_32"] = {},
-    ["29_9_33"] = {},
-    ["29_9_34"] = {},
-    ["29_9_35"] = {},
+    ["29_9_33"] = {{"shadow_air_shoes, shadow_mystic_melody"}},
+    ["29_9_34"] = {{"shadow_air_shoes, shadow_mystic_melody"}},
+    ["29_9_35"] = {{"shadow_air_shoes, shadow_mystic_melody"}},
 --  Bigs
     ["29_10_1"] = {},
 
@@ -2282,7 +2282,7 @@ hard_logic = {
     ["3_9_4"] = {},
     ["3_9_5"] = {},
 --  Bigs
-    ["3_10_1"] = {{"sonic_bounce_bracelet"}},
+    ["3_10_1"] = {},
 
 -- Green Forest --------------------------------------------------------------------------------------------------------------------------
 -- Missions
@@ -3715,7 +3715,7 @@ hard_logic = {
     ["27_9_1"] = {},
     ["27_9_2"] = {{"rouge_treasure_scope"}},
     ["27_9_3"] = {},
-    ["27_9_4"] = {},
+    ["27_9_4"] = {{"rouge_iron_boots"}},
     ["27_9_5"] = {{"rouge_treasure_scope"}},
     ["27_9_6"] = {{"rouge_treasure_scope"}},
     ["27_9_7"] = {},
@@ -4286,7 +4286,7 @@ expert_logic = {
     ["3_9_4"] = {},
     ["3_9_5"] = {},
 --  Bigs
-    ["3_10_1"] = {{"sonic_bounce_bracelet"}},
+    ["3_10_1"] = {},
 
 -- Green Forest --------------------------------------------------------------------------------------------------------------------------
 -- Missions
@@ -5817,7 +5817,7 @@ expert_logic = {
 -- Missions
     ["29_0_1"] = {},
     ["29_0_2"] = {},
-    ["29_0_3"] = {{"shadow_air_shoes", "shadow_mystic_melody"}},
+    ["29_0_3"] = {},
     ["29_0_4"] = {},
     ["29_0_5"] = {},
 -- Upgrade
