@@ -4832,7 +4832,7 @@ expert_logic = {
 -- ItemBoxes
     ["13_9_1"] = {},
     ["13_9_2"] = {},
-    ["13_9_3"] = {},
+    ["13_9_3"] = {{"knuckles_sunglasses"}},
     ["13_9_4"] = {},
     ["13_9_5"] = {},
     ["13_9_6"] = {{"knuckles_sunglasses"}},
@@ -5334,7 +5334,7 @@ expert_logic = {
     ["20_9_8"] = {},
     ["20_9_9"] = {},
     ["20_9_10"] = {{"rouge_treasure_scope"}},
-    ["20_9_11"] = {{"rouge_iron_boots"}},
+    ["20_9_11"] = {{"rouge_pick_nails"}, {"rouge_iron_boots"}},
 --  Bigs
     ["20_10_1"] = {},
 
@@ -5965,7 +5965,7 @@ expert_logic = {
     ["30_9_2"] = {{"eggman_mystic_melody", "eggman_jet_engine"}},
     ["30_9_3"] = {},
     ["30_9_4"] = {{"eggman_mystic_melody", "eggman_jet_engine", "rouge_mystic_melody"}},
-    ["30_9_5"] = {{"rouge_iron_boots"}},
+    ["30_9_5"] = {},
     ["30_9_6"] = {{"eggman_mystic_melody", "eggman_jet_engine", "rouge_mystic_melody", "knuckles_mystic_melody"}},
     ["30_9_7"] = {},
     ["30_9_8"] = {},
