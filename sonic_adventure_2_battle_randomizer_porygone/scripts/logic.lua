@@ -132,7 +132,10 @@ function MissionAccess(level_num, mission_num, glitched)
 			local prev_location_str = '@' .. level_name_str .. '/Mission ' .. tostring(MISSION_ORDERS[mission_order][i-1])
 			local prev_location = Tracker:FindObjectForCode(prev_location_str)
 
-			local can_clear_prev = MissionAccess(level_num, MISSION_ORDERS[mission_order][i-1], 0) and LocationAccess(level_num, 0, MISSION_ORDERS[mission_order][i-1])
+			local prev_mission_access = MissionAccess(level_num, MISSION_ORDERS[mission_order][i-1], 0)
+			local prev_location_access = LocationAccess(level_num, 0, MISSION_ORDERS[mission_order][i-1])
+
+			local can_clear_prev = prev_mission_access and prev_location_access
 			return (prev_location.AccessibilityLevel >= AccessibilityLevel.Normal) and can_clear_prev
 		end
 	end
@@ -156,11 +159,11 @@ function LocationAccess(level_num, location_type, location_num)
 
 	if possible_itemsets == nil then
 		-- If there is no entry, mark it as inaccessible for debugging visibility
-		return 0
+		return false
 	end
 	
 	if next(possible_itemsets) == nil then
-		return 1
+		return true
 	end
 
 	for _, itemset in ipairs(possible_itemsets) do
@@ -174,11 +177,11 @@ function LocationAccess(level_num, location_type, location_num)
 		end
 
 		if have_all_in_set then
-			return 1
+			return true
 		end
 	end
 
-	return 0
+	return false
 end
 
 function MissionActive(level_num, mission_num)
@@ -199,7 +202,7 @@ function MissionActive(level_num, mission_num)
 		end
 	end
 	
-	return 0
+	return false
 end
 
 function IsNoLevelGoal()

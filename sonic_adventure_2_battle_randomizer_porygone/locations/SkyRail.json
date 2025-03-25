@@ -38,7 +38,7 @@
 			},
 			{
 				"name": "Upgrade",
-				"access_rules": [ "$MissionAccess|26|5|0, $LocationAccess|26|1|1" ],
+				"access_rules": [ "$LocationAccess|26|1|1" ],
 				"chest_unopened_img": "images/checks/level_upgrade_disabled.png",
 				"chest_opened_img": "images/checks/level_upgrade.png",
 				"item_count": 1

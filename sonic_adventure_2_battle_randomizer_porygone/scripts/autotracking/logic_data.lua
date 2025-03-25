@@ -614,14 +614,14 @@ standard_logic = {
     ["10_8_2"] = {{"sonic_bounce_bracelet"}},
     ["10_8_3"] = {{"sonic_bounce_bracelet"}},
     ["10_8_4"] = {{"sonic_bounce_bracelet"}},
-    ["10_8_5"] = {{"sonic_bounce_bracelet"}},
+    ["10_8_5"] = {{"sonic_light_shoes", "sonic_bounce_bracelet", "sonic_mystic_melody"}},
     ["10_8_6"] = {{"sonic_bounce_bracelet"}},
     ["10_8_7"] = {{"sonic_bounce_bracelet"}},
 -- ItemBoxes
-    ["10_9_1"] = {{"sonic_light_shoes"}},
-    ["10_9_2"] = {{"sonic_light_shoes"}},
-    ["10_9_3"] = {{"sonic_light_shoes"}},
-    ["10_9_4"] = {{"sonic_light_shoes"}},
+    ["10_9_1"] = {},
+    ["10_9_2"] = {},
+    ["10_9_3"] = {},
+    ["10_9_4"] = {},
     ["10_9_5"] = {{"sonic_bounce_bracelet"}},
     ["10_9_6"] = {{"sonic_bounce_bracelet"}},
     ["10_9_7"] = {{"sonic_bounce_bracelet"}},
@@ -1315,7 +1315,7 @@ standard_logic = {
     ["20_9_6"] = {{"rouge_mystic_melody"}},
     ["20_9_7"] = {{"rouge_mystic_melody"}},
     ["20_9_8"] = {{"rouge_mystic_melody"}},
-    ["20_9_9"] = {},
+    ["20_9_9"] = {{"rouge_mystic_melody"}},
     ["20_9_10"] = {{"rouge_mystic_melody", "rouge_treasure_scope"}},
     ["20_9_11"] = {{"rouge_mystic_melody", "rouge_pick_nails", "rouge_iron_boots"}},
 --  Bigs
@@ -1634,8 +1634,8 @@ standard_logic = {
     ["26_9_4"] = {},
     ["26_9_5"] = {},
     ["26_9_6"] = {},
-    ["26_9_7"] = {},
-    ["26_9_8"] = {{"shadow_air_shoes", "shadow_mystic_melody"}},
+    ["26_9_7"] = {{"shadow_air_shoes", "shadow_mystic_melody"}},
+    ["26_9_8"] = {},
     ["26_9_9"] = {},
     ["26_9_10"] = {},
     ["26_9_11"] = {},
@@ -3328,7 +3328,7 @@ hard_logic = {
     ["20_9_6"] = {{"rouge_mystic_melody"}},
     ["20_9_7"] = {{"rouge_mystic_melody"}},
     ["20_9_8"] = {{"rouge_mystic_melody"}},
-    ["20_9_9"] = {},
+    ["20_9_9"] = {{"rouge_mystic_melody"}},
     ["20_9_10"] = {{"rouge_mystic_melody", "rouge_treasure_scope"}},
     ["20_9_11"] = {{"rouge_mystic_melody", "rouge_pick_nails", "rouge_iron_boots"}},
 --  Bigs
@@ -3418,7 +3418,7 @@ hard_logic = {
 
 -- Omochao
     ["22_6_1"] = {},
-    ["22_6_2"] = {{"eggman_jet_engine"}, {"eggman_large_cannon"}},
+    ["22_6_2"] = {},
     ["22_6_3"] = {{"eggman_jet_engine"}},
 -- Animals
     ["22_7_1"] = {},
@@ -3447,7 +3447,7 @@ hard_logic = {
     ["22_9_6"] = {{"eggman_jet_engine"}},
     ["22_9_7"] = {{"eggman_jet_engine"}},
 --  Bigs
-    ["22_10_1"] = {{"eggman_jet_engine"}},
+    ["22_10_1"] = {},
 
 -- Security Hall --------------------------------------------------------------------------------------------------------------------------
 -- Missions
@@ -4781,8 +4781,8 @@ expert_logic = {
     ["12_9_10"] = {{"tails_booster"}},
     ["12_9_11"] = {{"tails_booster"}},
     ["12_9_12"] = {{"tails_booster"}},
-    ["12_9_13"] = {{"tails_booster"}},
-    ["12_9_14"] = {{"tails_booster"}},
+    ["12_9_13"] = {{"tails_booster", "tails_bazooka"}},
+    ["12_9_14"] = {{"tails_booster", "tails_bazooka"}},
 --  Bigs
     ["12_10_1"] = {{"tails_booster", "tails_bazooka"}},
 
@@ -5334,7 +5334,7 @@ expert_logic = {
     ["20_9_8"] = {},
     ["20_9_9"] = {},
     ["20_9_10"] = {{"rouge_treasure_scope"}},
-    ["20_9_11"] = {{"rouge_pick_nails"}, {"rouge_iron_boots"}},
+    ["20_9_11"] = {{"rouge_pick_nails", "rouge_iron_boots"}},
 --  Bigs
     ["20_10_1"] = {},
 
@@ -5422,7 +5422,7 @@ expert_logic = {
 
 -- Omochao
     ["22_6_1"] = {},
-    ["22_6_2"] = {{"eggman_jet_engine"}, {"eggman_large_cannon"}},
+    ["22_6_2"] = {},
     ["22_6_3"] = {{"eggman_jet_engine"}},
 -- Animals
     ["22_7_1"] = {},
@@ -5438,7 +5438,7 @@ expert_logic = {
     ["22_7_11"] = {{"eggman_jet_engine"}},
     ["22_7_12"] = {{"eggman_jet_engine"}},
     ["22_7_13"] = {{"eggman_jet_engine"}},
-    ["22_7_14"] = {{"eggman_jet_engine"}},
+    ["22_7_14"] = {{"eggman_jet_engine", "eggman_large_cannon"}},
     ["22_7_15"] = {{"eggman_jet_engine", "eggman_large_cannon"}},
 -- LifeBoxes
     ["22_8_1"] = {{"eggman_jet_engine"}},
@@ -5451,7 +5451,7 @@ expert_logic = {
     ["22_9_6"] = {{"eggman_jet_engine"}},
     ["22_9_7"] = {{"eggman_jet_engine"}},
 --  Bigs
-    ["22_10_1"] = {{"eggman_jet_engine"}},
+    ["22_10_1"] = {},
 
 -- Security Hall --------------------------------------------------------------------------------------------------------------------------
 -- Missions

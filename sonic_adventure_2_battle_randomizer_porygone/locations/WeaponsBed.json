@@ -87,7 +87,7 @@
 				"name": "Big",
 				"chest_unopened_img": "images/checks/ap_big_disabled.png",
 				"chest_opened_img": "images/checks/ap_big.png",
-				"access_rules": [ "$LocationAccess|0|10|1" ],
+				"access_rules": [ "$LocationAccess|22|10|1" ],
 				"visibility_rules": [ "bigsanity" ],
 				"item_count": 1
 			}
