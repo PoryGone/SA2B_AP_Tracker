@@ -123,20 +123,22 @@ function BossRushAvailable()
 end
 
 function MissionAccess(level_num, mission_num, glitched)
+	if tonumber(level_num) == 25 or tonumber(level_num) == 8 then
+		return true
+	end
+
     local mission_order_id = MISSION_MAPPING[tonumber(level_num)][1]
     local level_name_str = MISSION_NAME_MAPPING[tonumber(level_num)][1]
     local mission_order = Tracker:ProviderCountForCode(mission_order_id)
 
 	for i=2,5 do
 		if MISSION_ORDERS[mission_order][i] == tonumber(mission_num) then
-			local prev_location_str = '@' .. level_name_str .. '/Mission ' .. tostring(MISSION_ORDERS[mission_order][i-1])
-			local prev_location = Tracker:FindObjectForCode(prev_location_str)
-
 			local prev_mission_access = MissionAccess(level_num, MISSION_ORDERS[mission_order][i-1], 0)
 			local prev_location_access = LocationAccess(level_num, 0, MISSION_ORDERS[mission_order][i-1])
 
 			local can_clear_prev = prev_mission_access and prev_location_access
-			return (prev_location.AccessibilityLevel >= AccessibilityLevel.Normal) and can_clear_prev
+
+			return can_clear_prev
 		end
 	end
 

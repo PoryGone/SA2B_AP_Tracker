@@ -675,10 +675,10 @@ standard_logic = {
     ["11_7_4"] = {{"knuckles_hammer_gloves"}},
     ["11_7_5"] = {{"knuckles_hammer_gloves"}},
     ["11_7_6"] = {{"knuckles_hammer_gloves"}},
-    ["11_7_7"] = {{"knuckles_mystic_melody", "knuckles_hammer_gloves"}},
-    ["11_7_8"] = {{"knuckles_mystic_melody", "knuckles_hammer_gloves"}},
-    ["11_7_9"] = {{"knuckles_mystic_melody", "knuckles_hammer_gloves"}},
-    ["11_7_10"] = {{"knuckles_mystic_melody", "knuckles_hammer_gloves"}},
+    ["11_7_7"] = {{"knuckles_shovel_claws", "knuckles_hammer_gloves"}},
+    ["11_7_8"] = {{"knuckles_shovel_claws", "knuckles_hammer_gloves"}},
+    ["11_7_9"] = {{"knuckles_shovel_claws", "knuckles_hammer_gloves"}},
+    ["11_7_10"] = {{"knuckles_shovel_claws", "knuckles_hammer_gloves"}},
 -- LifeBoxes
     ["11_8_1"] = {{"knuckles_mystic_melody", "knuckles_shovel_claws", "knuckles_air_necklace", "knuckles_hammer_gloves"}},
 -- ItemBoxes
@@ -815,7 +815,7 @@ standard_logic = {
 -- ItemBoxes
     ["13_9_1"] = {},
     ["13_9_2"] = {},
-    ["13_9_3"] = {},
+    ["13_9_3"] = {{"knuckles_sunglasses"}},
     ["13_9_4"] = {},
     ["13_9_5"] = {},
     ["13_9_6"] = {{"knuckles_hammer_gloves", "knuckles_sunglasses"}},
@@ -1442,7 +1442,7 @@ standard_logic = {
     ["23_0_2"] = {{"rouge_pick_nails"}},
     ["23_0_3"] = {{"rouge_treasure_scope"}},
     ["23_0_4"] = {{"rouge_pick_nails"}},
-    ["23_0_5"] = {{"rouge_pick_nails", "rouge_treasure_scope"}},
+    ["23_0_5"] = {{"rouge_pick_nails", "rouge_treasure_scope", "rouge_iron_boots"}},
 -- Upgrade
     ["23_1_1"] = {{"rouge_mystic_melody", "rouge_iron_boots"}},
 -- Keys
@@ -1800,7 +1800,7 @@ standard_logic = {
 -- Missions
     ["29_0_1"] = {},
     ["29_0_2"] = {},
-    ["29_0_3"] = {{"shadow_air_shoes, shadow_mystic_melody"}},
+    ["29_0_3"] = {{"shadow_air_shoes", "shadow_mystic_melody"}},
     ["29_0_4"] = {},
     ["29_0_5"] = {},
 -- Upgrade
@@ -1880,9 +1880,9 @@ standard_logic = {
     ["29_9_30"] = {},
     ["29_9_31"] = {},
     ["29_9_32"] = {},
-    ["29_9_33"] = {{"shadow_air_shoes, shadow_mystic_melody"}},
-    ["29_9_34"] = {{"shadow_air_shoes, shadow_mystic_melody"}},
-    ["29_9_35"] = {{"shadow_air_shoes, shadow_mystic_melody"}},
+    ["29_9_33"] = {{"shadow_air_shoes", "shadow_mystic_melody"}},
+    ["29_9_34"] = {{"shadow_air_shoes", "shadow_mystic_melody"}},
+    ["29_9_35"] = {{"shadow_air_shoes", "shadow_mystic_melody"}},
 --  Bigs
     ["29_10_1"] = {},
 
@@ -2688,10 +2688,10 @@ hard_logic = {
     ["11_7_4"] = {{"knuckles_hammer_gloves"}},
     ["11_7_5"] = {{"knuckles_hammer_gloves"}},
     ["11_7_6"] = {{"knuckles_hammer_gloves"}},
-    ["11_7_7"] = {{"knuckles_mystic_melody", "knuckles_hammer_gloves"}},
-    ["11_7_8"] = {{"knuckles_mystic_melody", "knuckles_hammer_gloves"}},
-    ["11_7_9"] = {{"knuckles_mystic_melody", "knuckles_hammer_gloves"}},
-    ["11_7_10"] = {{"knuckles_mystic_melody", "knuckles_hammer_gloves"}},
+    ["11_7_7"] = {{"knuckles_shovel_claws", "knuckles_hammer_gloves"}},
+    ["11_7_8"] = {{"knuckles_shovel_claws", "knuckles_hammer_gloves"}},
+    ["11_7_9"] = {{"knuckles_shovel_claws", "knuckles_hammer_gloves"}},
+    ["11_7_10"] = {{"knuckles_shovel_claws", "knuckles_hammer_gloves"}},
 -- LifeBoxes
     ["11_8_1"] = {{"knuckles_mystic_melody", "knuckles_shovel_claws", "knuckles_hammer_gloves"}},
 -- ItemBoxes
@@ -2828,7 +2828,7 @@ hard_logic = {
 -- ItemBoxes
     ["13_9_1"] = {},
     ["13_9_2"] = {},
-    ["13_9_3"] = {},
+    ["13_9_3"] = {{"knuckles_sunglasses"}},
     ["13_9_4"] = {},
     ["13_9_5"] = {},
     ["13_9_6"] = {{"knuckles_hammer_gloves", "knuckles_sunglasses"}},
