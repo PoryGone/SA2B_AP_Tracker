@@ -148,6 +148,11 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data['LogicDifficulty'] then
+        local logic_diff = Tracker:FindObjectForCode("logic_difficulty")
+        logic_diff.CurrentStage = (slot_data['LogicDifficulty'])
+    end
+
     if slot_data['ChaoKeys'] then
         local keysanity = Tracker:FindObjectForCode("keysanity")
         keysanity.Active = (slot_data['ChaoKeys'])

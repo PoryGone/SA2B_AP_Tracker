@@ -1082,7 +1082,7 @@ standard_logic = {
     ["17_0_2"] = {},
     ["17_0_3"] = {{"rouge_mystic_melody", "rouge_pick_nails", "rouge_iron_boots"}},
     ["17_0_4"] = {},
-    ["17_0_5"] = {{"rouge_treasure_scope"}},
+    ["17_0_5"] = {{"rouge_pick_nails", "rouge_treasure_scope"}},
 -- Upgrade
     ["17_1_1"] = {{"rouge_pick_nails"}},
 -- Keys
@@ -1180,7 +1180,7 @@ standard_logic = {
     ["18_7_15"] = {{"eggman_jet_engine", "eggman_large_cannon"}},
 -- LifeBoxes
     ["18_8_1"] = {},
-    ["18_8_2"] = {{"eggman_jet_engine"}},
+    ["18_8_2"] = {},
     ["18_8_3"] = {{"eggman_jet_engine", "eggman_large_cannon"}},
 -- ItemBoxes
     ["18_9_1"] = {},
@@ -1635,7 +1635,7 @@ standard_logic = {
     ["26_9_5"] = {},
     ["26_9_6"] = {},
     ["26_9_7"] = {{"shadow_air_shoes", "shadow_mystic_melody"}},
-    ["26_9_8"] = {},
+    ["26_9_8"] = {{"shadow_air_shoes", "shadow_mystic_melody"}},
     ["26_9_9"] = {},
     ["26_9_10"] = {},
     ["26_9_11"] = {},
@@ -3193,7 +3193,7 @@ hard_logic = {
     ["18_7_15"] = {{"eggman_jet_engine", "eggman_large_cannon"}},
 -- LifeBoxes
     ["18_8_1"] = {},
-    ["18_8_2"] = {{"eggman_jet_engine"}},
+    ["18_8_2"] = {},
     ["18_8_3"] = {{"eggman_jet_engine"}},
 -- ItemBoxes
     ["18_9_1"] = {},
@@ -5197,7 +5197,7 @@ expert_logic = {
     ["18_7_15"] = {{"eggman_jet_engine", "eggman_large_cannon"}},
 -- LifeBoxes
     ["18_8_1"] = {},
-    ["18_8_2"] = {{"eggman_jet_engine"}},
+    ["18_8_2"] = {},
     ["18_8_3"] = {{"eggman_jet_engine"}},
 -- ItemBoxes
     ["18_9_1"] = {},
