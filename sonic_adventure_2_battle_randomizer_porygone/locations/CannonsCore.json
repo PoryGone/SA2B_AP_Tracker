@@ -55,7 +55,7 @@
 				"chest_unopened_img": "images/checks/ap_chao_key_disabled.png",
 				"chest_opened_img": "images/checks/ap_chao_key.png",
 				"item_count": 1,
-				"access_rules": [ "$LocationAccess|30|3|1" ],
+				"access_rules": [ "$LocationAccess|30|2|1" ],
 				"visibility_rules": [ "keysanity" ]
 			},
 			{

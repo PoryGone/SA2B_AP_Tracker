@@ -138,6 +138,10 @@ function onClear(slot_data)
             goal.CurrentStage = 4
         elseif tonumber(slot_data['Goal']) == 6 then
             goal.CurrentStage = 5
+        elseif tonumber(slot_data['Goal']) == 7 then
+            goal.CurrentStage = 6
+        elseif tonumber(slot_data['Goal']) == 8 then
+            goal.CurrentStage = 7
         end
     end
 

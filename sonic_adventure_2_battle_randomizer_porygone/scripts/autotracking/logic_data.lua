@@ -1556,7 +1556,7 @@ standard_logic = {
     ["24_7_16"] = {{"shadow_flame_ring", "shadow_air_shoes"}},
 -- LifeBoxes
     ["24_8_1"] = {},
-    ["24_8_2"] = {{"shadow_flame_ring"}},
+    ["24_8_2"] = {{"shadow_flame_ring", "shadow_air_shoes"}},
 -- ItemBoxes
     ["24_9_1"] = {},
     ["24_9_2"] = {},
@@ -1957,7 +1957,7 @@ standard_logic = {
     ["30_9_11"] = {{"tails_booster", "eggman_jet_engine", "knuckles_air_necklace", "knuckles_hammer_gloves"}},
     ["30_9_12"] = {{"tails_booster", "eggman_jet_engine", "knuckles_air_necklace", "knuckles_hammer_gloves"}},
 --  Bigs
-    ["30_10_1"] = {},
+    ["30_10_1"] = {{"tails_booster"}},
     ["30_10_2"] = {{"tails_booster", "eggman_jet_engine"}},
     ["30_10_3"] = {{"tails_booster", "eggman_jet_engine"}},
     ["30_10_4"] = {{"tails_booster", "eggman_jet_engine", "knuckles_air_necklace", "knuckles_hammer_gloves"}},
