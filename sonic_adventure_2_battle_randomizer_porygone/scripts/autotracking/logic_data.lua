@@ -586,7 +586,7 @@ standard_logic = {
 
 -- Omochao
     ["10_6_1"] = {},
-    ["10_6_2"] = {},
+    ["10_6_2"] = {{"sonic_bounce_bracelet"}},
     ["10_6_3"] = {{"sonic_bounce_bracelet"}},
     ["10_6_4"] = {{"sonic_bounce_bracelet"}},
 -- Animals
@@ -3903,7 +3903,7 @@ hard_logic = {
 
 -- Cannon's Core --------------------------------------------------------------------------------------------------------------------------
 -- Missions
-    ["30_0_1"] = {{"tails_booster"}},
+    ["30_0_1"] = {{"tails_booster", "knuckles_hammer_gloves"}},
     ["30_0_2"] = {{"tails_booster"}},
     ["30_0_3"] = {{"tails_booster", "knuckles_hammer_gloves"}},
     ["30_0_4"] = {{"tails_booster", "knuckles_hammer_gloves"}},
@@ -5286,7 +5286,7 @@ expert_logic = {
     ["20_0_2"] = {},
     ["20_0_3"] = {},
     ["20_0_4"] = {{"rouge_pick_nails"}},
-    ["20_0_5"] = {{"rouge_treasure_scope"}},
+    ["20_0_5"] = {{"rouge_treasure_scope"}, {"rouge_pick_nails"}},
 -- Upgrade
     ["20_1_1"] = {},
 -- Keys
@@ -5853,7 +5853,7 @@ expert_logic = {
     ["29_7_14"] = {},
     ["29_7_15"] = {},
     ["29_7_16"] = {},
-    ["29_7_17"] = {{"shadow_flame_ring"}},
+    ["29_7_17"] = {},
 -- LifeBoxes
     ["29_8_1"] = {},
     ["29_8_2"] = {},
@@ -5986,30 +5986,49 @@ expert_logic = {
 
     ["9_100_3"] = {{"tails_booster"}},
     ["28_100_3"] = {{"eggman_jet_engine"}},
+    ["30_100_3"] = {},
+
+    ["30_100_4"] = {},
 
     ["28_100_5"] = {{"eggman_jet_engine"}},
+    ["30_100_5"] = {},
+
+    ["30_100_6"] = {},
+
+    ["30_100_7"] = {},
 
     ["9_100_8"] = {{"tails_booster"}},
 
     ["12_100_11"] = {{"tails_booster"}},
+    ["30_100_11"] = {},
+
+    ["30_100_12"] = {},
 
     ["28_100_14"] = {{"eggman_jet_engine"}},
 
     ["21_100_15"] = {{"eggman_jet_engine"}},
+    ["30_100_15"] = {},
 
     ["9_100_16"] = {{"tails_booster"}},
     ["12_101_16"] = {{"tails_booster"}},
 
     ["10_100_17"] = {{"sonic_flame_ring"}},
+    ["11_101_17"] = {},
     ["18_100_17"] = {{"eggman_jet_engine"}},
     ["21_101_17"] = {{"eggman_jet_engine"}},
 
+    ["1_100_19"] = {},
+    ["15_100_19"] = {},
     ["16_100_19"] = {{"eggman_jet_engine"}},
     ["30_101_19"] = {{"eggman_jet_engine"}},
 
     ["2_100_20"] = {{"tails_booster"}},
+    ["28_100_20"] = {{"eggman_jet_engine"}},
 
     ["6_100_21"] = {{"tails_booster", "tails_bazooka"}},
     ["6_101_21"] = {{"tails_booster"}},
+    ["14_100_21"] = {},
     ["22_100_21"] = {{"eggman_jet_engine"}},
+    ["23_100_21"] = {},
+    ["30_100_21"] = {},
 }

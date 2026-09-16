@@ -123,6 +123,13 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data['RequiredCannonsCoreMissions'] then
+        local cost = Tracker:FindObjectForCode("cannons_core_required_missions")
+        if cost then
+            cost.Active = (slot_data['RequiredCannonsCoreMissions'])
+        end
+    end
+
     if slot_data['Goal'] then
         local goal = Tracker:FindObjectForCode("goal")
 

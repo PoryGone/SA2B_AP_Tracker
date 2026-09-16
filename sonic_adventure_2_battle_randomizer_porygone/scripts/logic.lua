@@ -98,13 +98,27 @@ end
 function BossRushAvailable()
 	local goal = Tracker:FindObjectForCode("goal")
 	local emblemCount = Tracker:ProviderCountForCode("emblems")
-	local cannon_core_cost = CalculateCannonsCoreCost()
+	local cannons_core_required_missions = Tracker:FindObjectForCode("cannons_core_required_missions")
 	
 	local boss_available = false
     if goal.CurrentStage == 3 then
 		boss_available = true
     elseif goal.CurrentStage == 4 then
-		boss_available = (emblemCount >= cannon_core_cost)
+		boss_available = CannonsCoreAvailable()
+		local cannons_core_active_mission_order = Tracker:ProviderCountForCode("cannons_core_missions")
+		local cannons_core_mission_count = Tracker:ProviderCountForCode("cannons_core_mission_counts")
+
+		if boss_available then
+			if cannons_core_required_missions.Active then
+				for i=1,cannons_core_mission_count do
+					if not LocationAccess(30, 0, MISSION_ORDERS[cannons_core_active_mission_order][i]) then
+						return false
+					end
+				end
+			else
+				boss_available = LocationAccess(30, 0, MISSION_ORDERS[cannons_core_active_mission_order][1])
+			end
+		end
     elseif goal.CurrentStage == 5 then
 		local emerald_1 = Tracker:ProviderCountForCode("white_chaos_emerald")
 		local emerald_2 = Tracker:ProviderCountForCode("red_chaos_emerald")

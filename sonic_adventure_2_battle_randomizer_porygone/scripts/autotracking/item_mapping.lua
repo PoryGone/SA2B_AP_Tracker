@@ -118,6 +118,7 @@ ITEM_MAPPING = {
 SETTINGS_MAPPING = {
     [0xFFF121] = {"mission_count", "consumable"},
     [0xFFF122] = {"cannons_core_cost", "consumable"},
+    [0xFFF174] = {"cannons_core_required_missions", "consumable"},
 
     [0xFFF143] = {"chao_race_beginner_cost", "consumable"},
     [0xFFF144] = {"chao_race_intermediate_cost", "consumable"},

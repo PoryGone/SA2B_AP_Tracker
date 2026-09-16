@@ -422,6 +422,12 @@
         "codes": "cannons_core_cost"
     },
     {
+        "name": "Cannon's Core Required Missions",
+        "type": "toggle",
+        "img": "images/checks/CheckNotDone.png",
+        "codes": "cannons_core_required_missions"
+    },
+    {
         "name": "City Escape",
         "type": "toggle",
         "img": "images/levels/city_escape_available.png",
