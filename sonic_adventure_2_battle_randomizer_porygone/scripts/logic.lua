@@ -108,7 +108,7 @@ function BossRushAvailable()
 		local cannons_core_active_mission_order = Tracker:ProviderCountForCode("cannons_core_missions")
 		local cannons_core_mission_count = Tracker:ProviderCountForCode("cannons_core_mission_counts")
 
-		if boss_available then
+		if boss_available > 0 then
 			if cannons_core_required_missions.Active then
 				for i=1,cannons_core_mission_count do
 					if not LocationAccess(30, 0, MISSION_ORDERS[cannons_core_active_mission_order][i]) then
